@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Học Tiếng Trung — hoctiengtrung.app
 
-## Getting Started
+Web app tự học tiếng Trung cho người Việt, từ cơ bản (HSK 1) đến nâng cao (HSK 6).
 
-First, run the development server:
+## Tính năng chính
+
+- **Bài học có cấu trúc**: Theo cấp độ HSK 1-6, bao gồm ngữ pháp, hội thoại, đọc hiểu
+- **Từ vựng & Flashcard**: Hệ thống lặp lại ngắt quãng (Spaced Repetition - SM2)
+- **Luyện tập đa dạng**: Trắc nghiệm, nghe, viết chữ Hán, đọc hiểu
+- **Theo dõi tiến độ**: Dashboard, streak, thành tích, thống kê học tập
+- **Quản trị nội dung**: Admin panel để quản lý bài học, từ vựng, người dùng
+
+## Tech Stack
+
+- Next.js 15 (App Router) + TypeScript
+- Tailwind CSS + shadcn/ui
+- Neon PostgreSQL + Prisma ORM
+- Better Auth
+- next-intl (UI tiếng Việt)
+- TanStack Query + Zod
+- Deploy: Vercel
+
+## Cài đặt
 
 ```bash
+# Clone repo
+git clone <repo-url>
+cd Chinese_manager
+
+# Install dependencies
+npm install
+
+# Setup environment variables
+cp .env.example .env.local
+# Edit .env.local with your Neon DB URL, auth secrets, etc.
+
+# Setup database
+npx prisma generate
+npm run db:push
+npm run db:seed
+
+# Start dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Cấu trúc thư mục
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+├── app/          # Next.js App Router pages & API routes
+├── components/   # React components (feature-based)
+├── lib/          # Utilities, actions, queries, validators
+├── hooks/        # Custom React hooks
+├── types/        # TypeScript type definitions
+├── providers/    # React context providers
+├── config/       # Site & routing config
+└── i18n/         # Internationalization setup
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts
 
-## Learn More
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start dev server |
+| `npm run build` | Production build |
+| `npm run lint` | ESLint check |
+| `npm run db:push` | Push schema to DB |
+| `npm run db:migrate` | Run migrations |
+| `npm run db:seed` | Seed sample data |
+| `npm run db:studio` | Open Prisma Studio |
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Private — All rights reserved.
