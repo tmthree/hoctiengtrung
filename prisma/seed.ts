@@ -1,8 +1,26 @@
 // Seed script — run with: npm run db:seed (uses tsx)
-// Uses PrismaClient directly (not db.ts singleton) so it works standalone
-import { PrismaClient } from "@prisma/client";
+import * as dotenv from "dotenv";
+import * as path from "path";
+dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
 
-const prisma = new PrismaClient();
+import { PrismaClient } from "@prisma/client";
+import { PrismaNeon } from "@prisma/adapter-neon";
+import { neonConfig } from "@neondatabase/serverless";
+import ws from "ws";
+
+// Required for @neondatabase/serverless in Node.js environment
+neonConfig.webSocketConstructor = ws;
+
+const dbUrl = process.env.DATABASE_URL;
+if (!dbUrl) {
+  console.error("DATABASE_URL not set! Check .env.local");
+  process.exit(1);
+}
+console.log("Connecting to:", dbUrl.substring(0, 40) + "...");
+
+// PrismaNeon v7 takes PoolConfig directly (not Pool instance)
+const adapter = new PrismaNeon({ connectionString: dbUrl });
+const prisma = new PrismaClient({ adapter });
 
 // ==================== VOCABULARY DATA ====================
 
