@@ -19,6 +19,7 @@ import { DailyGoalRing } from "@/components/dashboard/daily-goal-ring";
 import { RecentActivity } from "@/components/dashboard/recent-activity";
 import { ContinueLearning } from "@/components/dashboard/continue-learning";
 import { HskProgress } from "@/components/dashboard/hsk-progress";
+import { PlanStatusCard } from "@/components/dashboard/plan-status-card";
 import { getTranslations } from "next-intl/server";
 
 interface DashboardPageProps {
@@ -47,7 +48,7 @@ export default async function DashboardPage({ params }: DashboardPageProps) {
       getDueReviewCount(userId),
       db.user.findUnique({
         where: { id: userId },
-        select: { dailyGoalMinutes: true, name: true },
+        select: { dailyGoalMinutes: true, name: true, plan: true, planExpiresAt: true },
       }),
     ]);
 
@@ -67,6 +68,13 @@ export default async function DashboardPage({ params }: DashboardPageProps) {
           {t("welcome")}, {session.user.name}!
         </p>
       </div>
+
+      {/* Plan status — upgrade CTA for free users */}
+      <PlanStatusCard
+        plan={user?.plan ?? "FREE"}
+        planExpiresAt={user?.planExpiresAt ?? null}
+        locale={locale}
+      />
 
       <StatsOverview
         lessonsCompleted={stats.lessonsCompleted}

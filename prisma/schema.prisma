@@ -10,15 +10,17 @@ datasource db {
 // ==================== AUTH (Better Auth) ====================
 
 model User {
-  id               String   @id @default(cuid())
+  id               String    @id @default(cuid())
   name             String
-  email            String   @unique
-  emailVerified    Boolean  @default(false)
+  email            String    @unique
+  emailVerified    Boolean   @default(false)
   image            String?
-  role             Role     @default(LEARNER)
-  dailyGoalMinutes Int      @default(15)
-  createdAt        DateTime @default(now())
-  updatedAt        DateTime @updatedAt
+  role             Role      @default(LEARNER)
+  plan             Plan      @default(FREE)
+  planExpiresAt    DateTime?
+  dailyGoalMinutes Int       @default(15)
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
 
   sessions     Session[]
   accounts     Account[]
@@ -31,6 +33,11 @@ model User {
 enum Role {
   LEARNER
   ADMIN
+}
+
+enum Plan {
+  FREE
+  PREMIUM
 }
 
 model Session {

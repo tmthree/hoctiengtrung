@@ -128,6 +128,8 @@ export async function getAllUsers({
         name: true,
         email: true,
         role: true,
+        plan: true,
+        planExpiresAt: true,
         createdAt: true,
       },
     }),

@@ -11,13 +11,15 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { updateUserRole } from "@/lib/actions/admin-user-actions";
+import { updateUserRole, updateUserPlan } from "@/lib/actions/admin-user-actions";
 
 interface User {
   id: string;
   name: string;
   email: string;
   role: string;
+  plan: string;
+  planExpiresAt: Date | null;
   createdAt: Date;
 }
 
@@ -53,6 +55,17 @@ export function UserTable({ users, total, totalPages, page, search = "" }: Props
     startTransition(async () => { await updateUserRole(userId, role); });
   }
 
+  function handlePlanChange(userId: string, plan: "FREE" | "PREMIUM") {
+    // Default to 1 month when upgrading to PREMIUM
+    const months = plan === "PREMIUM" ? 1 : undefined;
+    startTransition(async () => { await updateUserPlan(userId, plan, months); });
+  }
+
+  function formatExpiry(date: Date | null) {
+    if (!date) return "—";
+    return new Date(date).toLocaleDateString("vi-VN");
+  }
+
   return (
     <div className="space-y-4">
       <div className="flex gap-2">
@@ -75,13 +88,19 @@ export function UserTable({ users, total, totalPages, page, search = "" }: Props
               <th className="text-left px-4 py-3 font-medium">Họ tên</th>
               <th className="text-left px-4 py-3 font-medium">Email</th>
               <th className="text-left px-4 py-3 font-medium">Vai trò</th>
+              <th className="text-left px-4 py-3 font-medium">Gói</th>
+              <th className="text-left px-4 py-3 font-medium">Hết hạn</th>
               <th className="text-left px-4 py-3 font-medium">Ngày tạo</th>
               <th className="text-right px-4 py-3 font-medium">Thay đổi</th>
             </tr>
           </thead>
           <tbody className="divide-y">
             {users.length === 0 && (
-              <tr><td colSpan={5} className="text-center py-8 text-muted-foreground">Chưa có dữ liệu</td></tr>
+              <tr>
+                <td colSpan={7} className="text-center py-8 text-muted-foreground">
+                  Chưa có dữ liệu
+                </td>
+              </tr>
             )}
             {users.map((user) => (
               <tr key={user.id} className="hover:bg-muted/30">
@@ -92,11 +111,26 @@ export function UserTable({ users, total, totalPages, page, search = "" }: Props
                     {user.role}
                   </Badge>
                 </td>
+                <td className="px-4 py-3">
+                  <Badge
+                    variant={user.plan === "PREMIUM" ? "default" : "outline"}
+                    className={
+                      user.plan === "PREMIUM"
+                        ? "bg-amber-500 text-white border-amber-500"
+                        : ""
+                    }
+                  >
+                    {user.plan}
+                  </Badge>
+                </td>
+                <td className="px-4 py-3 text-muted-foreground">
+                  {formatExpiry(user.planExpiresAt)}
+                </td>
                 <td className="px-4 py-3 text-muted-foreground">
                   {new Date(user.createdAt).toLocaleDateString("vi-VN")}
                 </td>
                 <td className="px-4 py-3">
-                  <div className="flex justify-end">
+                  <div className="flex justify-end gap-2">
                     <Select
                       defaultValue={user.role}
                       onValueChange={(v) => handleRoleChange(user.id, v as "LEARNER" | "ADMIN")}
@@ -109,6 +143,18 @@ export function UserTable({ users, total, totalPages, page, search = "" }: Props
                         <SelectItem value="ADMIN">ADMIN</SelectItem>
                       </SelectContent>
                     </Select>
+                    <Select
+                      defaultValue={user.plan}
+                      onValueChange={(v) => handlePlanChange(user.id, v as "FREE" | "PREMIUM")}
+                    >
+                      <SelectTrigger className="w-28 h-8 text-xs">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="FREE">FREE</SelectItem>
+                        <SelectItem value="PREMIUM">PREMIUM</SelectItem>
+                      </SelectContent>
+                    </Select>
                   </div>
                 </td>
               </tr>
@@ -119,9 +165,23 @@ export function UserTable({ users, total, totalPages, page, search = "" }: Props
 
       {totalPages > 1 && (
         <div className="flex gap-2 justify-center">
-          <Button variant="outline" size="sm" disabled={page <= 1} onClick={() => changePage(page - 1)}>Trước</Button>
+          <Button
+            variant="outline"
+            size="sm"
+            disabled={page <= 1}
+            onClick={() => changePage(page - 1)}
+          >
+            Trước
+          </Button>
           <span className="flex items-center text-sm px-2">{page} / {totalPages}</span>
-          <Button variant="outline" size="sm" disabled={page >= totalPages} onClick={() => changePage(page + 1)}>Sau</Button>
+          <Button
+            variant="outline"
+            size="sm"
+            disabled={page >= totalPages}
+            onClick={() => changePage(page + 1)}
+          >
+            Sau
+          </Button>
         </div>
       )}
     </div>
