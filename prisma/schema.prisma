@@ -1,0 +1,235 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ==================== AUTH (Better Auth) ====================
+
+model User {
+  id               String   @id @default(cuid())
+  name             String
+  email            String   @unique
+  emailVerified    Boolean  @default(false)
+  image            String?
+  role             Role     @default(LEARNER)
+  dailyGoalMinutes Int      @default(15)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  sessions     Session[]
+  accounts     Account[]
+  progress     UserProgress[]
+  reviews      VocabularyReview[]
+  quizAttempts QuizAttempt[]
+  streaks      LearningStreak[]
+}
+
+enum Role {
+  LEARNER
+  ADMIN
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  userId    String
+  token     String   @unique
+  expiresAt DateTime
+  ipAddress String?
+  userAgent String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Account {
+  id                   String    @id @default(cuid())
+  userId               String
+  accountId            String
+  providerId           String
+  accessToken          String?
+  refreshToken         String?
+  accessTokenExpiresAt DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                String?
+  idToken              String?
+  password             String?
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+  user                 User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Verification {
+  id         String   @id @default(cuid())
+  identifier String
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+// ==================== CONTENT ====================
+
+model Lesson {
+  id          String     @id @default(cuid())
+  title       String
+  description String
+  hskLevel    Int        @default(1)
+  type        LessonType @default(GRAMMAR)
+  content     Json       @default("[]")
+  order       Int        @default(0)
+  isPublished Boolean    @default(false)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  vocabulary LessonVocabulary[]
+  exercises  Exercise[]
+  progress   UserProgress[]
+
+  @@index([hskLevel])
+  @@index([isPublished])
+}
+
+enum LessonType {
+  GRAMMAR
+  CONVERSATION
+  READING
+  CULTURE
+  BUSINESS
+}
+
+model Vocabulary {
+  id              String   @id @default(cuid())
+  simplified      String
+  traditional     String?
+  pinyin          String
+  meaning         String
+  exampleSentence String?
+  examplePinyin   String?
+  exampleMeaning  String?
+  audioUrl        String?
+  strokeOrder     Json?
+  hskLevel        Int      @default(1)
+  category        String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  lessons LessonVocabulary[]
+  reviews VocabularyReview[]
+
+  @@index([hskLevel])
+  @@index([simplified])
+}
+
+model LessonVocabulary {
+  id           String @id @default(cuid())
+  lessonId     String
+  vocabularyId String
+  order        Int    @default(0)
+
+  lesson     Lesson     @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  vocabulary Vocabulary @relation(fields: [vocabularyId], references: [id], onDelete: Cascade)
+
+  @@unique([lessonId, vocabularyId])
+}
+
+model Exercise {
+  id          String       @id @default(cuid())
+  lessonId    String
+  type        ExerciseType
+  question    Json
+  answer      Json
+  explanation String?
+  order       Int          @default(0)
+  difficulty  Int          @default(1)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  lesson   Lesson        @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  attempts QuizAttempt[]
+
+  @@index([lessonId])
+}
+
+enum ExerciseType {
+  MULTIPLE_CHOICE
+  FILL_BLANK
+  LISTENING
+  MATCHING
+  WRITING
+  READING
+  TONE
+  PINYIN
+}
+
+// ==================== LEARNING PROGRESS ====================
+
+model UserProgress {
+  id             String         @id @default(cuid())
+  userId         String
+  lessonId       String
+  status         ProgressStatus @default(NOT_STARTED)
+  score          Int?
+  completedAt    DateTime?
+  lastAccessedAt DateTime       @default(now())
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, lessonId])
+}
+
+enum ProgressStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+}
+
+model VocabularyReview {
+  id           String    @id @default(cuid())
+  userId       String
+  vocabularyId String
+  ease         Float     @default(2.5)
+  interval     Int       @default(0)
+  repetitions  Int       @default(0)
+  nextReview   DateTime  @default(now())
+  lastReview   DateTime?
+
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  vocabulary Vocabulary @relation(fields: [vocabularyId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, vocabularyId])
+  @@index([userId, nextReview])
+}
+
+model QuizAttempt {
+  id          String   @id @default(cuid())
+  userId      String
+  exerciseId  String
+  isCorrect   Boolean
+  userAnswer  Json
+  timeSpent   Int      @default(0)
+  attemptedAt DateTime @default(now())
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  exercise Exercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model LearningStreak {
+  id                 String   @id @default(cuid())
+  userId             String
+  date               DateTime @db.Date
+  minutesStudied     Int      @default(0)
+  wordsLearned       Int      @default(0)
+  exercisesCompleted Int      @default(0)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, date])
+  @@index([userId, date])
+}

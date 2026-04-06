@@ -1,0 +1,345 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "back": "Back",
+    "next": "Next",
+    "search": "Search",
+    "confirm": "Confirm",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "or": "or",
+    "seeAll": "See all",
+    "noResults": "No results"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "login": "Log in",
+    "register": "Register",
+    "getStarted": "Start learning",
+    "dashboard": "Dashboard",
+    "lessons": "Lessons",
+    "vocabulary": "Vocabulary",
+    "practice": "Practice",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Log out",
+    "adminDashboard": "Overview",
+    "adminLessons": "Manage lessons",
+    "adminVocabulary": "Manage vocabulary",
+    "adminUsers": "Manage users"
+  },
+  "auth": {
+    "loginTitle": "Sign in",
+    "loginDescription": "Sign in to continue learning Chinese",
+    "registerTitle": "Register",
+    "registerDescription": "Create an account to start your Chinese learning journey",
+    "forgotPasswordTitle": "Forgot password",
+    "forgotPasswordDescription": "Enter your email to reset your password",
+    "name": "Full name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "loginButton": "Sign in",
+    "registerButton": "Register",
+    "resetButton": "Send reset link",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "registerNow": "Register now",
+    "loginNow": "Sign in now",
+    "checkEmail": "Please check your email",
+    "registerSuccess": "Registration successful! Please sign in.",
+    "loginError": "Invalid email or password",
+    "registerError": "Registration failed. Email may already be in use.",
+    "loading": "Processing..."
+  },
+  "landing": {
+    "hero": {
+      "badge": "✦ LEARN CHINESE FOR FREE",
+      "heading": "The most effective way to learn Chinese for Vietnamese learners",
+      "subtitle": "From HSK 1 to HSK 6, structured lessons, smart flashcards, and diverse exercises to help you master Chinese.",
+      "primaryCta": "Start learning for free",
+      "secondaryCta": "Learn more"
+    },
+    "features": {
+      "badge": "✦ KEY FEATURES",
+      "heading": "Everything you need to learn Chinese",
+      "lessons": {
+        "title": "Structured lessons",
+        "desc": "Following HSK 1-6 standards, from beginner to advanced"
+      },
+      "vocabulary": {
+        "title": "Vocabulary & Flashcards",
+        "desc": "Spaced repetition system for long-term retention"
+      },
+      "practice": {
+        "title": "Diverse exercises",
+        "desc": "Multiple choice, listening, writing, matching and more"
+      },
+      "progress": {
+        "title": "Progress tracking",
+        "desc": "Detailed dashboard, streaks and achievements"
+      },
+      "vietnamese": {
+        "title": "Vietnamese interface",
+        "desc": "Designed specifically for Vietnamese learners of Chinese"
+      },
+      "anytime": {
+        "title": "Learn anywhere, anytime",
+        "desc": "Access on any device, sync your progress"
+      }
+    },
+    "howItWorks": {
+      "badge": "✦ HOW IT WORKS",
+      "heading": "Get started in just 3 steps",
+      "step1": {
+        "title": "Create an account",
+        "desc": "Sign up for free in just 30 seconds"
+      },
+      "step2": {
+        "title": "Choose your level",
+        "desc": "Start at HSK 1 or take a placement test"
+      },
+      "step3": {
+        "title": "Start learning",
+        "desc": "Study lessons, review vocabulary and practice daily"
+      }
+    },
+    "hsk": {
+      "badge": "✦ 6 HSK LEVELS",
+      "heading": "A clear learning path from A to Z"
+    },
+    "cta": {
+      "heading": "Ready to start your Chinese learning journey?",
+      "subtitle": "Free. No credit card required. Start today.",
+      "button": "Sign up for free"
+    }
+  },
+  "about": {
+    "badge": "ABOUT US",
+    "heading": "About",
+    "intro": "Học Tiếng Trung is a free online Chinese learning platform, designed specifically for Vietnamese speakers. We believe that learning Chinese can be easier and more effective with the right approach.",
+    "mission": {
+      "heading": "Our mission",
+      "body": "We built this platform to help Vietnamese people learn Chinese systematically and at no cost. Vietnamese speakers share Sino-Vietnamese vocabulary with Chinese, giving them a unique advantage when learning the language."
+    },
+    "method": {
+      "heading": "Learning methodology",
+      "spaced": {
+        "title": "Spaced Repetition (SRS)",
+        "body": "Our smart flashcard system reminds you to review words at the optimal moment before forgetting, enabling long-term retention with less study time."
+      },
+      "hsk": {
+        "title": "International HSK curriculum",
+        "body": "Content follows the official HSK standards from Hanban, preparing you for official Chinese proficiency exams."
+      },
+      "viet": {
+        "title": "Vietnamese-Chinese connections",
+        "body": "Explanations from a Vietnamese perspective, highlighting relationships between Sino-Vietnamese words and modern Mandarin."
+      }
+    },
+    "hsk": {
+      "heading": "What is HSK?",
+      "intro": "HSK (Hànyǔ Shuǐpíng Kǎoshì — 汉语水平考试) is the international Chinese proficiency test. It has 6 levels from beginner to advanced:",
+      "level1": "~150 words · Greetings, numbers, colors",
+      "level2": "~300 words · Simple everyday communication",
+      "level3": "~600 words · Communication in common situations",
+      "level4": "~1200 words · Basic reading comprehension",
+      "level5": "~2500 words · Read newspapers, watch films without subtitles",
+      "level6": "~5000 words · Full Chinese proficiency"
+    },
+    "cta": {
+      "heading": "Start learning today — for free!",
+      "button": "Sign up for free"
+    }
+  },
+  "pricing": {
+    "badge": "PRICING",
+    "heading": "Pricing",
+    "subtitle": "Simple, transparent. No hidden plans.",
+    "plan": {
+      "label": "Free",
+      "price": "$0",
+      "period": "forever"
+    },
+    "features": {
+      "lessons": "All HSK 1-6 lessons",
+      "flashcard": "Smart flashcard system",
+      "practice": "Diverse exercises",
+      "progress": "Progress tracking",
+      "interface": "Vietnamese interface"
+    },
+    "cta": "Start learning for free",
+    "note": "All features are completely free during the development phase"
+  },
+  "lessons": {
+    "title": "Lessons",
+    "allLevels": "All levels",
+    "searchPlaceholder": "Search lessons...",
+    "noLessons": "No lessons found",
+    "noLessonsDesc": "There are no lessons matching this filter",
+    "backToLessons": "Back to lessons",
+    "vocabulary": "Vocabulary in this lesson",
+    "exercises": "Exercises",
+    "doExercises": "Do exercises",
+    "type": "Type",
+    "level": "Level"
+  },
+  "vocabulary": {
+    "title": "Vocabulary",
+    "searchPlaceholder": "Search vocabulary...",
+    "noWords": "No vocabulary found",
+    "noWordsDesc": "There are no words matching this filter",
+    "backToVocabulary": "Back to vocabulary",
+    "meaning": "Meaning",
+    "pinyin": "Pinyin",
+    "example": "Example",
+    "strokeOrder": "Stroke order",
+    "comingSoon": "Coming soon",
+    "relatedWords": "Related words",
+    "character": "Chinese character"
+  },
+  "practice": {
+    "title": "Practice",
+    "flashcards": "Vocabulary review",
+    "flashcardsDesc": "Review vocabulary with smart flashcards",
+    "startReview": "Start review",
+    "quizzes": "Quizzes",
+    "quizzesDesc": "Do exercises for each lesson",
+    "doQuiz": "Do exercises",
+    "noCardsDue": "No cards due for review",
+    "noCardsDueDesc": "Come back later or learn new words",
+    "again": "Again",
+    "hard": "Hard",
+    "good": "Good",
+    "easy": "Easy",
+    "flipCard": "Click to flip",
+    "cardsReviewed": "Reviewed",
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "score": "Score",
+    "tryAgain": "Try again",
+    "backToLesson": "Back to lesson",
+    "backToPractice": "Back to practice",
+    "continueLearning": "Continue learning",
+    "sessionComplete": "Session complete!",
+    "quizComplete": "Quiz complete!",
+    "next": "Next",
+    "submit": "Check",
+    "selectTone": "Select tone",
+    "typePinyin": "Type pinyin",
+    "matchPairs": "Match pairs",
+    "fillBlank": "Fill in the blank",
+    "listenAndAnswer": "Listen and answer"
+  },
+  "contact": {
+    "badge": "CONTACT",
+    "heading": "Contact",
+    "subtitle": "Have a question or feedback? We'd love to hear from you.",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send message",
+      "success": "Thank you! We'll get back to you as soon as possible."
+    },
+    "info": {
+      "heading": "Contact information",
+      "emailLabel": "Email",
+      "socialLabel": "Social media",
+      "socialValue": "Facebook · Zalo · YouTube (coming soon)"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back",
+    "lessonsCompleted": "Lessons Completed",
+    "wordsReviewed": "Words Reviewed",
+    "streakDays": "Day Streak",
+    "studyTime": "Study Time",
+    "minutes": "minutes",
+    "hours": "hours",
+    "continueLearning": "Continue Learning",
+    "reviewDue": "{count} words due for review",
+    "nextLesson": "Next lesson",
+    "recentActivity": "Recent Activity",
+    "noActivity": "No activity yet",
+    "hskProgress": "HSK Progress",
+    "wordsOf": "words",
+    "streakCalendar": "Study Calendar",
+    "dailyGoal": "Today's Goal",
+    "goalReached": "Goal reached!",
+    "quizCompleted": "Quiz",
+    "wordReviewed": "Reviewed word"
+  },
+  "profile": {
+    "title": "Profile",
+    "editProfile": "Edit Profile",
+    "name": "Full name",
+    "saveProfile": "Save changes",
+    "saved": "Saved!",
+    "dailyGoal": "Daily Goal",
+    "dailyGoalDesc": "Set your daily study goal (minutes)",
+    "saveGoal": "Save goal",
+    "achievements": "Achievements",
+    "achievementsDesc": "Unlock achievements by studying regularly",
+    "unlocked": "Unlocked",
+    "locked": "Locked",
+    "minutesPerDay": "min/day"
+  },
+  "admin": {
+    "title": "Administration",
+    "dashboard": "Overview",
+    "totalUsers": "Total Users",
+    "totalLessons": "Total Lessons",
+    "totalVocabulary": "Total Vocabulary",
+    "todayActive": "Active Today",
+    "manageLessons": "Manage Lessons",
+    "manageVocabulary": "Manage Vocabulary",
+    "manageUsers": "Manage Users",
+    "addLesson": "Add Lesson",
+    "editLesson": "Edit Lesson",
+    "addWord": "Add Word",
+    "editWord": "Edit Word",
+    "importCSV": "Import CSV",
+    "published": "Published",
+    "unpublished": "Draft",
+    "publish": "Publish",
+    "unpublish": "Unpublish",
+    "confirmDelete": "Are you sure you want to delete?",
+    "deleteWarning": "This action cannot be undone",
+    "lessonTitle": "Title",
+    "lessonDescription": "Description",
+    "lessonType": "Lesson Type",
+    "lessonContent": "Content (JSON)",
+    "lessonOrder": "Order",
+    "simplified": "Simplified",
+    "traditional": "Traditional",
+    "pinyin": "Pinyin",
+    "meaning": "Meaning",
+    "exampleSentence": "Example Sentence",
+    "examplePinyin": "Example Pinyin",
+    "exampleMeaning": "Example Meaning",
+    "category": "Category",
+    "role": "Role",
+    "changeRole": "Change Role",
+    "previewImport": "Preview",
+    "importSuccess": "Successfully imported {count} words",
+    "importError": "Error during import",
+    "saveLesson": "Save Lesson",
+    "saveWord": "Save Word",
+    "created": "Created",
+    "actions": "Actions",
+    "noData": "No data yet"
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "common": {
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "delete": "Xóa",
+    "edit": "Sửa",
+    "create": "Tạo mới",
+    "loading": "Đang tải...",
+    "error": "Đã xảy ra lỗi",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "search": "Tìm kiếm",
+    "confirm": "Xác nhận",
+    "close": "Đóng",
+    "yes": "Có",
+    "no": "Không",
+    "or": "hoặc",
+    "seeAll": "Xem tất cả",
+    "noResults": "Không có kết quả"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "pricing": "Bảng giá",
+    "contact": "Liên hệ",
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "getStarted": "Bắt đầu học",
+    "dashboard": "Bảng điều khiển",
+    "lessons": "Bài học",
+    "vocabulary": "Từ vựng",
+    "practice": "Luyện tập",
+    "profile": "Hồ sơ",
+    "settings": "Cài đặt",
+    "logout": "Đăng xuất",
+    "adminDashboard": "Tổng quan",
+    "adminLessons": "Quản lý bài học",
+    "adminVocabulary": "Quản lý từ vựng",
+    "adminUsers": "Quản lý người dùng"
+  },
+  "auth": {
+    "loginTitle": "Đăng nhập",
+    "loginDescription": "Đăng nhập để tiếp tục học tiếng Trung",
+    "registerTitle": "Đăng ký",
+    "registerDescription": "Tạo tài khoản để bắt đầu hành trình học tiếng Trung",
+    "forgotPasswordTitle": "Quên mật khẩu",
+    "forgotPasswordDescription": "Nhập email để đặt lại mật khẩu",
+    "name": "Họ tên",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "loginButton": "Đăng nhập",
+    "registerButton": "Đăng ký",
+    "resetButton": "Gửi link đặt lại",
+    "forgotPassword": "Quên mật khẩu?",
+    "noAccount": "Chưa có tài khoản?",
+    "hasAccount": "Đã có tài khoản?",
+    "registerNow": "Đăng ký ngay",
+    "loginNow": "Đăng nhập ngay",
+    "checkEmail": "Vui lòng kiểm tra email của bạn",
+    "registerSuccess": "Đăng ký thành công! Vui lòng đăng nhập.",
+    "loginError": "Email hoặc mật khẩu không đúng",
+    "registerError": "Đăng ký thất bại. Email có thể đã được sử dụng.",
+    "loading": "Đang xử lý..."
+  },
+  "landing": {
+    "hero": {
+      "badge": "✦ HỌC TIẾNG TRUNG MIỄN PHÍ",
+      "heading": "Cách học tiếng Trung hiệu quả nhất cho người Việt",
+      "subtitle": "Từ HSK 1 đến HSK 6, hệ thống bài học có cấu trúc, flashcard thông minh và bài tập đa dạng giúp bạn thành thạo tiếng Trung.",
+      "primaryCta": "Bắt đầu học miễn phí",
+      "secondaryCta": "Tìm hiểu thêm"
+    },
+    "features": {
+      "badge": "✦ TÍNH NĂNG NỔI BẬT",
+      "heading": "Mọi thứ bạn cần để học tiếng Trung",
+      "lessons": {
+        "title": "Bài học có cấu trúc",
+        "desc": "Theo chuẩn HSK 1-6, từ cơ bản đến nâng cao"
+      },
+      "vocabulary": {
+        "title": "Từ vựng & Flashcard",
+        "desc": "Hệ thống lặp lại ngắt quãng, ghi nhớ lâu dài"
+      },
+      "practice": {
+        "title": "Luyện tập đa dạng",
+        "desc": "Trắc nghiệm, nghe, viết, nối cặp và nhiều hơn"
+      },
+      "progress": {
+        "title": "Theo dõi tiến độ",
+        "desc": "Dashboard chi tiết, streak và thành tích"
+      },
+      "vietnamese": {
+        "title": "Giao diện tiếng Việt",
+        "desc": "Thiết kế riêng cho người Việt học tiếng Trung"
+      },
+      "anytime": {
+        "title": "Học mọi lúc mọi nơi",
+        "desc": "Truy cập trên mọi thiết bị, đồng bộ tiến độ"
+      }
+    },
+    "howItWorks": {
+      "badge": "✦ CÁCH THỨC HOẠT ĐỘNG",
+      "heading": "Bắt đầu chỉ trong 3 bước",
+      "step1": {
+        "title": "Đăng ký tài khoản",
+        "desc": "Tạo tài khoản miễn phí chỉ trong 30 giây"
+      },
+      "step2": {
+        "title": "Chọn cấp độ",
+        "desc": "Bắt đầu từ HSK 1 hoặc kiểm tra trình độ"
+      },
+      "step3": {
+        "title": "Bắt đầu học",
+        "desc": "Học bài, ôn từ vựng và luyện tập mỗi ngày"
+      }
+    },
+    "hsk": {
+      "badge": "✦ 6 CẤP ĐỘ HSK",
+      "heading": "Lộ trình học rõ ràng từ A đến Z"
+    },
+    "cta": {
+      "heading": "Sẵn sàng bắt đầu hành trình học tiếng Trung?",
+      "subtitle": "Miễn phí. Không cần thẻ tín dụng. Bắt đầu ngay hôm nay.",
+      "button": "Đăng ký miễn phí"
+    }
+  },
+  "about": {
+    "badge": "GIỚI THIỆU",
+    "heading": "Giới thiệu",
+    "intro": "Học Tiếng Trung là nền tảng học tiếng Trung trực tuyến miễn phí, được thiết kế đặc biệt cho người Việt Nam. Chúng tôi tin rằng việc học tiếng Trung có thể trở nên dễ dàng và hiệu quả hơn với phương pháp đúng đắn.",
+    "mission": {
+      "heading": "Sứ mệnh của chúng tôi",
+      "body": "Chúng tôi xây dựng nền tảng này để giúp người Việt học tiếng Trung một cách bài bản, có hệ thống và không tốn chi phí. Với lợi thế ngôn ngữ chia sẻ ký tự Hán, người Việt có nhiều lợi thế khi học tiếng Trung hơn nhiều ngôn ngữ khác."
+    },
+    "method": {
+      "heading": "Phương pháp học tập",
+      "spaced": {
+        "title": "Lặp lại ngắt quãng (SRS)",
+        "body": "Hệ thống flashcard thông minh nhắc bạn ôn từ đúng thời điểm bộ nhớ sắp quên, giúp ghi nhớ lâu dài với ít thời gian hơn."
+      },
+      "hsk": {
+        "title": "Chương trình HSK chuẩn quốc tế",
+        "body": "Nội dung theo đúng chuẩn HSK của Hội đồng quốc tế tiếng Trung, giúp bạn chuẩn bị cho các kỳ thi chính thức."
+      },
+      "viet": {
+        "title": "Kết nối Việt-Trung",
+        "body": "Giải thích từ vựng qua góc nhìn người Việt, chỉ ra mối liên hệ giữa từ Hán-Việt và tiếng Trung hiện đại."
+      }
+    },
+    "hsk": {
+      "heading": "Hệ thống HSK là gì?",
+      "intro": "HSK (Hànyǔ Shuǐpíng Kǎoshì — 汉语水平考试) là kỳ thi năng lực tiếng Trung quốc tế. Có 6 cấp độ từ sơ cấp đến cao cấp:",
+      "level1": "~150 từ · Chào hỏi, số đếm, màu sắc",
+      "level2": "~300 từ · Giao tiếp đơn giản hàng ngày",
+      "level3": "~600 từ · Giao tiếp trong các tình huống thông thường",
+      "level4": "~1200 từ · Đọc hiểu văn bản đơn giản",
+      "level5": "~2500 từ · Đọc báo, xem phim không cần phụ đề",
+      "level6": "~5000 từ · Thành thạo hoàn toàn tiếng Trung"
+    },
+    "cta": {
+      "heading": "Bắt đầu học ngay hôm nay — miễn phí!",
+      "button": "Đăng ký miễn phí"
+    }
+  },
+  "pricing": {
+    "badge": "BẢNG GIÁ",
+    "heading": "Bảng giá",
+    "subtitle": "Đơn giản, minh bạch. Không có gói ẩn.",
+    "plan": {
+      "label": "Miễn phí",
+      "price": "0₫",
+      "period": "mãi mãi"
+    },
+    "features": {
+      "lessons": "Tất cả bài học HSK 1-6",
+      "flashcard": "Hệ thống flashcard thông minh",
+      "practice": "Bài tập đa dạng",
+      "progress": "Theo dõi tiến độ",
+      "interface": "Giao diện tiếng Việt"
+    },
+    "cta": "Bắt đầu học miễn phí",
+    "note": "Tất cả tính năng hoàn toàn miễn phí trong giai đoạn phát triển"
+  },
+  "lessons": {
+    "title": "Bài học",
+    "allLevels": "Tất cả",
+    "searchPlaceholder": "Tìm kiếm bài học...",
+    "noLessons": "Không có bài học nào",
+    "noLessonsDesc": "Chưa có bài học nào cho bộ lọc này",
+    "backToLessons": "Quay lại bài học",
+    "vocabulary": "Từ vựng trong bài",
+    "exercises": "Bài tập",
+    "doExercises": "Làm bài tập",
+    "type": "Loại bài",
+    "level": "Cấp độ"
+  },
+  "vocabulary": {
+    "title": "Từ vựng",
+    "searchPlaceholder": "Tìm kiếm từ vựng...",
+    "noWords": "Không có từ vựng nào",
+    "noWordsDesc": "Chưa có từ vựng nào cho bộ lọc này",
+    "backToVocabulary": "Quay lại từ vựng",
+    "meaning": "Nghĩa",
+    "pinyin": "Pinyin",
+    "example": "Ví dụ",
+    "strokeOrder": "Thứ tự nét",
+    "comingSoon": "Sắp có",
+    "relatedWords": "Từ liên quan",
+    "character": "Chữ Hán"
+  },
+  "practice": {
+    "title": "Luyện tập",
+    "flashcards": "Ôn tập từ vựng",
+    "flashcardsDesc": "Ôn tập từ vựng với thẻ ghi nhớ thông minh",
+    "startReview": "Bắt đầu ôn",
+    "quizzes": "Bài kiểm tra",
+    "quizzesDesc": "Làm bài tập theo từng bài học",
+    "doQuiz": "Làm bài tập",
+    "noCardsDue": "Không có từ nào cần ôn",
+    "noCardsDueDesc": "Hãy quay lại sau hoặc học thêm từ mới",
+    "again": "Lại",
+    "hard": "Khó",
+    "good": "Tốt",
+    "easy": "Dễ",
+    "flipCard": "Nhấn để lật thẻ",
+    "cardsReviewed": "Đã ôn",
+    "correct": "Đúng",
+    "incorrect": "Sai",
+    "score": "Điểm",
+    "tryAgain": "Thử lại",
+    "backToLesson": "Quay lại bài học",
+    "backToPractice": "Quay lại luyện tập",
+    "continueLearning": "Tiếp tục học",
+    "sessionComplete": "Hoàn thành ôn tập!",
+    "quizComplete": "Hoàn thành bài kiểm tra!",
+    "next": "Tiếp theo",
+    "submit": "Kiểm tra",
+    "selectTone": "Chọn thanh điệu",
+    "typePinyin": "Gõ pinyin",
+    "matchPairs": "Nối cặp tương ứng",
+    "fillBlank": "Điền vào chỗ trống",
+    "listenAndAnswer": "Nghe và trả lời"
+  },
+  "contact": {
+    "badge": "LIÊN HỆ",
+    "heading": "Liên hệ",
+    "subtitle": "Có câu hỏi hoặc góp ý? Chúng tôi rất muốn nghe từ bạn.",
+    "form": {
+      "name": "Họ tên",
+      "email": "Email",
+      "message": "Tin nhắn",
+      "submit": "Gửi tin nhắn",
+      "success": "Cảm ơn bạn! Chúng tôi sẽ phản hồi sớm nhất có thể."
+    },
+    "info": {
+      "heading": "Thông tin liên hệ",
+      "emailLabel": "Email",
+      "socialLabel": "Mạng xã hội",
+      "socialValue": "Facebook · Zalo · YouTube (sắp có)"
+    }
+  },
+  "dashboard": {
+    "title": "Bảng điều khiển",
+    "welcome": "Chào mừng trở lại",
+    "lessonsCompleted": "Bài học hoàn thành",
+    "wordsReviewed": "Từ vựng đã ôn",
+    "streakDays": "Chuỗi ngày học",
+    "studyTime": "Thời gian học",
+    "minutes": "phút",
+    "hours": "giờ",
+    "continueLearning": "Tiếp tục học",
+    "reviewDue": "Có {count} từ cần ôn tập",
+    "nextLesson": "Bài học tiếp theo",
+    "recentActivity": "Hoạt động gần đây",
+    "noActivity": "Chưa có hoạt động nào",
+    "hskProgress": "Tiến độ HSK",
+    "wordsOf": "từ",
+    "streakCalendar": "Lịch học",
+    "dailyGoal": "Mục tiêu hôm nay",
+    "goalReached": "Hoàn thành mục tiêu!",
+    "quizCompleted": "Làm bài tập",
+    "wordReviewed": "Ôn từ"
+  },
+  "profile": {
+    "title": "Hồ sơ",
+    "editProfile": "Chỉnh sửa hồ sơ",
+    "name": "Họ tên",
+    "saveProfile": "Lưu thay đổi",
+    "saved": "Đã lưu!",
+    "dailyGoal": "Mục tiêu hàng ngày",
+    "dailyGoalDesc": "Đặt mục tiêu học tập mỗi ngày (phút)",
+    "saveGoal": "Lưu mục tiêu",
+    "achievements": "Thành tích",
+    "achievementsDesc": "Mở khóa thành tích bằng cách học đều đặn",
+    "unlocked": "Đã mở",
+    "locked": "Chưa mở",
+    "minutesPerDay": "phút/ngày"
+  },
+  "admin": {
+    "title": "Quản trị",
+    "dashboard": "Tổng quan",
+    "totalUsers": "Tổng người dùng",
+    "totalLessons": "Tổng bài học",
+    "totalVocabulary": "Tổng từ vựng",
+    "todayActive": "Hoạt động hôm nay",
+    "manageLessons": "Quản lý bài học",
+    "manageVocabulary": "Quản lý từ vựng",
+    "manageUsers": "Quản lý người dùng",
+    "addLesson": "Thêm bài học",
+    "editLesson": "Sửa bài học",
+    "addWord": "Thêm từ",
+    "editWord": "Sửa từ",
+    "importCSV": "Nhập CSV",
+    "published": "Đã xuất bản",
+    "unpublished": "Nháp",
+    "publish": "Xuất bản",
+    "unpublish": "Gỡ xuất bản",
+    "confirmDelete": "Bạn có chắc muốn xóa?",
+    "deleteWarning": "Hành động này không thể hoàn tác",
+    "lessonTitle": "Tiêu đề",
+    "lessonDescription": "Mô tả",
+    "lessonType": "Loại bài",
+    "lessonContent": "Nội dung (JSON)",
+    "lessonOrder": "Thứ tự",
+    "simplified": "Chữ giản thể",
+    "traditional": "Chữ phồn thể",
+    "pinyin": "Pinyin",
+    "meaning": "Nghĩa",
+    "exampleSentence": "Câu ví dụ",
+    "examplePinyin": "Pinyin ví dụ",
+    "exampleMeaning": "Nghĩa ví dụ",
+    "category": "Danh mục",
+    "role": "Vai trò",
+    "changeRole": "Đổi vai trò",
+    "previewImport": "Xem trước",
+    "importSuccess": "Nhập thành công {count} từ",
+    "importError": "Có lỗi khi nhập",
+    "saveLesson": "Lưu bài học",
+    "saveWord": "Lưu từ",
+    "created": "Đã tạo",
+    "actions": "Thao tác",
+    "noData": "Chưa có dữ liệu"
+  }
+}

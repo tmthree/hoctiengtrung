@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias=\"@/*\" --yes)"
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias=\"@/*\" --yes)",
+      "WebFetch(domain:www.prisma.io)",
+      "Bash(ls /Users/tmthree/Project/Chinese_manager/node_modules/next/dist/server/require-hook*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(ls -lh /Users/tmthree/Project/Chinese_manager/docs/*.md)",
+      "Bash(wc -l docs/*.md)",
+      "Bash(ls -1 docs/*.md)",
+      "Bash(/Users/tmthree/Project/Chinese_manager/DOCS_UPDATE_SUMMARY.txt:*)"
     ]
   }
 }
