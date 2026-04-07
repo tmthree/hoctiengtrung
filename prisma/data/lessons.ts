@@ -2,7 +2,7 @@
 // Each lesson has content blocks, vocabulary keys, and exercise data
 
 export type ExerciseData = {
-  type: "MULTIPLE_CHOICE" | "FILL_BLANK" | "TONE" | "PINYIN" | "MATCHING";
+  type: "MULTIPLE_CHOICE" | "FILL_BLANK" | "TONE" | "PINYIN" | "MATCHING" | "READING" | "LISTENING" | "WRITING";
   order: number;
   difficulty: number;
   question: Record<string, unknown>;
@@ -14,7 +14,7 @@ export type LessonData = {
   title: string;
   description: string;
   hskLevel: number;
-  type: "GRAMMAR" | "CONVERSATION" | "READING" | "CULTURE";
+  type: "GRAMMAR" | "CONVERSATION" | "READING" | "CULTURE" | "BUSINESS";
   order: number;
   content: Record<string, unknown>[];
   vocabularyKeys: string[];
