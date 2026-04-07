@@ -34,7 +34,12 @@ export function RegisterForm() {
     });
 
     if (error) {
-      const msg = t("registerError");
+      // Use server error message when available (e.g. "User already exists")
+      // fallback to generic Vietnamese message for unknown errors
+      const msg =
+        error.code === "USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL"
+          ? "Email này đã được sử dụng. Vui lòng dùng email khác."
+          : t("registerError");
       setServerError(msg);
       toast.error(msg);
       return;
