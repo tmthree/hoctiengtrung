@@ -10,9 +10,12 @@ import { neonConfig } from "@neondatabase/serverless";
 import ws from "ws";
 
 import { hsk1Vocabulary } from "./data/hsk1-vocabulary";
+import { hsk1VocabularyExpanded } from "./data/hsk1-vocabulary-expanded";
 import { hsk2Vocabulary } from "./data/hsk2-vocabulary";
+import { hsk2VocabularyExpanded } from "./data/hsk2-vocabulary-expanded";
 import { hsk3Vocabulary } from "./data/hsk3-vocabulary";
 import { lessonData } from "./data/lessons";
+import { lessonDataExpanded } from "./data/lessons-expanded";
 
 // Required for @neondatabase/serverless in Node.js environment
 neonConfig.webSocketConstructor = ws;
@@ -60,7 +63,25 @@ async function main() {
     });
     createdVocab[word.simplified] = v.id;
   }
-  console.log(`Created ${hsk1Vocabulary.length} HSK 1 words.`);
+  console.log(`Created ${hsk1Vocabulary.length} HSK 1 words (base).`);
+
+  // ── Insert vocabulary: HSK 1 Expanded ──
+  for (const word of hsk1VocabularyExpanded) {
+    const v = await prisma.vocabulary.create({
+      data: {
+        simplified: word.simplified,
+        pinyin: word.pinyin,
+        meaning: word.meaning,
+        exampleSentence: word.exampleSentence,
+        examplePinyin: word.examplePinyin,
+        exampleMeaning: word.exampleMeaning,
+        hskLevel: word.hskLevel,
+        category: word.category,
+      },
+    });
+    createdVocab[word.simplified] = v.id;
+  }
+  console.log(`Created ${hsk1VocabularyExpanded.length} HSK 1 words (expanded).`);
 
   // ── Insert vocabulary: HSK 2 ──
   for (const word of hsk2Vocabulary) {
@@ -78,7 +99,25 @@ async function main() {
     });
     createdVocab[word.simplified] = v.id;
   }
-  console.log(`Created ${hsk2Vocabulary.length} HSK 2 words.`);
+  console.log(`Created ${hsk2Vocabulary.length} HSK 2 words (base).`);
+
+  // ── Insert vocabulary: HSK 2 Expanded ──
+  for (const word of hsk2VocabularyExpanded) {
+    const v = await prisma.vocabulary.create({
+      data: {
+        simplified: word.simplified,
+        pinyin: word.pinyin,
+        meaning: word.meaning,
+        exampleSentence: word.exampleSentence,
+        examplePinyin: word.examplePinyin,
+        exampleMeaning: word.exampleMeaning,
+        hskLevel: word.hskLevel,
+        category: word.category,
+      },
+    });
+    createdVocab[word.simplified] = v.id;
+  }
+  console.log(`Created ${hsk2VocabularyExpanded.length} HSK 2 words (expanded).`);
 
   // ── Insert vocabulary: HSK 3 ──
   for (const word of hsk3Vocabulary) {
@@ -98,13 +137,14 @@ async function main() {
   }
   console.log(`Created ${hsk3Vocabulary.length} HSK 3 words.`);
 
-  const totalVocab = hsk1Vocabulary.length + hsk2Vocabulary.length + hsk3Vocabulary.length;
+  const totalVocab = hsk1Vocabulary.length + hsk1VocabularyExpanded.length + hsk2Vocabulary.length + hsk2VocabularyExpanded.length + hsk3Vocabulary.length;
   console.log(`Total vocabulary created: ${totalVocab} words.`);
 
   // ── Insert lessons with exercises and vocabulary links ──
   let totalExercises = 0;
+  const allLessons = [...lessonData, ...lessonDataExpanded];
 
-  for (const ld of lessonData) {
+  for (const ld of allLessons) {
     const { vocabularyKeys, exercises: exerciseData, ...lessonFields } = ld;
 
     const lesson = await prisma.lesson.create({
@@ -149,8 +189,8 @@ async function main() {
   }
 
   console.log("\n=== Seed Summary ===");
-  console.log(`Vocabulary: ${totalVocab} words (HSK 1: ${hsk1Vocabulary.length}, HSK 2: ${hsk2Vocabulary.length}, HSK 3: ${hsk3Vocabulary.length})`);
-  console.log(`Lessons:    ${lessonData.length} lessons`);
+  console.log(`Vocabulary: ${totalVocab} words (HSK 1: ${hsk1Vocabulary.length + hsk1VocabularyExpanded.length}, HSK 2: ${hsk2Vocabulary.length + hsk2VocabularyExpanded.length}, HSK 3: ${hsk3Vocabulary.length})`);
+  console.log(`Lessons:    ${allLessons.length} lessons`);
   console.log(`Exercises:  ${totalExercises} exercises`);
   console.log("Seed completed successfully.");
 }
