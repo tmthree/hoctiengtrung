@@ -25,8 +25,12 @@ export default async function LessonsPage({ params, searchParams }: LessonsPageP
   const search = sp.search;
   const page = sp.page ? parseInt(sp.page) : 1;
 
-  // Determine user plan
-  const session = await auth.api.getSession({ headers: await headers() });
+  // Parallel: auth check + lesson data (don't wait for auth before querying lessons)
+  const [session, lessonsData] = await Promise.all([
+    auth.api.getSession({ headers: await headers() }),
+    getLessons({ hskLevel, search, page }),
+  ]);
+
   let userIsPremium = false;
   if (session?.user?.id) {
     const userPlan = await db.user.findUnique({
@@ -36,7 +40,7 @@ export default async function LessonsPage({ params, searchParams }: LessonsPageP
     if (userPlan) userIsPremium = isPremium(userPlan);
   }
 
-  const { lessons, totalPages } = await getLessons({ hskLevel, search, page });
+  const { lessons, totalPages } = lessonsData;
   const showUpgradeBanner = !userIsPremium;
 
   return (
