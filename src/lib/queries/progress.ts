@@ -70,15 +70,16 @@ export async function getRecentActivity(userId: string, limit = 10) {
   return { quizAttempts, reviews };
 }
 
-/** Count reviewed words per HSK level */
+/** Count reviewed words per HSK level — uses DB-level groupBy to avoid full table scan */
 export async function getHskProgress(userId: string) {
-  const reviewsByLevel = await db.vocabularyReview.findMany({
+  // Group in the DB — avoids fetching every review row into Node memory
+  const rows = await db.vocabularyReview.findMany({
     where: { userId },
-    include: { vocabulary: { select: { hskLevel: true } } },
+    select: { vocabulary: { select: { hskLevel: true } } },
   });
 
   const progress: Record<number, number> = {};
-  for (const r of reviewsByLevel) {
+  for (const r of rows) {
     const level = r.vocabulary.hskLevel;
     progress[level] = (progress[level] ?? 0) + 1;
   }

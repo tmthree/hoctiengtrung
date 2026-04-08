@@ -33,17 +33,14 @@ export function ChineseText({
   return (
     <div className={`flex flex-col items-center gap-1 ${className}`}>
       {pinyin ? (
-        <ruby className={`${sizeMap[size]} font-normal text-foreground`} style={{ fontFamily: "'Noto Sans SC', sans-serif" }}>
+        <ruby className={`${sizeMap[size]} font-normal text-foreground font-chinese`}>
           {simplified}
           <rt className={`${pinyinSizeMap[size]} text-muted-foreground not-italic`}>
             {pinyin}
           </rt>
         </ruby>
       ) : (
-        <span
-          className={`${sizeMap[size]} font-normal text-foreground`}
-          style={{ fontFamily: "'Noto Sans SC', sans-serif" }}
-        >
+        <span className={`${sizeMap[size]} font-normal text-foreground font-chinese`}>
           {simplified}
         </span>
       )}

@@ -38,7 +38,8 @@ export default async function DashboardPage({ params }: DashboardPageProps) {
   const userId = session.user.id;
   const t = await getTranslations("dashboard");
 
-  const [stats, streakCalendar, activity, hskProgress, todayMinutes, dueCount, user] =
+  // All 9 queries fire in parallel — no sequential waterfalls
+  const [stats, streakCalendar, activity, hskProgress, todayMinutes, dueCount, user, lessonsData, completedProgressRows] =
     await Promise.all([
       getUserStats(userId),
       getStreakCalendar(userId),
@@ -50,13 +51,15 @@ export default async function DashboardPage({ params }: DashboardPageProps) {
         where: { id: userId },
         select: { dailyGoalMinutes: true, name: true, plan: true, planExpiresAt: true },
       }),
+      getLessons({ limit: 20 }),
+      db.userProgress.findMany({
+        where: { userId, status: "COMPLETED" },
+        select: { lessonId: true },
+      }),
     ]);
 
-  // Find first non-completed lesson for learning suggestion
-  const { lessons } = await getLessons({ limit: 20 });
-  const completedIds = await db.userProgress
-    .findMany({ where: { userId, status: "COMPLETED" }, select: { lessonId: true } })
-    .then((rows) => new Set(rows.map((r) => r.lessonId)));
+  const completedIds = new Set(completedProgressRows.map((r) => r.lessonId));
+  const { lessons } = lessonsData;
   const nextLesson = lessons.find((l) => !completedIds.has(l.id));
   const dailyGoal = user?.dailyGoalMinutes ?? 15;
 

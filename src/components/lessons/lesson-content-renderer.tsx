@@ -52,8 +52,7 @@ export function LessonContentRenderer({ content }: LessonContentRendererProps) {
                   {block.examples.map((ex, i) => (
                     <li
                       key={i}
-                      className="text-sm text-blue-700"
-                      style={{ fontFamily: "'Noto Sans SC', sans-serif" }}
+                      className="text-sm text-blue-700 font-chinese"
                     >
                       · {ex}
                     </li>

@@ -63,10 +63,7 @@ export function ExerciseListening({
           <Volume2 className="w-4 h-4" />
           Phát âm
         </button>
-        <p
-          className="text-5xl font-normal text-foreground"
-          style={{ fontFamily: "'Noto Sans SC', sans-serif" }}
-        >
+        <p className="text-5xl font-normal text-foreground font-chinese">
           {question.text}
         </p>
         {question.hint && (

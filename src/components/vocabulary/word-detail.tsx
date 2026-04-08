@@ -15,14 +15,11 @@ export function WordDetail({ word }: WordDetailProps) {
     <div className="space-y-6">
       {/* Main character display */}
       <div className="flex flex-col items-center gap-3 py-8">
-        <span
-          className="text-7xl font-normal text-foreground leading-none"
-          style={{ fontFamily: "'Noto Sans SC', sans-serif" }}
-        >
+        <span className="text-7xl font-normal text-foreground leading-none font-chinese">
           {word.simplified}
         </span>
         {word.traditional && word.traditional !== word.simplified && (
-          <span className="text-2xl text-muted-foreground" style={{ fontFamily: "'Noto Sans SC', sans-serif" }}>
+          <span className="text-2xl text-muted-foreground font-chinese">
             {word.traditional}
           </span>
         )}
@@ -43,10 +40,7 @@ export function WordDetail({ word }: WordDetailProps) {
             <CardTitle className="text-base">Ví dụ</CardTitle>
           </CardHeader>
           <CardContent className="space-y-1">
-            <p
-              className="text-lg text-foreground"
-              style={{ fontFamily: "'Noto Sans SC', sans-serif" }}
-            >
+            <p className="text-lg text-foreground font-chinese">
               {word.exampleSentence}
             </p>
             {word.examplePinyin && (

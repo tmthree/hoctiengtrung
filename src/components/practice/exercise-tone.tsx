@@ -46,10 +46,7 @@ export function ExerciseTone({
     <div className="space-y-6">
       <div className="text-center">
         <p className="text-sm text-muted-foreground mb-2">Chọn thanh điệu đúng</p>
-        <p
-          className="text-7xl font-normal text-foreground"
-          style={{ fontFamily: "'Noto Sans SC', sans-serif" }}
-        >
+        <p className="text-7xl font-normal text-foreground font-chinese">
           {character}
         </p>
       </div>

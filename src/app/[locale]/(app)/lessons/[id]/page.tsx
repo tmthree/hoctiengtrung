@@ -70,7 +70,7 @@ export default async function LessonDetailPage({ params }: LessonDetailPageProps
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead style={{ fontFamily: "'Noto Sans SC', sans-serif" }}>Chữ Hán</TableHead>
+                  <TableHead className="font-chinese">Chữ Hán</TableHead>
                   <TableHead>Pinyin</TableHead>
                   <TableHead>Nghĩa</TableHead>
                 </TableRow>
@@ -79,8 +79,7 @@ export default async function LessonDetailPage({ params }: LessonDetailPageProps
                 {lesson.vocabulary.map(({ vocabulary: v }) => (
                   <TableRow key={v.id}>
                     <TableCell
-                      className="text-lg font-normal"
-                      style={{ fontFamily: "'Noto Sans SC', sans-serif" }}
+                      className="text-lg font-normal font-chinese"
                     >
                       {v.simplified}
                     </TableCell>

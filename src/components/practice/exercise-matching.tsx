@@ -1,6 +1,7 @@
 "use client";
 // Matching exercise — click to pair Chinese characters with their meanings
 import { useState } from "react";
+import { cn } from "@/lib/utils";
 import type { AnswerResult } from "@/hooks/use-quiz-state";
 
 interface MatchingQuestion {
@@ -102,10 +103,9 @@ export function ExerciseMatching({
           {question.pairs.map((pair, leftIdx) => (
             <button
               key={leftIdx}
-              className={getLeftClass(leftIdx)}
+              className={cn(getLeftClass(leftIdx), "font-chinese")}
               onClick={() => handleLeftClick(leftIdx)}
               disabled={isLeftMatched(leftIdx) || !!result}
-              style={{ fontFamily: "'Noto Sans SC', sans-serif" }}
             >
               {pair.left}
             </button>
