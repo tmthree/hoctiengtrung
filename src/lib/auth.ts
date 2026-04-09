@@ -5,6 +5,14 @@ import { db } from "./db";
 
 export const auth = betterAuth({
   database: prismaAdapter(db, { provider: "postgresql" }),
-  emailAndPassword: { enabled: true },
+  emailAndPassword: {
+    enabled: true,
+    minPasswordLength: 8,
+    maxPasswordLength: 128,
+  },
+  rateLimit: {
+    window: 60,
+    max: 10,
+  },
   plugins: [nextCookies()],
 });

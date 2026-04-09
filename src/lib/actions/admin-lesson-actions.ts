@@ -3,6 +3,7 @@ import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import { db } from "@/lib/db";
 import { revalidatePath } from "next/cache";
+import type { Prisma } from "@prisma/client";
 import {
   createLessonSchema,
   updateLessonSchema,
@@ -29,14 +30,21 @@ export async function createLesson(data: CreateLessonInput) {
     return { success: false, error: parsed.error.issues[0].message };
   }
 
+  let content: Prisma.InputJsonValue = [];
+  if (parsed.data.content) {
+    try {
+      content = JSON.parse(parsed.data.content);
+    } catch {
+      return { success: false, error: "Nội dung JSON không hợp lệ" };
+    }
+    if (!Array.isArray(content)) {
+      return { success: false, error: "Nội dung phải là mảng JSON" };
+    }
+  }
+
   try {
     const lesson = await db.lesson.create({
-      data: {
-        ...parsed.data,
-        content: parsed.data.content
-          ? JSON.parse(parsed.data.content)
-          : [],
-      },
+      data: { ...parsed.data, content },
     });
     revalidateLessons();
     return { success: true, data: lesson };
@@ -57,14 +65,21 @@ export async function updateLesson(
 
   try {
     const { id: _, ...updateData } = parsed.data;
+    let contentUpdate: { content?: Prisma.InputJsonValue } = {};
+    if (updateData.content !== undefined) {
+      try {
+        const parsed = JSON.parse(updateData.content as string);
+        if (!Array.isArray(parsed)) {
+          return { success: false, error: "Nội dung phải là mảng JSON" };
+        }
+        contentUpdate = { content: parsed as Prisma.InputJsonValue };
+      } catch {
+        return { success: false, error: "Nội dung JSON không hợp lệ" };
+      }
+    }
     const lesson = await db.lesson.update({
       where: { id },
-      data: {
-        ...updateData,
-        ...(updateData.content !== undefined
-          ? { content: JSON.parse(updateData.content as string) }
-          : {}),
-      },
+      data: { ...updateData, ...contentUpdate },
     });
     revalidateLessons();
     return { success: true, data: lesson };

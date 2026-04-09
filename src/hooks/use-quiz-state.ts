@@ -7,7 +7,6 @@ export interface Exercise {
   id: string;
   type: string;
   question: unknown;
-  answer: unknown;
   explanation?: string | null;
   order: number;
   difficulty: number;

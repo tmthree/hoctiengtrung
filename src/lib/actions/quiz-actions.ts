@@ -77,6 +77,11 @@ export async function submitQuizAnswer(exerciseId: string, userAnswer: unknown) 
   }
 }
 
+/** Strip answer field from exercises before sending to client */
+function stripAnswers(exercises: { id: string; type: string; question: unknown; explanation: string | null; order: number; difficulty: number; lessonId: string; answer?: unknown }[]) {
+  return exercises.map(({ answer: _answer, ...rest }) => rest);
+}
+
 /** Get exercises for a specific lesson, ordered by position */
 export async function getExercisesForLesson(lessonId: string) {
   try {
@@ -88,7 +93,7 @@ export async function getExercisesForLesson(lessonId: string) {
       orderBy: { order: "asc" },
     });
 
-    return { success: true, data: exercises };
+    return { success: true, data: stripAnswers(exercises) };
   } catch (error) {
     console.error("getExercisesForLesson error:", error);
     return { success: false, error: "Failed to fetch exercises", data: [] };
@@ -101,7 +106,6 @@ export async function getExamExercises(hskLevel: number, count: number = 30) {
     const session = await auth.api.getSession({ headers: await headers() });
     if (!session) return { success: false, error: "Unauthorized", data: [] };
 
-    // Get all exercises from lessons at this HSK level
     const exercises = await db.exercise.findMany({
       where: { lesson: { hskLevel } },
       orderBy: { order: "asc" },
@@ -109,7 +113,7 @@ export async function getExamExercises(hskLevel: number, count: number = 30) {
 
     // Shuffle and take `count` exercises
     const shuffled = exercises.sort(() => Math.random() - 0.5);
-    return { success: true, data: shuffled.slice(0, count) };
+    return { success: true, data: stripAnswers(shuffled.slice(0, count)) };
   } catch (error) {
     console.error("getExamExercises error:", error);
     return { success: false, error: "Failed to fetch exam exercises", data: [] };
