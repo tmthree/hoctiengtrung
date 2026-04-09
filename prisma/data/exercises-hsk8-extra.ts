@@ -1,0 +1,1041 @@
+// HSK 8 Extra Exercises — 7 lessons × 10 exercises = 70 exercises (orders 101–107)
+// Topics: Advanced Diplomacy, Financial Derivatives, Philosophy of Mind, Classical Poetry,
+//         Sociolinguistics, Comparative Law, Advanced Science & Technology
+
+export const exerciseLessonsHsk8Extra = [
+  // ─── LESSON 101: Ngoại giao nâng cao — Quan hệ quốc tế ─────────────────
+  {
+    title: "Luyện tập nâng cao HSK 8 — Quan hệ quốc tế",
+    description: "Bài tập chuyên sâu về ngoại giao, hiệp ước quốc tế và quan hệ đa phương",
+    hskLevel: 8,
+    order: 101,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "斡旋 (wòxuán) trong ngoại giao có nghĩa là gì?",
+          options: [
+            "Tuyên chiến chính thức",
+            "Vận động ngoại giao trung gian để thúc đẩy đàm phán",
+            "Ký kết hiệp ước song phương",
+            "Triệu hồi đại sứ về nước",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "斡旋 = vận động ngoại giao, làm trung gian. Thường dùng khi một nước thứ ba giúp hai bên xung đột đạt thỏa thuận. Ví dụ: 积极斡旋停火协议。",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "新任大使向国家元首递交了___，正式开始其外交任期。(Đại sứ mới đã trình ___ lên nguyên thủ quốc gia, chính thức bắt đầu nhiệm kỳ ngoại giao.)",
+          hint: "Văn thư chính thức mà đại sứ trình lên để được công nhận",
+        },
+        answer: { correct: "国书" },
+        explanation: "国书 (guóshū) = quốc thư. Văn thư chính thức của nguyên thủ nước cử đại sứ gửi nguyên thủ nước nhận đại sứ.",
+      },
+      {
+        type: "MATCHING",
+        order: 3,
+        difficulty: 4,
+        question: {
+          text: "Nối hành động ngoại giao với nghĩa:",
+          pairs: [
+            { left: "签署条约", right: "ký kết hiệp ước" },
+            { left: "撤军", right: "rút quân" },
+            { left: "停火", right: "ngừng bắn" },
+            { left: "调解", right: "hòa giải" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Các hành động ngoại giao cơ bản: ký hiệp ước, rút quân, ngừng bắn, hòa giải.",
+      },
+      {
+        type: "TONE",
+        order: 4,
+        difficulty: 4,
+        question: {
+          character: "斡",
+          options: ["wō", "wó", "wǒ", "wò"],
+        },
+        answer: { correct: 3 },
+        explanation: "斡旋 (wòxuán) — 斡 đọc thanh thứ tư. Đây là từ hiếm gặp, chủ yếu xuất hiện trong văn bản ngoại giao chính thức.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "互利共赢 (hùlì gòng yíng) là nguyên tắc quan trọng trong quan hệ quốc tế. Nó có nghĩa là gì?",
+          options: [
+            "Một bên được lợi hoàn toàn, bên kia nhượng bộ",
+            "Cùng có lợi, cùng thắng — không có bên thua cuộc",
+            "Ưu tiên lợi ích quốc gia trên hết",
+            "Lợi ích kinh tế quan trọng hơn an ninh",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "互利共赢 = cùng có lợi, cùng thắng (win-win). 互利 = hỗ lợi; 共赢 = cùng thắng. Đây là nguyên tắc hợp tác quốc tế hiện đại.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n照会",
+          options: ["Công hàm ngoại giao", "Cuộc họp ngoại giao", "Tuyên bố chung", "Thông cáo báo chí"],
+        },
+        answer: { correct: 0 },
+        explanation: "照会 (zhàohuì) = công hàm ngoại giao. Văn bản chính thức từ một bộ ngoại giao gửi đến bộ ngoại giao nước khác.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "联合国对该国实施了经济___，禁止与其进行贸易往来。(Liên Hợp Quốc đã áp đặt lệnh ___ kinh tế đối với nước đó, cấm giao thương với nước này.)",
+          hint: "Biện pháp cấm đoán giao thương như vũ khí, dầu mỏ...",
+        },
+        answer: { correct: "制裁" },
+        explanation: "制裁 (zhìcái) = trừng phạt, chế tài. Biện pháp cưỡng chế kinh tế hoặc ngoại giao của cộng đồng quốc tế.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Trong luật quốc tế, nguyên tắc 不干涉内政 (bù gānshè nèizhèng) bảo vệ điều gì?",
+          options: [
+            "Quyền của nước lớn can thiệp vào nước nhỏ",
+            "Chủ quyền quốc gia — quyền tự quyết các vấn đề nội bộ không bị nước ngoài can thiệp",
+            "Quyền của LHQ giám sát tất cả quốc gia",
+            "Quyền nước ngoài can thiệp vì lý do nhân đạo",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "不干涉内政 = không can thiệp nội chính. Nguyên tắc cơ bản của luật quốc tế bảo vệ chủ quyền quốc gia.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 4,
+        question: {
+          character: "主权",
+          hint: "quyền tối cao của một quốc gia trên lãnh thổ của mình",
+        },
+        answer: { correct: "zhǔquán" },
+        explanation: "主权 (zhǔquán) — 主 thanh thứ ba, 权 thanh thứ hai. Nghĩa: chủ quyền.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối tổ chức quốc tế với chức năng chính:",
+          pairs: [
+            { left: "联合国", right: "duy trì hòa bình và an ninh quốc tế" },
+            { left: "世贸组织", right: "điều phối thương mại quốc tế" },
+            { left: "国际货币基金组织", right: "ổn định hệ thống tiền tệ quốc tế" },
+            { left: "世界卫生组织", right: "điều phối y tế và sức khỏe toàn cầu" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "LHQ (hòa bình), WTO (thương mại), IMF (tiền tệ), WHO (y tế) — bốn tổ chức quốc tế trụ cột.",
+      },
+    ],
+  },
+
+  // ─── LESSON 102: Tài chính phái sinh & Thị trường vốn ──────────────────
+  {
+    title: "Luyện tập nâng cao HSK 8 — Tài chính phái sinh",
+    description: "Bài tập về sản phẩm tài chính phái sinh, quản lý rủi ro và thị trường vốn",
+    hskLevel: 8,
+    order: 102,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "对冲基金 (duìchōng jījīn) khác với quỹ đầu tư thông thường như thế nào?",
+          options: [
+            "Chỉ đầu tư vào cổ phiếu blue-chip an toàn",
+            "Sử dụng nhiều chiến lược phức tạp, đòn bẩy và công cụ phái sinh để đạt lợi nhuận tuyệt đối",
+            "Chỉ dành cho nhà đầu tư nhỏ lẻ",
+            "Không được phép đầu tư ra nước ngoài",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "对冲基金 = hedge fund. Sử dụng đòn bẩy (杠杆), bán khống (做空), phái sinh (衍生品) để tìm lợi nhuận bất kể thị trường tăng hay giảm.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "期货合约规定买卖双方在未来某一日期以约定价格___特定数量的商品。(Hợp đồng tương lai quy định hai bên sẽ ___ một lượng hàng hóa nhất định với giá thỏa thuận vào một ngày tương lai.)",
+          hint: "Hành động mua hoặc bán hàng hóa",
+        },
+        answer: { correct: "交割" },
+        explanation: "交割 (jiāogē) = giao nhận hàng hóa. Trong hợp đồng futures, 交割 là nghĩa vụ thực hiện giao dịch vào ngày đáo hạn.",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 4,
+        question: {
+          character: "杠",
+          options: ["gāng", "gáng", "gǎng", "gàng"],
+        },
+        answer: { correct: 3 },
+        explanation: "杠杆 (gànggǎn) — 杠 đọc thanh thứ tư. Nghĩa: đòn bẩy. Trong tài chính, 金融杠杆 = đòn bẩy tài chính.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          text: "Nối thuật ngữ tài chính phái sinh với nghĩa:",
+          pairs: [
+            { left: "期货", right: "hợp đồng tương lai" },
+            { left: "期权", right: "quyền chọn" },
+            { left: "对冲", right: "phòng ngừa rủi ro" },
+            { left: "套利", right: "kiếm lời chênh lệch giá" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn khái niệm cốt lõi của tài chính phái sinh: futures, options, hedging, arbitrage.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Khi ngân hàng trung ương thực hiện 量化宽松 (liànghuà kuānsōng — QE), mục tiêu chính là gì?",
+          options: [
+            "Giảm lượng tiền lưu thông để kiềm chế lạm phát",
+            "Bơm tiền vào nền kinh tế để kích thích tăng trưởng khi lãi suất đã gần bằng không",
+            "Tăng tỷ lệ dự trữ bắt buộc của ngân hàng thương mại",
+            "Thu hút vốn đầu tư nước ngoài",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "量化宽松 (QE) = nới lỏng định lượng. NHTW mua trái phiếu để bơm tiền vào hệ thống tài chính khi công cụ lãi suất truyền thống đã hết hiệu lực.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n流动性",
+          options: ["Thanh khoản", "Lưu thông tiền tệ", "Tính linh hoạt", "Cơ cấu vốn"],
+        },
+        answer: { correct: 0 },
+        explanation: "流动性 (liúdòngxìng) = thanh khoản. 流动 = lưu động; 性 = tính chất. Khả năng chuyển đổi tài sản thành tiền mặt nhanh chóng.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "分散化的___有助于降低非系统性风险，是个人投资的基本原则。(Danh mục ___ đa dạng hóa giúp giảm rủi ro phi hệ thống, là nguyên tắc cơ bản của đầu tư cá nhân.)",
+          hint: "Tập hợp các khoản đầu tư của một nhà đầu tư",
+        },
+        answer: { correct: "投资组合" },
+        explanation: "投资组合 (tóuzī zǔhé) = danh mục đầu tư (portfolio). Đa dạng hóa portfolio giúp giảm rủi ro không cần thiết.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "市盈率 (P/E ratio) cao thường phản ánh điều gì?",
+          options: [
+            "Công ty đang thua lỗ nặng",
+            "Nhà đầu tư kỳ vọng cao về tăng trưởng lợi nhuận tương lai",
+            "Cổ phiếu đang bị định giá thấp hơn thực tế",
+            "Công ty có nhiều nợ",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "市盈率 (shìyínglǜ) = P/E = price-to-earnings. P/E cao = giá cổ phiếu cao so với lợi nhuận hiện tại → nhà đầu tư kỳ vọng tăng trưởng mạnh trong tương lai.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 4,
+        question: {
+          character: "衍生品",
+          hint: "sản phẩm có giá trị phái sinh từ tài sản cơ sở",
+        },
+        answer: { correct: "yǎnshēngpǐn" },
+        explanation: "衍生品 (yǎnshēngpǐn) — 衍 thanh thứ ba, 生 thanh thứ nhất, 品 thanh thứ ba. Nghĩa: sản phẩm phái sinh.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối chỉ số tài chính với ý nghĩa:",
+          pairs: [
+            { left: "市盈率", right: "giá/thu nhập mỗi cổ phiếu" },
+            { left: "收益率", right: "tỷ suất lợi nhuận" },
+            { left: "流动比率", right: "khả năng thanh toán ngắn hạn" },
+            { left: "资产负债率", right: "tỷ lệ đòn bẩy tài chính" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn chỉ số tài chính quan trọng trong phân tích cơ bản doanh nghiệp.",
+      },
+    ],
+  },
+
+  // ─── LESSON 103: Triết học tâm trí & Nhận thức luận ────────────────────
+  {
+    title: "Luyện tập nâng cao HSK 8 — Triết học tâm trí",
+    description: "Bài tập về nhận thức luận, triết học tâm trí, ý thức và bản thể luận",
+    hskLevel: 8,
+    order: 103,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "形而上学 (xíng'ér shàngxué) nghiên cứu vấn đề gì?",
+          options: [
+            "Các quy luật logic và lập luận hình thức",
+            "Bản chất của thực tại, tồn tại, không gian, thời gian",
+            "Đạo đức và chuẩn mực xã hội",
+            "Nhận thức luận và giới hạn của tri thức",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "形而上学 = siêu hình học (metaphysics). Nghiên cứu 存在 (tồn tại), 实体 (bản thể), 因果 (nhân quả), 时间空间 (thời gian không gian).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "认识论探讨知识的本质、___及其界限，是哲学的核心分支之一。(Nhận thức luận khảo sát bản chất, ___ và giới hạn của tri thức, là nhánh cốt lõi của triết học.)",
+          hint: "Từ chỉ nguồn gốc, từ đâu mà ra",
+        },
+        answer: { correct: "来源" },
+        explanation: "来源 (láiyuán) = nguồn gốc, xuất xứ. Nhận thức luận hỏi: tri thức đến từ đâu? Kinh nghiệm (empiricism) hay lý trí thuần túy (rationalism)?",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 4,
+        question: {
+          character: "识",
+          options: ["shī", "shí", "shǐ", "shì"],
+        },
+        answer: { correct: 1 },
+        explanation: "认识 (rènshí) — 识 đọc thanh thứ hai. Nghĩa: nhận biết, tri thức. 认识论 = nhận thức luận.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          text: "Nối khái niệm triết học với lĩnh vực:",
+          pairs: [
+            { left: "形而上学", right: "bản chất của thực tại" },
+            { left: "认识论", right: "nguồn gốc và giới hạn của tri thức" },
+            { left: "伦理学", right: "đúng sai và giá trị đạo đức" },
+            { left: "逻辑学", right: "quy luật suy luận đúng đắn" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn nhánh chính của triết học: siêu hình học, nhận thức luận, đạo đức học, logic học.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Khái niệm 辩证法 (biànzhèngfǎ) của Hegel và Marx nhấn mạnh điều gì?",
+          options: [
+            "Thực tại là bất biến và hoàn hảo",
+            "Vận động phát triển qua mâu thuẫn: chính đề → phản đề → hợp đề",
+            "Chỉ có trải nghiệm cảm giác mới là tri thức thực sự",
+            "Tư duy logic hình thức là cơ sở duy nhất của triết học",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "辩证法 = biện chứng pháp. Quy luật 正题→反题→合题 (thesis→antithesis→synthesis): mâu thuẫn là động lực của phát triển.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n唯物主义",
+          options: ["Chủ nghĩa duy vật", "Chủ nghĩa duy tâm", "Thuyết hoài nghi", "Chủ nghĩa duy lý"],
+        },
+        answer: { correct: 0 },
+        explanation: "唯物主义 (wéiwù zhǔyì) = chủ nghĩa duy vật. 唯物 = chỉ vật chất. Quan điểm vật chất là nền tảng của thực tại, ý thức là sản phẩm của vật chất.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "笛卡尔的名言'我思故我在'表达了___的核心观点，即思维是存在的唯一确定性。(Câu nói nổi tiếng của Descartes 'Tôi tư duy, vậy tôi tồn tại' thể hiện quan điểm cốt lõi của ___, rằng tư duy là sự chắc chắn duy nhất của tồn tại.)",
+          hint: "Quan điểm triết học cho rằng tâm trí/ý thức là nền tảng của thực tại",
+        },
+        answer: { correct: "唯心主义" },
+        explanation: "唯心主义 (wéixīn zhǔyì) = chủ nghĩa duy tâm. Descartes xuất phát từ nghi ngờ mọi thứ, nhưng không thể nghi ngờ chính bản thân đang tư duy.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Trong triết học Phật giáo, khái niệm 空 (kōng — tính không) có nghĩa là gì?",
+          options: [
+            "Vũ trụ hoàn toàn trống rỗng, không có gì tồn tại",
+            "Mọi hiện tượng đều không có tự tính độc lập, chỉ tồn tại tương duyên",
+            "Niết bàn là trạng thái trống không hoàn toàn",
+            "Vật chất là ảo giác, chỉ tâm trí là thực",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "空 (śūnyatā) = tính không. Mọi pháp đều vô tự tính, chỉ tồn tại nhờ tương quan duyên khởi (缘起). Không phải hư vô tuyệt đối mà là tương tức tương dung.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 4,
+        question: {
+          character: "哲学",
+          hint: "môn học về sự hiểu biết, tồn tại và đạo đức",
+        },
+        answer: { correct: "zhéxué" },
+        explanation: "哲学 (zhéxué) — 哲 thanh thứ hai, 学 thanh thứ hai. Nghĩa: triết học.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối nhà triết học với tư tưởng chính:",
+          pairs: [
+            { left: "孔子", right: "nhân nghĩa lễ trí — tu thân tề gia trị quốc" },
+            { left: "老子", right: "đạo khả đạo, phi thường đạo — vô vi tự nhiên" },
+            { left: "庄子", right: "vạn vật tề đồng — tự do tiêu dao" },
+            { left: "韩非子", right: "pháp, thuật, thế — cai trị bằng pháp luật nghiêm minh" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Tứ đại triết gia Trung Quốc cổ đại: Khổng Tử (Nho), Lão Tử (Đạo), Trang Tử (Đạo), Hàn Phi Tử (Pháp).",
+      },
+    ],
+  },
+
+  // ─── LESSON 104: Thơ cổ điển Trung Quốc nâng cao ───────────────────────
+  {
+    title: "Luyện tập nâng cao HSK 8 — Thơ cổ điển Trung Quốc",
+    description: "Bài tập về thơ Đường, thơ Tống, từ khúc và các thể loại thơ cổ điển",
+    hskLevel: 8,
+    order: 104,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "律诗 (lǜshī) có đặc điểm hình thức nào?",
+          options: [
+            "Số chữ mỗi câu và vần điệu hoàn toàn tự do",
+            "Gồm 8 câu, mỗi câu 5 hoặc 7 chữ, có quy tắc đối ngẫu và niêm luật chặt chẽ",
+            "Chỉ có 4 câu, không có quy tắc",
+            "Dài bất kỳ, chủ yếu kể chuyện sử thi",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "律诗 = thơ luật. 8 câu (8 cú), câu 3-4 và câu 5-6 phải đối nhau (对仗). Có niêm luật về thanh điệu nghiêm ngặt. Đây là thể loại thơ bậc cao nhất thời Đường.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "宋代文学的代表性体裁是___，融合了诗的意境与散文的灵活性。(Thể loại văn học tiêu biểu thời Tống là ___, kết hợp ý cảnh thơ với sự linh hoạt của tản văn.)",
+          hint: "Thể loại thơ ca thời Tống, có thể dài ngắn khác nhau",
+        },
+        answer: { correct: "词" },
+        explanation: "词 (cí) = từ (từ khúc). Thể loại thơ ca nổi bật thời Tống, câu có độ dài khác nhau theo điệu nhạc. Đại biểu: Tô Thức, Lý Thanh Chiếu.",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 4,
+        question: {
+          character: "韵",
+          options: ["yūn", "yún", "yǔn", "yùn"],
+        },
+        answer: { correct: 3 },
+        explanation: "韵律 (yùnlǜ) — 韵 đọc thanh thứ tư. Nghĩa: vần điệu, nhịp điệu trong thơ ca.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 4,
+        question: {
+          text: "Nối nhà thơ với đặc điểm phong cách:",
+          pairs: [
+            { left: "李白", right: "hào phóng bay bổng, lãng mạn" },
+            { left: "杜甫", right: "trầm uất hiện thực, ưu thời mẫn thế" },
+            { left: "王维", right: "tĩnh lặng thiền định, thơ như tranh" },
+            { left: "白居易", right: "bình dị dễ hiểu, phê bình xã hội" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Tứ đại thi nhân Đường: Lý Bạch (lãng mạn), Đỗ Phủ (hiện thực), Vương Duy (thiền định), Bạch Cư Dị (bình dân).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Bài thơ Tĩnh dạ tư 静夜思 của Lý Bạch bắt đầu bằng câu nào?",
+          options: [
+            "春眠不觉晓，处处闻啼鸟",
+            "床前明月光，疑是地上霜",
+            "故人西辞黄鹤楼，烟花三月下扬州",
+            "独在异乡为异客，每逢佳节倍思亲",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "床前明月光，疑是地上霜 (Trước giường ánh trăng sáng, ngỡ là sương trên mặt đất) — câu mở đầu 静夜思 của Lý Bạch. Bài thơ nổi tiếng nhất về nỗi nhớ quê hương.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 4,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n意象",
+          options: ["Hình ảnh ý niệm trong thơ", "Ý nghĩa ẩn dụ", "Cảm xúc của tác giả", "Nhân vật trong thơ"],
+        },
+        answer: { correct: 0 },
+        explanation: "意象 (yìxiàng) = ý tượng, hình ảnh thơ. Hình ảnh cụ thể mang ý nghĩa biểu tượng trong thơ, kết hợp giữa ý (ý nghĩa) và象 (hình tượng).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "苏轼的《水调歌头》中'但愿人长久，___'表达了对亲人的深深祝愿。(Trong 《水调歌头》của Tô Thức, 'Nhưng mong người mãi vui, ___' bày tỏ lời chúc sâu sắc đến người thân.)",
+          hint: "Kết thúc câu thơ nổi tiếng, nói về hai người ở xa nhau vẫn có thể chia sẻ điều gì",
+        },
+        answer: { correct: "千里共婵娟" },
+        explanation: "千里共婵娟 (qiānlǐ gòng chánjuān) = ngàn dặm cùng chiêm ngưỡng trăng đẹp. 婵娟 = trăng tròn đẹp. Câu thơ bất hủ của Tô Thức về tình thân.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Kỹ thuật 对仗 (duìzhàng — đối ngẫu) trong thơ Đường đòi hỏi điều gì?",
+          options: [
+            "Hai câu liên tiếp có cùng vần",
+            "Hai câu đối xứng về từ loại, âm thanh và ý nghĩa",
+            "Lặp lại cùng một từ ở đầu mỗi câu",
+            "Mỗi câu phải có đúng bảy chữ",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "对仗 = đối ngẫu. Hai câu phải đối xứng: danh từ đối danh từ, động từ đối động từ, tính từ đối tính từ; âm thanh và ý nghĩa cũng phải tương ứng.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 4,
+        question: {
+          character: "意境",
+          hint: "cảnh giới tinh thần, không khí nghệ thuật trong thơ và tranh",
+        },
+        answer: { correct: "yìjìng" },
+        explanation: "意境 (yìjìng) — 意 thanh thứ tư, 境 thanh thứ tư. Nghĩa: ý cảnh, cảnh giới nghệ thuật.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối hình ảnh thơ Đường với ý nghĩa biểu tượng:",
+          pairs: [
+            { left: "明月", right: "nỗi nhớ quê hương, tình thân" },
+            { left: "杨柳", right: "biệt ly, tiễn đưa" },
+            { left: "大雁", right: "thư từ, tin tức từ xa" },
+            { left: "梅花", right: "khí tiết kiên cường, vẻ đẹp thanh cao" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Hình ảnh biểu tượng: trăng sáng (nhớ nhà), liễu (tiễn biệt), nhạn (thư từ), mai (khí tiết).",
+      },
+    ],
+  },
+
+  // ─── LESSON 105: Ngôn ngữ học xã hội & Giao tiếp học thuật ────────────
+  {
+    title: "Luyện tập nâng cao HSK 8 — Ngôn ngữ học xã hội",
+    description: "Bài tập về ngôn ngữ học xã hội, diễn ngôn học thuật và biến thể ngôn ngữ",
+    hskLevel: 8,
+    order: 105,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "社会语言学 (shèhuì yǔyánxué) nghiên cứu mối quan hệ giữa điều gì?",
+          options: [
+            "Ngữ pháp và cấu trúc câu",
+            "Ngôn ngữ và xã hội — cách xã hội ảnh hưởng đến ngôn ngữ và ngược lại",
+            "Âm vị học và thanh điệu",
+            "Từ điển và định nghĩa từ",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "社会语言学 = ngôn ngữ học xã hội. Nghiên cứu biến thể ngôn ngữ theo vùng địa lý, tầng lớp xã hội, giới tính, tuổi tác và ngữ cảnh giao tiếp.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "汉语普通话以北京___为标准音，在全国推广。(Tiếng phổ thông Hán ngữ lấy ___ Bắc Kinh làm chuẩn âm, phổ cập trên toàn quốc.)",
+          hint: "Hệ thống âm thanh, phát âm của một ngôn ngữ",
+        },
+        answer: { correct: "语音" },
+        explanation: "语音 (yǔyīn) = ngữ âm, hệ thống phát âm. Tiếng phổ thông lấy âm Bắc Kinh làm chuẩn, từ vựng lấy phương ngữ Bắc làm cơ sở.",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 4,
+        question: {
+          character: "语",
+          options: ["yū", "yú", "yǔ", "yù"],
+        },
+        answer: { correct: 2 },
+        explanation: "语言 (yǔyán) — 语 đọc thanh thứ ba. Nghĩa: ngôn ngữ, lời nói.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          text: "Nối khái niệm ngôn ngữ học với định nghĩa:",
+          pairs: [
+            { left: "方言", right: "tiếng địa phương, phương ngữ" },
+            { left: "语域", right: "phong cách ngôn ngữ theo ngữ cảnh" },
+            { left: "语用学", right: "nghiên cứu cách sử dụng ngôn ngữ trong giao tiếp" },
+            { left: "词汇学", right: "nghiên cứu từ vựng và ý nghĩa từ" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Phân ngành ngôn ngữ học: 方言 (phương ngữ), 语域 (register), 语用学 (pragmatics), 词汇学 (lexicology).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "在正式学术写作中，下列哪种表达最为得体?",
+          options: [
+            "这个问题特别难搞",
+            "就目前研究而言，该问题尚存在诸多争议",
+            "大家都觉得这个理论不对",
+            "反正这种方法肯定有效",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "学术写作要求客观、严谨、正式。'就目前研究而言...尚存在诸多争议' = học thuật chính quy. Các lựa chọn khác mang tính khẩu ngữ, chủ quan.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Nhìn vào cụm từ và chọn đúng nghĩa:\n\n语言能力",
+          options: ["Năng lực ngôn ngữ", "Khả năng học tiếng", "Bằng tiếng Trung", "Kiến thức ngữ pháp"],
+        },
+        answer: { correct: 0 },
+        explanation: "语言能力 (yǔyán nénglì) = năng lực ngôn ngữ. Trong ngôn ngữ học Chomsky, 语言能力 (competence) là kiến thức nội tại về ngôn ngữ.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "汉字是表意文字，每个字的___往往能帮助学习者理解其意义。(Chữ Hán là chữ biểu ý, ___ của mỗi chữ thường giúp người học hiểu nghĩa.)",
+          hint: "Thành phần của chữ Hán cho biết ý nghĩa",
+        },
+        answer: { correct: "偏旁部首" },
+        explanation: "偏旁部首 (piānpáng bùshǒu) = bộ thủ, thành phần biểu ý của chữ Hán. Ví dụ: bộ 水 (水/氵) chỉ liên quan đến nước.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Hiện tượng 语码转换 (yǔmǎ zhuǎnhuàn — code-switching) phổ biến trong cộng đồng song ngữ có đặc điểm gì?",
+          options: [
+            "Người nói quên một trong hai ngôn ngữ",
+            "Người nói luân phiên chuyển đổi giữa hai ngôn ngữ trong cùng cuộc hội thoại",
+            "Từ vay mượn từ ngôn ngữ khác",
+            "Mất khả năng nói ngôn ngữ mẹ đẻ",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "语码转换 = chuyển đổi mã ngôn ngữ. Người song ngữ tự nhiên chuyển qua lại giữa hai ngôn ngữ theo ngữ cảnh, chủ đề hoặc đối tác hội thoại.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 4,
+        question: {
+          character: "修辞",
+          hint: "nghệ thuật sử dụng ngôn ngữ để tăng sức biểu đạt",
+        },
+        answer: { correct: "xiūcí" },
+        explanation: "修辞 (xiūcí) — 修 thanh thứ nhất, 辞 thanh thứ hai. Nghĩa: tu từ, hùng biện.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối biện pháp tu từ với ví dụ:",
+          pairs: [
+            { left: "比喻", right: "时间就是金钱 (ẩn dụ/so sánh)" },
+            { left: "排比", right: "我来了，我看了，我征服了 (liệt kê song song)" },
+            { left: "反问", right: "难道这不是真的吗？(câu hỏi tu từ)" },
+            { left: "夸张", right: "飞流直下三千尺 (cường điệu)" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn biện pháp tu từ phổ biến trong tiếng Hán: ẩn dụ (比喻), liệt kê song song (排比), câu hỏi tu từ (反问), cường điệu (夸张).",
+      },
+    ],
+  },
+
+  // ─── LESSON 106: Luật so sánh & Nhân quyền quốc tế ─────────────────────
+  {
+    title: "Luyện tập nâng cao HSK 8 — Luật so sánh & Nhân quyền",
+    description: "Bài tập về luật so sánh, quyền con người quốc tế và các hệ thống pháp luật",
+    hskLevel: 8,
+    order: 106,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "普通法系 (pǔtōng fǎxì — common law) và大陆法系 (dàlù fǎxì — civil law) khác nhau chủ yếu ở điểm nào?",
+          options: [
+            "Common law có hiến pháp, civil law thì không",
+            "Common law dựa trên án lệ (tiền lệ tư pháp); civil law dựa trên bộ luật thành văn",
+            "Civil law chỉ áp dụng ở châu Âu",
+            "Common law không có tòa án tối cao",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "普通法系 (common law) dựa trên 判例法 (án lệ) — tiền lệ tư pháp ràng buộc. 大陆法系 (civil law) dựa trên bộ luật thành văn hệ thống hóa.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "《世界人权宣言》于1948年由联合国___，确立了人权保护的国际标准。(《Tuyên ngôn Quốc tế Nhân quyền》được LHQ ___ năm 1948, xác lập tiêu chuẩn quốc tế về bảo vệ nhân quyền.)",
+          hint: "Hành động công bố, thông qua chính thức",
+        },
+        answer: { correct: "通过" },
+        explanation: "通过 (tōngguò) = thông qua, phê chuẩn. 《世界人权宣言》được Đại hội đồng LHQ thông qua ngày 10/12/1948.",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 4,
+        question: {
+          character: "诉",
+          options: ["sū", "sú", "sǔ", "sù"],
+        },
+        answer: { correct: 3 },
+        explanation: "诉讼 (sùsòng) — 诉 đọc thanh thứ tư. Nghĩa: tố tụng, kiện cáo.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          text: "Nối khái niệm pháp lý với định nghĩa:",
+          pairs: [
+            { left: "无罪推定", right: "bị cáo được coi là vô tội cho đến khi có bằng chứng kết tội" },
+            { left: "正当程序", right: "đảm bảo quyền được xét xử công bằng theo luật" },
+            { left: "司法独立", right: "tòa án không chịu ảnh hưởng của quyền lực khác" },
+            { left: "比例原则", right: "hình phạt phải tương xứng với tính chất vi phạm" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn nguyên tắc nền tảng của nhà nước pháp quyền: vô tội suy đoán, due process, độc lập tư pháp, nguyên tắc tương xứng.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Điều ước quốc tế về nhân quyền bao gồm 《公民权利和政治权利国际公约》và 《经济、社会及文化权利国际公约》, thuộc loại công cụ pháp lý nào?",
+          options: [
+            "Nghị quyết không ràng buộc của Đại hội đồng LHQ",
+            "Điều ước ràng buộc pháp lý — các quốc gia thành viên có nghĩa vụ thực thi",
+            "Tuyên bố chính trị không có giá trị pháp lý",
+            "Hướng dẫn khuyến nghị cho các quốc gia",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "《公民权利和政治权利国际公约》(ICCPR) và《经济、社会及文化权利国际公约》(ICESCR) là điều ước quốc tế ràng buộc pháp lý.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n主权豁免",
+          options: ["Miễn trừ chủ quyền", "Chủ quyền quốc gia", "Từ bỏ chủ quyền", "Vi phạm chủ quyền"],
+        },
+        answer: { correct: 0 },
+        explanation: "主权豁免 (zhǔquán huòmiǎn) = miễn trừ chủ quyền (sovereign immunity). Nguyên tắc cho rằng quốc gia không thể bị kiện trước tòa nước ngoài.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "在刑事诉讼中，检察机关承担举证责任，必须证明被告___。(Trong tố tụng hình sự, cơ quan công tố có nghĩa vụ cung cấp bằng chứng, phải chứng minh bị cáo ___.)",
+          hint: "Trạng thái ngược lại với vô tội",
+        },
+        answer: { correct: "有罪" },
+        explanation: "有罪 (yǒuzuì) = có tội. Nguyên tắc vô tội suy đoán: bên công tố phải chứng minh bị cáo có tội, không phải bị cáo tự chứng minh vô tội.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "国际刑事法院 (ICC) có thẩm quyền xét xử loại tội phạm nào?",
+          options: [
+            "Tất cả các loại tội hình sự quốc tế",
+            "Tội ác diệt chủng, tội chống nhân loại, tội chiến tranh và tội gây hấn",
+            "Chỉ các tội khủng bố quốc tế",
+            "Tranh chấp thương mại giữa các quốc gia",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "ICC tại The Hague xét xử bốn loại tội: 种族灭绝 (diệt chủng), 危害人类罪 (chống nhân loại), 战争罪 (chiến tranh), 侵略罪 (gây hấn).",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 4,
+        question: {
+          character: "人权",
+          hint: "các quyền cơ bản mà mọi người đều có từ khi sinh ra",
+        },
+        answer: { correct: "rénquán" },
+        explanation: "人权 (rénquán) — 人 thanh thứ hai, 权 thanh thứ hai. Nghĩa: nhân quyền.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối loại quyền con người với nội dung:",
+          pairs: [
+            { left: "公民权利", right: "quyền bầu cử, ngôn luận, hội họp" },
+            { left: "经济权利", right: "quyền lao động, an sinh xã hội" },
+            { left: "文化权利", right: "quyền tham gia đời sống văn hóa" },
+            { left: "环境权利", right: "quyền được sống trong môi trường lành mạnh" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Nhân quyền bao gồm: quyền dân sự chính trị, kinh tế xã hội, văn hóa, và quyền môi trường (thế hệ thứ ba).",
+      },
+    ],
+  },
+
+  // ─── LESSON 107: Khoa học & Công nghệ tiên tiến ─────────────────────────
+  {
+    title: "Luyện tập nâng cao HSK 8 — Khoa học & Công nghệ tiên tiến",
+    description: "Bài tập về trí tuệ nhân tạo, công nghệ sinh học, khoa học vũ trụ và đổi mới sáng tạo",
+    hskLevel: 8,
+    order: 107,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "人工智能 (réngōng zhìnéng — AI) lĩnh vực 深度学习 (deep learning) học từ dữ liệu như thế nào?",
+          options: [
+            "Bằng cách lập trình thủ công từng quy tắc",
+            "Thông qua mạng nơ-ron nhiều lớp, tự động học đặc trưng từ dữ liệu lớn",
+            "Bằng cách tra cứu cơ sở dữ liệu cố định",
+            "Thông qua lập trình di truyền",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "深度学习 (deep learning) = học sâu. Sử dụng 神经网络 (mạng nơ-ron) nhiều lớp để tự học đặc trưng từ dữ liệu lớn mà không cần lập trình thủ công.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "量子计算机利用___和量子纠缠等量子力学原理，在某些问题上远超传统计算机。(Máy tính lượng tử sử dụng ___ và vướng víu lượng tử theo nguyên lý cơ học lượng tử, vượt xa máy tính truyền thống trong một số vấn đề.)",
+          hint: "Khái niệm lượng tử — trạng thái vừa là 0 vừa là 1 cùng lúc",
+        },
+        answer: { correct: "量子叠加" },
+        explanation: "量子叠加 (liàngzǐ dié jiā) = chồng chất lượng tử (superposition). Qubit có thể ở trạng thái 0 và 1 đồng thời, không như bit nhị phân thông thường.",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 4,
+        question: {
+          character: "智",
+          options: ["zhī", "zhí", "zhǐ", "zhì"],
+        },
+        answer: { correct: 3 },
+        explanation: "智能 (zhìnéng) — 智 đọc thanh thứ tư. Nghĩa: trí tuệ, thông minh. 人工智能 = trí tuệ nhân tạo.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          text: "Nối lĩnh vực khoa học với ứng dụng:",
+          pairs: [
+            { left: "基因编辑", right: "sửa đổi ADN để chữa bệnh di truyền" },
+            { left: "量子计算", right: "giải mã hóa học phức tạp trong giây" },
+            { left: "纳米技术", right: "chế tạo vật liệu và thiết bị cực nhỏ" },
+            { left: "人工智能", right: "nhận diện ảnh, dịch ngôn ngữ tự động" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn công nghệ đột phá thế kỷ 21: gene editing, quantum computing, nanotechnology, AI.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "CRISPR-Cas9 — trong tiếng Trung gọi là 基因编辑技术 — có thể làm gì?",
+          options: [
+            "Tạo ra protein nhân tạo trong phòng thí nghiệm",
+            "Cắt và chỉnh sửa trình tự ADN tại vị trí chính xác",
+            "Nhân bản vô tính động vật",
+            "Sản xuất năng lượng từ phản ứng hạt nhân",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "CRISPR (基因编辑) cho phép cắt ADN tại vị trí chính xác như 'kéo phân tử'. Ứng dụng: chữa bệnh di truyền, cải thiện cây trồng, nghiên cứu y học.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n可持续技术",
+          options: ["Công nghệ bền vững", "Công nghệ lâu đời", "Công nghệ có thể lặp lại", "Công nghệ truyền thống"],
+        },
+        answer: { correct: 0 },
+        explanation: "可持续技术 (kě chísù jìshù) = công nghệ bền vững. Công nghệ được thiết kế để giảm thiểu tác động môi trường và có thể duy trì lâu dài.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "中国的'___工程'是迄今规模最大的射电望远镜，用于探索宇宙深处的信号。(Công trình '___ ' của Trung Quốc là kính thiên văn vô tuyến lớn nhất từ trước đến nay, dùng để thăm dò tín hiệu từ vũ trụ sâu.)",
+          hint: "Viết tắt của 'Five-hundred-meter Aperture Spherical Telescope'",
+        },
+        answer: { correct: "FAST" },
+        explanation: "FAST (天眼 = 'mắt trời') = kính thiên văn vô tuyến đường kính 500m tại Quý Châu. Lớn nhất thế giới, dùng nghiên cứu xung sao, ngoài hành tinh và tín hiệu vũ trụ.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Hệ thống 元宇宙 (yuányǔzhòu — metaverse) là khái niệm như thế nào?",
+          options: [
+            "Mạng internet tốc độ cao thế hệ mới",
+            "Không gian số ba chiều liên kết, kết hợp thực tế ảo và thực tế tăng cường",
+            "Hệ thống lưu trữ đám mây phân tán",
+            "Mạng blockchain phi tập trung",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "元宇宙 (metaverse) = siêu vũ trụ số. Không gian 3D kết hợp VR (虚拟现实), AR (增强现实), blockchain, avatar — tương tác liên tục như thế giới thực.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 4,
+        question: {
+          character: "创新",
+          hint: "tạo ra cái mới, đổi mới sáng tạo",
+        },
+        answer: { correct: "chuàngxīn" },
+        explanation: "创新 (chuàngxīn) — 创 thanh thứ tư, 新 thanh thứ nhất. Nghĩa: đổi mới, sáng tạo.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối công nghệ với ứng dụng thực tiễn:",
+          pairs: [
+            { left: "区块链", right: "giao dịch minh bạch không cần trung gian" },
+            { left: "5G网络", right: "truyền dữ liệu tốc độ cao, độ trễ thấp" },
+            { left: "大数据", right: "phân tích xu hướng từ hàng tỷ điểm dữ liệu" },
+            { left: "云计算", right: "lưu trữ và xử lý tính toán qua internet" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn trụ cột của cách mạng số: blockchain, 5G, big data, cloud computing.",
+      },
+    ],
+  },
+];

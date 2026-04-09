@@ -1,0 +1,1003 @@
+// HSK 4 Extra Exercises — 7 new practice lessons (orders 73-79)
+// Topics: Economy & Finance, Environment & Nature, Technology & Internet,
+//         Travel & Tourism, Education & Learning, Media & Culture, City Life
+// 10 exercises per lesson = 70 total
+
+import type { LessonData } from "./lessons";
+
+export const exerciseLessonsHsk4Extra: LessonData[] = [
+  // ─── LESSON 1: Kinh tế và tài chính ─────────────────────────
+  {
+    title: "Luyện tập tổng hợp HSK 4 (1)",
+    description: "Luyện tập từ vựng kinh tế, tài chính và đầu tư nâng cao",
+    hskLevel: 4,
+    order: 73,
+    type: "BUSINESS",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 3,
+        question: {
+          text: "通货膨胀 (tōnghuò péngzhàng) có nghĩa là gì?",
+          options: ["Lạm phát", "Giảm phát", "Tỷ giá hối đoái", "Tăng trưởng kinh tế"],
+        },
+        answer: { correct: 0 },
+        explanation: "通货膨胀 (tōnghuò péngzhàng) = lạm phát. 通货 = tiền tệ lưu thông, 膨胀 = phình to/tăng. Đây là khái niệm kinh tế vĩ mô quan trọng.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 3,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 胀:",
+          character: "胀",
+          options: ["zhāng", "zháng", "zhǎng", "zhàng"],
+        },
+        answer: { correct: 3 },
+        explanation: "胀 (zhàng) = phình, trương. Đọc thanh thứ tư. 膨胀 (péngzhàng) = phình to, lạm phát.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 3,
+        question: {
+          text: "银行的___利率很低，很多人选择投资股票。(Lãi suất tiết kiệm ngân hàng rất thấp, nhiều người chọn đầu tư cổ phiếu.)",
+          hint: "Tiết kiệm/gửi tiền",
+        },
+        answer: { correct: "储蓄" },
+        explanation: "储蓄 (chǔxù) = tiết kiệm, gửi tiết kiệm. 利率 (lìlǜ) = lãi suất. 股票 (gǔpiào) = cổ phiếu.",
+      },
+      {
+        type: "LISTENING",
+        order: 4,
+        difficulty: 3,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"今年经济形势不太乐观，失业率有所上升。\"",
+          options: [
+            "Năm nay tình hình kinh tế không mấy lạc quan, tỷ lệ thất nghiệp có phần tăng lên.",
+            "Năm nay kinh tế phát triển tốt, thất nghiệp giảm.",
+            "Năm nay kinh tế khó khăn, GDP giảm mạnh.",
+            "Năm nay tình hình kinh tế rất tốt, thu nhập tăng.",
+          ],
+          hint: "经济形势 = tình hình kinh tế, 失业率 = tỷ lệ thất nghiệp",
+        },
+        answer: { correct: 0 },
+        explanation: "经济形势 = tình hình kinh tế. 不太乐观 = không mấy lạc quan. 失业率 = tỷ lệ thất nghiệp. 有所上升 = có phần tăng lên.",
+      },
+      {
+        type: "MATCHING",
+        order: 5,
+        difficulty: 3,
+        question: {
+          pairs: [
+            { left: "股票", right: "Cổ phiếu" },
+            { left: "债券", right: "Trái phiếu" },
+            { left: "贷款", right: "Vay vốn" },
+            { left: "汇率", right: "Tỷ giá" },
+            { left: "预算", right: "Ngân sách" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Thuật ngữ tài chính: 股票 (gǔpiào), 债券 (zhàiquàn), 贷款 (dàikuǎn), 汇率 (huìlǜ), 预算 (yùsuàn).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 6,
+        difficulty: 3,
+        question: {
+          text: "Câu nào có cấu trúc 不仅...而且... đúng?",
+          options: [
+            "这个投资方案不仅风险低，而且收益高。",
+            "这个投资方案不仅风险低，收益高而且。",
+            "不仅这个投资方案风险低，收益高而且。",
+            "这个投资方案不仅，风险低而且收益高。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "不仅...而且... (bùjǐn...érqiě...) = không chỉ...mà còn... Cấu trúc: Chủ ngữ + 不仅 + vế 1 + 而且 + vế 2.",
+      },
+      {
+        type: "PINYIN",
+        order: 7,
+        difficulty: 3,
+        question: {
+          text: "Viết pinyin cho chữ 经济:",
+          character: "经济",
+        },
+        answer: { correct: "jīngjì" },
+        explanation: "经济 (jīngjì) = kinh tế. 经 = kinh (thanh 1), 济 = tế/giúp (thanh 4). Từ cực kỳ phổ biến trong tiếng Trung hiện đại.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 4,
+        question: {
+          text: "由于___危机，许多企业倒闭，工人失业。(Do khủng hoảng tài chính, nhiều doanh nghiệp phá sản, công nhân thất nghiệp.)",
+          hint: "Tài chính",
+        },
+        answer: { correct: "金融" },
+        explanation: "金融 (jīnróng) = tài chính, tiền tệ. 金融危机 = khủng hoảng tài chính. 倒闭 (dǎobì) = phá sản. 失业 (shīyè) = thất nghiệp.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 4,
+        question: {
+          text: "可持续发展 (kě chíxù fāzhǎn) có nghĩa là gì?",
+          options: [
+            "Phát triển bền vững",
+            "Tăng trưởng nhanh chóng",
+            "Phát triển kinh tế",
+            "Phát triển công nghiệp",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "可持续发展 = phát triển bền vững. 可 = có thể, 持续 = tiếp tục/bền vững, 发展 = phát triển. Đây là khái niệm quan trọng trong kinh tế và môi trường.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 4,
+        question: {
+          text: "\"按照市场规律，供大于求时价格会___。\"",
+          options: ["下降", "上升", "稳定", "波动"],
+        },
+        answer: { correct: 0 },
+        explanation: "供大于求 (gōng dà yú qiú) = cung vượt cầu. 按照市场规律 = theo quy luật thị trường. Cung vượt cầu thì giá sẽ 下降 (xiàjiàng) = giảm.",
+      },
+    ],
+  },
+
+  // ─── LESSON 2: Môi trường và thiên nhiên ────────────────────
+  {
+    title: "Luyện tập tổng hợp HSK 4 (2)",
+    description: "Luyện tập từ vựng về môi trường, sinh thái và các vấn đề toàn cầu",
+    hskLevel: 4,
+    order: 74,
+    type: "READING",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 3,
+        question: {
+          text: "污染 (wūrǎn) có nghĩa là gì?",
+          options: ["Tái chế", "Ô nhiễm", "Bảo vệ", "Tiết kiệm"],
+        },
+        answer: { correct: 1 },
+        explanation: "污染 (wūrǎn) = ô nhiễm. 污 = bẩn/ô, 染 = nhiễm. Ví dụ: 空气污染 = ô nhiễm không khí, 水污染 = ô nhiễm nước.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 3,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 染:",
+          character: "染",
+          options: ["rān", "rán", "rǎn", "rân"],
+        },
+        answer: { correct: 2 },
+        explanation: "染 (rǎn) = nhuộm, nhiễm. Đọc thanh thứ ba. 污染 (wūrǎn) = ô nhiễm.",
+      },
+      {
+        type: "MATCHING",
+        order: 3,
+        difficulty: 3,
+        question: {
+          pairs: [
+            { left: "温室效应", right: "Hiệu ứng nhà kính" },
+            { left: "可再生能源", right: "Năng lượng tái tạo" },
+            { left: "碳排放", right: "Phát thải carbon" },
+            { left: "生物多样性", right: "Đa dạng sinh học" },
+            { left: "荒漠化", right: "Sa mạc hóa" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Thuật ngữ môi trường quan trọng: 温室效应 (wēnshì xiàoyìng), 可再生能源 (kě zàishēng néngyuán), 碳排放 (tàn páifàng), 生物多样性 (shēngwù duōyàngxìng), 荒漠化 (huāngmòhuà).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 4,
+        difficulty: 3,
+        question: {
+          text: "为了保护___，我们应该减少使用一次性塑料。(Để bảo vệ môi trường, chúng ta nên giảm sử dụng nhựa dùng một lần.)",
+          hint: "Môi trường",
+        },
+        answer: { correct: "环境" },
+        explanation: "环境 (huánjìng) = môi trường. 保护环境 = bảo vệ môi trường. 一次性塑料 (yīcìxìng sùliào) = nhựa dùng một lần.",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 3,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"全球变暖导致极端天气越来越频繁。\"",
+          options: [
+            "Nóng lên toàn cầu dẫn đến thời tiết cực đoan ngày càng thường xuyên hơn.",
+            "Thay đổi khí hậu làm cho mùa đông lạnh hơn mỗi năm.",
+            "Ô nhiễm không khí gây ra nhiều bệnh hô hấp.",
+            "Nhiệt độ toàn cầu tăng khiến băng tan chảy.",
+          ],
+          hint: "全球变暖 = nóng lên toàn cầu, 极端天气 = thời tiết cực đoan",
+        },
+        answer: { correct: 0 },
+        explanation: "全球变暖 (quánqiú biànnuǎn) = nóng lên toàn cầu. 导致 (dǎozhì) = dẫn đến. 极端天气 = thời tiết cực đoan. 频繁 (pínfán) = thường xuyên.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 6,
+        difficulty: 3,
+        question: {
+          text: "循环利用 (xúnhuán lìyòng) có nghĩa là gì?",
+          options: ["Sử dụng một lần", "Tái chế sử dụng", "Bảo quản tài nguyên", "Phân loại rác"],
+        },
+        answer: { correct: 1 },
+        explanation: "循环利用 = tái chế, tái sử dụng. 循环 = tuần hoàn/vòng lặp, 利用 = sử dụng. Đây là hành động quan trọng trong bảo vệ môi trường.",
+      },
+      {
+        type: "PINYIN",
+        order: 7,
+        difficulty: 3,
+        question: {
+          text: "Viết pinyin cho chữ 森林:",
+          character: "森林",
+        },
+        answer: { correct: "sēnlín" },
+        explanation: "森林 (sēnlín) = rừng, rừng cây. 森 = rừng rậm (thanh 1), 林 = rừng/cánh rừng (thanh 2). 森林覆盖率 = tỷ lệ che phủ rừng.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 4,
+        question: {
+          text: "由于人类活动，地球上许多___正在面临灭绝的威胁。(Do hoạt động của con người, nhiều loài trên Trái đất đang đối mặt với nguy cơ tuyệt chủng.)",
+          hint: "Các loài sinh vật",
+        },
+        answer: { correct: "物种" },
+        explanation: "物种 (wùzhǒng) = loài, chủng loài. 面临 (miànlín) = đối mặt với. 灭绝 (mièjué) = tuyệt chủng. 威胁 (wēixié) = mối đe dọa.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 4,
+        question: {
+          text: "Câu nào sử dụng 既然...就... (đã...thì...) đúng?",
+          options: [
+            "既然你知道环境污染的危害，就应该积极参与保护行动。",
+            "既然你知道环境污染的危害，而且应该保护环境。",
+            "你知道环境污染的危害，就既然应该保护。",
+            "既然就你知道，应该保护环境。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "既然...就... (jìrán...jiù...) = đã...thì... Cấu trúc: 既然 + điều kiện đã biết, 就 + kết luận/hành động. Câu A dùng đúng cấu trúc này.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 4,
+        question: {
+          text: "\"减排\" trong \"减少碳排放\" nghĩa là gì?",
+          options: [
+            "Giảm phát thải",
+            "Tái chế carbon",
+            "Hấp thụ carbon",
+            "Đo lường carbon",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "减排 (jiǎn pái) = giảm phát thải. 减 = giảm, 排 = thải ra. 减少碳排放 = giảm phát thải carbon — một trong những mục tiêu ứng phó biến đổi khí hậu.",
+      },
+    ],
+  },
+
+  // ─── LESSON 3: Công nghệ và Internet ────────────────────────
+  {
+    title: "Luyện tập tổng hợp HSK 4 (3)",
+    description: "Luyện tập từ vựng công nghệ số, mạng xã hội và xu hướng kỹ thuật số",
+    hskLevel: 4,
+    order: 75,
+    type: "READING",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 3,
+        question: {
+          text: "人工智能 (réngōng zhìnéng) có nghĩa là gì?",
+          options: ["Công nghệ thông tin", "Trí tuệ nhân tạo", "Máy tính lượng tử", "Mạng thần kinh"],
+        },
+        answer: { correct: 1 },
+        explanation: "人工智能 (réngōng zhìnéng) = trí tuệ nhân tạo (AI). 人工 = nhân tạo, 智能 = trí tuệ/thông minh. Thường viết tắt là 人工智能 hoặc AI.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 3,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 智:",
+          character: "智",
+          options: ["zhī", "zhí", "zhǐ", "zhì"],
+        },
+        answer: { correct: 3 },
+        explanation: "智 (zhì) = trí tuệ, thông minh. Đọc thanh thứ tư. 智能 (zhìnéng) = thông minh/trí tuệ.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 3,
+        question: {
+          text: "现代人离不开___，每天都要用手机上网。(Người hiện đại không thể thiếu Internet, mỗi ngày đều dùng điện thoại lướt mạng.)",
+          hint: "Mạng Internet",
+        },
+        answer: { correct: "网络" },
+        explanation: "网络 (wǎngluò) = mạng, Internet. 离不开 (lí bù kāi) = không thể xa rời/thiếu. 上网 (shàngwǎng) = lướt mạng, lên mạng.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 3,
+        question: {
+          pairs: [
+            { left: "软件", right: "Phần mềm" },
+            { left: "硬件", right: "Phần cứng" },
+            { left: "下载", right: "Tải xuống" },
+            { left: "上传", right: "Tải lên" },
+            { left: "密码", right: "Mật khẩu" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Từ vựng công nghệ: 软件 (ruǎnjiàn), 硬件 (yìngjiàn), 下载 (xiàzài), 上传 (shàngchuán), 密码 (mìmǎ).",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 3,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"请不要在公共场所随意连接不明来源的WiFi。\"",
+          options: [
+            "Xin đừng tùy tiện kết nối WiFi không rõ nguồn gốc ở nơi công cộng.",
+            "Hãy dùng WiFi công cộng khi cần thiết.",
+            "Nơi công cộng thường có WiFi miễn phí.",
+            "Không được dùng điện thoại ở nơi công cộng.",
+          ],
+          hint: "随意 = tùy tiện, 不明来源 = nguồn không rõ",
+        },
+        answer: { correct: 0 },
+        explanation: "随意 (suíyì) = tùy tiện. 连接 (liánjié) = kết nối. 不明来源 = nguồn không rõ ràng. Đây là lời cảnh báo bảo mật mạng.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 6,
+        difficulty: 3,
+        question: {
+          text: "网络购物 (wǎngluò gòuwù) có nghĩa là gì?",
+          options: ["Mua sắm trực tuyến", "Trung tâm thương mại", "Ứng dụng mua sắm", "Giao hàng nhanh"],
+        },
+        answer: { correct: 0 },
+        explanation: "网络购物 = mua sắm trực tuyến/online. 网络 = mạng, 购物 = mua sắm. Hiện nay rất phổ biến ở Trung Quốc qua các nền tảng như Taobao, JD.com.",
+      },
+      {
+        type: "PINYIN",
+        order: 7,
+        difficulty: 3,
+        question: {
+          text: "Viết pinyin cho chữ 智能手机:",
+          character: "智能手机",
+        },
+        answer: { correct: "zhìnéng shǒujī" },
+        explanation: "智能手机 (zhìnéng shǒujī) = điện thoại thông minh (smartphone). 智能 = thông minh, 手机 = điện thoại di động.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 4,
+        question: {
+          text: "随着___的快速发展，许多传统行业受到了冲击。(Cùng với sự phát triển nhanh chóng của thương mại điện tử, nhiều ngành truyền thống bị ảnh hưởng.)",
+          hint: "Thương mại điện tử",
+        },
+        answer: { correct: "电子商务" },
+        explanation: "电子商务 (diànzǐ shāngwù) = thương mại điện tử. 随着 (suízhe) = cùng với/theo. 传统行业 (chuántǒng hángyè) = ngành truyền thống.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 4,
+        question: {
+          text: "大数据 (dà shùjù) có nghĩa là gì?",
+          options: ["Dữ liệu lớn", "Máy chủ lớn", "Số liệu thống kê", "Siêu máy tính"],
+        },
+        answer: { correct: 0 },
+        explanation: "大数据 (dà shùjù) = dữ liệu lớn (Big Data). 大 = lớn, 数据 = dữ liệu. Đây là công nghệ nền tảng của nền kinh tế số hiện đại.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 4,
+        question: {
+          text: "\"网络安全\"中的\"安全\"最接近哪个意思？",
+          options: ["An toàn, bảo mật", "Miễn phí", "Nhanh chóng", "Tiện lợi"],
+        },
+        answer: { correct: 0 },
+        explanation: "安全 (ānquán) = an toàn, bảo mật. 网络安全 (wǎngluò ānquán) = bảo mật mạng, an ninh mạng. Đây là vấn đề quan trọng trong thời đại số.",
+      },
+    ],
+  },
+
+  // ─── LESSON 4: Du lịch và khám phá ──────────────────────────
+  {
+    title: "Luyện tập tổng hợp HSK 4 (4)",
+    description: "Luyện tập từ vựng du lịch, đặt phòng khách sạn và tham quan danh lam",
+    hskLevel: 4,
+    order: 76,
+    type: "CONVERSATION",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 3,
+        question: {
+          text: "签证 (qiānzhèng) có nghĩa là gì?",
+          options: ["Hộ chiếu", "Thị thực/Visa", "Vé máy bay", "Bảo hiểm du lịch"],
+        },
+        answer: { correct: 1 },
+        explanation: "签证 (qiānzhèng) = thị thực, visa. 签 = ký, 证 = giấy chứng nhận. Cần 签证 để nhập cảnh vào nhiều quốc gia.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 3,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 签:",
+          character: "签",
+          options: ["qiān", "qián", "qiǎn", "qiàn"],
+        },
+        answer: { correct: 0 },
+        explanation: "签 (qiān) = ký tên. Đọc thanh thứ nhất. 签证 (qiānzhèng) = thị thực. 签名 (qiānmíng) = ký tên.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 3,
+        question: {
+          text: "我想___一间标准间，住两晚。(Tôi muốn đặt một phòng tiêu chuẩn, ở hai đêm.)",
+          hint: "Đặt phòng",
+        },
+        answer: { correct: "预订" },
+        explanation: "预订 (yùdìng) = đặt trước, đặt chỗ. 标准间 (biāozhǔn jiān) = phòng tiêu chuẩn. 住两晚 = ở hai đêm.",
+      },
+      {
+        type: "LISTENING",
+        order: 4,
+        difficulty: 3,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"这个景点门票成人一百二，学生半价。\"",
+          options: [
+            "Vé vào điểm tham quan này người lớn 120 tệ, học sinh giảm một nửa.",
+            "Vé người lớn 120 tệ, học sinh miễn phí.",
+            "Vé người lớn 120 tệ, trẻ em 60 tệ.",
+            "Vé 120 tệ cho tất cả mọi người.",
+          ],
+          hint: "成人 = người lớn, 半价 = nửa giá",
+        },
+        answer: { correct: 0 },
+        explanation: "门票 (ménpiào) = vé vào cổng. 成人 (chéngrén) = người lớn. 一百二 = 120. 半价 (bànjià) = nửa giá, giảm 50%.",
+      },
+      {
+        type: "MATCHING",
+        order: 5,
+        difficulty: 3,
+        question: {
+          pairs: [
+            { left: "护照", right: "Hộ chiếu" },
+            { left: "行李箱", right: "Vali" },
+            { left: "旅游景点", right: "Điểm du lịch" },
+            { left: "导游", right: "Hướng dẫn viên" },
+            { left: "纪念品", right: "Quà lưu niệm" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Từ vựng du lịch: 护照 (hùzhào), 行李箱 (xínglǐ xiāng), 旅游景点 (lǚyóu jǐngdiǎn), 导游 (dǎoyóu), 纪念品 (jìniànpǐn).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 6,
+        difficulty: 3,
+        question: {
+          text: "Câu nào đúng khi hỏi giờ check-in khách sạn?",
+          options: [
+            "请问，入住时间是几点？",
+            "请问，酒店在哪里？",
+            "请问，酒店有几层楼？",
+            "请问，早餐是什么？",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "入住 (rùzhù) = check-in/nhận phòng. 几点 = mấy giờ. 请问，入住时间是几点？= Xin hỏi giờ nhận phòng là mấy giờ?",
+      },
+      {
+        type: "PINYIN",
+        order: 7,
+        difficulty: 3,
+        question: {
+          text: "Viết pinyin cho chữ 旅行:",
+          character: "旅行",
+        },
+        answer: { correct: "lǚxíng" },
+        explanation: "旅行 (lǚxíng) = du lịch, đi lại. 旅 = lữ/du (thanh 3), 行 = đi/hành (thanh 2). 旅行社 = công ty du lịch.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 4,
+        question: {
+          text: "这次旅行的___很高，但是我觉得非常值得。(Trải nghiệm du lịch lần này chi phí cao, nhưng tôi thấy rất xứng đáng.)",
+          hint: "Chi phí/giá cả",
+        },
+        answer: { correct: "费用" },
+        explanation: "费用 (fèiyòng) = chi phí, phí tổn. 值得 (zhídé) = xứng đáng. 这次旅行的费用 = chi phí chuyến đi lần này.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 4,
+        question: {
+          text: "背包旅行 (bēibāo lǚxíng) có nghĩa là gì?",
+          options: ["Du lịch ba lô", "Du lịch theo đoàn", "Du lịch sang trọng", "Du lịch công tác"],
+        },
+        answer: { correct: 0 },
+        explanation: "背包旅行 = du lịch ba lô (backpacking). 背包 (bēibāo) = ba lô, 旅行 = du lịch. Kiểu du lịch tiết kiệm, tự do, khám phá.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 4,
+        question: {
+          text: "\"这里风景如画\"中\"如画\"是什么意思？",
+          options: ["Đẹp như tranh vẽ", "Có nhiều tranh ảnh", "Phong cảnh đơn giản", "Có nhiều màu sắc"],
+        },
+        answer: { correct: 0 },
+        explanation: "风景如画 (fēngjǐng rú huà) = phong cảnh đẹp như tranh. 如 = như, 画 = tranh vẽ. Đây là thành ngữ thường dùng để khen cảnh đẹp.",
+      },
+    ],
+  },
+
+  // ─── LESSON 5: Giáo dục và học tập ──────────────────────────
+  {
+    title: "Luyện tập tổng hợp HSK 4 (5)",
+    description: "Luyện tập từ vựng về hệ thống giáo dục, phương pháp học tập và bằng cấp",
+    hskLevel: 4,
+    order: 77,
+    type: "READING",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 3,
+        question: {
+          text: "奖学金 (jiǎngxuéjīn) có nghĩa là gì?",
+          options: ["Học phí", "Học bổng", "Tiền thưởng", "Học phí miễn giảm"],
+        },
+        answer: { correct: 1 },
+        explanation: "奖学金 (jiǎngxuéjīn) = học bổng. 奖 = khen thưởng, 学金 = tiền học. Đây là hỗ trợ tài chính cho học sinh/sinh viên có thành tích tốt.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 3,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 奖:",
+          character: "奖",
+          options: ["jiāng", "jiáng", "jiǎng", "jiàng"],
+        },
+        answer: { correct: 2 },
+        explanation: "奖 (jiǎng) = giải thưởng, khen thưởng. Đọc thanh thứ ba. 奖学金 = học bổng, 获奖 = đoạt giải.",
+      },
+      {
+        type: "MATCHING",
+        order: 3,
+        difficulty: 3,
+        question: {
+          pairs: [
+            { left: "小学", right: "Tiểu học" },
+            { left: "中学", right: "Trung học" },
+            { left: "大学", right: "Đại học" },
+            { left: "研究生", right: "Cao học/Nghiên cứu sinh" },
+            { left: "博士", right: "Tiến sĩ" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Hệ thống giáo dục Trung Quốc: 小学 (xiǎoxué), 中学 (zhōngxué), 大学 (dàxué), 研究生 (yánjiūshēng), 博士 (bóshì).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 4,
+        difficulty: 3,
+        question: {
+          text: "他___三年，终于考上了理想的大学。(Anh ấy nỗ lực học tập ba năm, cuối cùng thi đỗ vào trường đại học mơ ước.)",
+          hint: "Nỗ lực học tập",
+        },
+        answer: { correct: "努力学习" },
+        explanation: "努力学习 (nǔlì xuéxí) = nỗ lực học tập. 终于 (zhōngyú) = cuối cùng. 考上 = thi đỗ vào. 理想的大学 = đại học mơ ước.",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 3,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"这所大学的录取率很低，竞争非常激烈。\"",
+          options: [
+            "Tỷ lệ trúng tuyển của trường đại học này rất thấp, cạnh tranh rất gay gắt.",
+            "Trường đại học này có học phí rất cao.",
+            "Trường đại học này có tỷ lệ tốt nghiệp thấp.",
+            "Trường này nổi tiếng nhưng khó xin việc.",
+          ],
+          hint: "录取率 = tỷ lệ trúng tuyển, 竞争激烈 = cạnh tranh gay gắt",
+        },
+        answer: { correct: 0 },
+        explanation: "录取率 (lùqǔ lǜ) = tỷ lệ trúng tuyển. 竞争激烈 (jìngzhēng jīliè) = cạnh tranh gay gắt. 这所大学 = trường đại học này.",
+      },
+      {
+        type: "PINYIN",
+        order: 6,
+        difficulty: 3,
+        question: {
+          text: "Viết pinyin cho chữ 毕业:",
+          character: "毕业",
+        },
+        answer: { correct: "bìyè" },
+        explanation: "毕业 (bìyè) = tốt nghiệp. 毕 = xong/kết thúc (thanh 4), 业 = nghiệp/việc học (thanh 4). 毕业生 = sinh viên tốt nghiệp.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 7,
+        difficulty: 3,
+        question: {
+          text: "Câu nào diễn đạt đúng \"Cô ấy đang học thạc sĩ tại Đại học Bắc Kinh\"?",
+          options: [
+            "她在北京大学读研究生。",
+            "她在北京大学教书。",
+            "她从北京大学毕业了。",
+            "她考上了北京大学本科。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "读研究生 (dú yánjiūshēng) = học thạc sĩ/cao học. 在...读 = đang học tại... Câu A phù hợp nhất với nghĩa được hỏi.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 4,
+        question: {
+          text: "高考是中国学生进入大学的重要___，关系到他们的未来。(Gaokao là kỳ thi quan trọng để học sinh Trung Quốc vào đại học, liên quan đến tương lai của họ.)",
+          hint: "Kỳ thi",
+        },
+        answer: { correct: "考试" },
+        explanation: "考试 (kǎoshì) = kỳ thi, thi cử. 高考 (gāokǎo) = kỳ thi tuyển sinh đại học quốc gia. 关系到 (guānxi dào) = liên quan đến, ảnh hưởng đến.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 4,
+        question: {
+          text: "因材施教 (yīn cái shī jiào) có nghĩa là gì?",
+          options: [
+            "Dạy học phù hợp với từng học sinh",
+            "Dạy học bằng nhiều phương pháp",
+            "Học sinh tự học theo sở thích",
+            "Giáo viên đánh giá học sinh",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "因材施教 = dạy học phù hợp với năng lực từng học sinh. 因材 = tùy theo tài năng, 施教 = thực hiện giáo dục. Đây là tư tưởng giáo dục của Khổng Tử.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 4,
+        question: {
+          text: "终身学习 (zhōngshēn xuéxí) có nghĩa là gì?",
+          options: [
+            "Học tập suốt đời",
+            "Học tập trong trường học",
+            "Học tập có kế hoạch",
+            "Học tập chuyên sâu",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "终身学习 = học tập suốt đời. 终身 (zhōngshēn) = suốt đời, cả đời. 学习 = học tập. Đây là triết lý giáo dục hiện đại quan trọng.",
+      },
+    ],
+  },
+
+  // ─── LESSON 6: Truyền thông và văn hóa đại chúng ─────────────
+  {
+    title: "Luyện tập tổng hợp HSK 4 (6)",
+    description: "Luyện tập từ vựng về truyền thông, phim ảnh, âm nhạc và văn hóa đại chúng",
+    hskLevel: 4,
+    order: 78,
+    type: "CULTURE",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 3,
+        question: {
+          text: "娱乐 (yúlè) có nghĩa là gì?",
+          options: ["Thể thao", "Giải trí", "Văn hóa", "Nghệ thuật"],
+        },
+        answer: { correct: 1 },
+        explanation: "娱乐 (yúlè) = giải trí. 娱 = vui chơi, 乐 = vui vẻ. Ví dụ: 娱乐节目 = chương trình giải trí, 娱乐行业 = ngành giải trí.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 3,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 播:",
+          character: "播",
+          options: ["bō", "bó", "bǒ", "bò"],
+        },
+        answer: { correct: 0 },
+        explanation: "播 (bō) = phát sóng, gieo. Đọc thanh thứ nhất. 广播 (guǎngbō) = phát thanh, 直播 (zhíbō) = phát sóng trực tiếp.",
+      },
+      {
+        type: "MATCHING",
+        order: 3,
+        difficulty: 3,
+        question: {
+          pairs: [
+            { left: "导演", right: "Đạo diễn" },
+            { left: "演员", right: "Diễn viên" },
+            { left: "观众", right: "Khán giả" },
+            { left: "剧本", right: "Kịch bản" },
+            { left: "票房", right: "Doanh thu phòng vé" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Từ vựng điện ảnh: 导演 (dǎoyǎn), 演员 (yǎnyuán), 观众 (guānzhòng), 剧本 (jùběn), 票房 (piàofáng).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 4,
+        difficulty: 3,
+        question: {
+          text: "这部电影的___非常精彩，让观众哈哈大笑。(Diễn xuất trong bộ phim này rất xuất sắc, khiến khán giả cười ngặt nghẽo.)",
+          hint: "Màn trình diễn của diễn viên",
+        },
+        answer: { correct: "表演" },
+        explanation: "表演 (biǎoyǎn) = diễn xuất, biểu diễn. 精彩 (jīngcǎi) = xuất sắc, hay. 哈哈大笑 = cười to sảng khoái.",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 3,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"这首歌的歌词很有意义，唱出了年轻人的心声。\"",
+          options: [
+            "Lời bài hát này rất có ý nghĩa, nói lên tiếng lòng của người trẻ.",
+            "Giai điệu bài hát này rất hay và được nhiều người yêu thích.",
+            "Bài hát này do một ca sĩ trẻ sáng tác.",
+            "Bài hát này đạt nhiều giải thưởng lớn.",
+          ],
+          hint: "歌词 = lời bài hát, 心声 = tiếng lòng",
+        },
+        answer: { correct: 0 },
+        explanation: "歌词 (gēcí) = lời bài hát. 有意义 = có ý nghĩa. 唱出 = thể hiện qua ca hát. 心声 (xīnshēng) = tiếng lòng, tâm tư.",
+      },
+      {
+        type: "PINYIN",
+        order: 6,
+        difficulty: 3,
+        question: {
+          text: "Viết pinyin cho chữ 新闻:",
+          character: "新闻",
+        },
+        answer: { correct: "xīnwén" },
+        explanation: "新闻 (xīnwén) = tin tức, bản tin. 新 = mới (thanh 1), 闻 = nghe/tin tức (thanh 2). 新闻联播 = bản tin thời sự trung ương.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 7,
+        difficulty: 3,
+        question: {
+          text: "直播 (zhíbō) có nghĩa là gì?",
+          options: ["Phát lại", "Phát sóng trực tiếp", "Ghi hình trước", "Chia sẻ video"],
+        },
+        answer: { correct: 1 },
+        explanation: "直播 (zhíbō) = phát sóng trực tiếp, livestream. 直 = thẳng/trực tiếp, 播 = phát sóng. Hiện rất phổ biến trên các nền tảng mạng xã hội Trung Quốc.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 4,
+        question: {
+          text: "随着社交媒体的兴起，___新闻传播越来越快，有时甚至超过传统媒体。(Cùng với sự nổi lên của mạng xã hội, tin tức trên mạng lan truyền ngày càng nhanh, đôi khi còn vượt truyền thông truyền thống.)",
+          hint: "Trên mạng/online",
+        },
+        answer: { correct: "网络" },
+        explanation: "网络新闻 = tin tức trên mạng. 社交媒体 (shèjiāo méitǐ) = mạng xã hội. 兴起 (xīngqǐ) = nổi lên, phát triển.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 4,
+        question: {
+          text: "\"这部电视剧让我欲罢不能\"中\"欲罢不能\"是什么意思？",
+          options: [
+            "Muốn ngừng nhưng không thể/quá hấp dẫn",
+            "Nội dung không hay nhưng phải xem",
+            "Xem đi xem lại nhiều lần",
+            "Tập phim quá dài không xem hết",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "欲罢不能 (yù bà bù néng) = muốn dừng nhưng không thể — nghĩa là rất hấp dẫn, không thể rời mắt. Thành ngữ dùng khi khen phim/sách rất cuốn hút.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 4,
+        question: {
+          text: "\"口碑很好\"中的\"口碑\"是什么意思？",
+          options: ["Tiếng tốt, danh tiếng truyền miệng", "Đánh giá của chuyên gia", "Doanh số cao", "Giải thưởng uy tín"],
+        },
+        answer: { correct: 0 },
+        explanation: "口碑 (kǒubēi) = tiếng tốt truyền miệng, uy tín. 口 = miệng, 碑 = bia đá. 口碑很好 = được nhiều người khen, uy tín cao.",
+      },
+    ],
+  },
+
+  // ─── LESSON 7: Cuộc sống đô thị ─────────────────────────────
+  {
+    title: "Luyện tập tổng hợp HSK 4 (7)",
+    description: "Luyện tập từ vựng về cuộc sống thành phố, nhà ở và các tiện ích đô thị",
+    hskLevel: 4,
+    order: 79,
+    type: "CONVERSATION",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 3,
+        question: {
+          text: "租房 (zūfáng) có nghĩa là gì?",
+          options: ["Mua nhà", "Thuê nhà", "Xây nhà", "Bán nhà"],
+        },
+        answer: { correct: 1 },
+        explanation: "租房 (zūfáng) = thuê nhà. 租 = thuê, 房 = nhà. 租金 (zūjīn) = tiền thuê nhà. 房东 (fángdōng) = chủ nhà.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 3,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 租:",
+          character: "租",
+          options: ["zū", "zú", "zǔ", "zù"],
+        },
+        answer: { correct: 0 },
+        explanation: "租 (zū) = thuê. Đọc thanh thứ nhất. 租房 = thuê nhà, 出租 = cho thuê.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 3,
+        question: {
+          text: "这套公寓的___是每月五千块，包括水电费。(Tiền thuê căn hộ này là 5000 tệ/tháng, bao gồm tiền nước điện.)",
+          hint: "Tiền thuê",
+        },
+        answer: { correct: "租金" },
+        explanation: "租金 (zūjīn) = tiền thuê. 套 (tào) = bộ/cái (lượng từ cho căn hộ). 包括 (bāokuò) = bao gồm. 水电费 = tiền nước điện.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 3,
+        question: {
+          pairs: [
+            { left: "超市", right: "Siêu thị" },
+            { left: "银行", right: "Ngân hàng" },
+            { left: "邮局", right: "Bưu điện" },
+            { left: "医院", right: "Bệnh viện" },
+            { left: "图书馆", right: "Thư viện" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Các tiện ích đô thị: 超市 (chāoshì), 银行 (yínháng), 邮局 (yóujú), 医院 (yīyuàn), 图书馆 (túshūguǎn).",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 3,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"城市化进程加速，越来越多的人涌入大城市。\"",
+          options: [
+            "Tiến trình đô thị hóa tăng tốc, ngày càng nhiều người đổ vào các thành phố lớn.",
+            "Đô thị hóa làm cho các vùng nông thôn phát triển hơn.",
+            "Nhiều người rời thành phố về nông thôn sinh sống.",
+            "Thành phố ngày càng đông đúc và ô nhiễm.",
+          ],
+          hint: "城市化 = đô thị hóa, 涌入 = đổ vào",
+        },
+        answer: { correct: 0 },
+        explanation: "城市化 (chéngshìhuà) = đô thị hóa. 进程 (jìnchéng) = tiến trình. 加速 (jiāsù) = tăng tốc. 涌入 (yǒng rù) = đổ vào ồ ạt.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 6,
+        difficulty: 3,
+        question: {
+          text: "Câu nào diễn đạt đúng \"Nhà này tuy nhỏ nhưng rất ấm cúng\"?",
+          options: [
+            "这房子虽然小，但是很温馨。",
+            "这房子因为小，所以很温馨。",
+            "这房子既然小，就很温馨。",
+            "这房子不仅小，而且很温馨。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "虽然...但是... (suīrán...dànshì...) = tuy...nhưng... Dùng để diễn đạt sự tương phản. Câu A dùng đúng cấu trúc này.",
+      },
+      {
+        type: "PINYIN",
+        order: 7,
+        difficulty: 3,
+        question: {
+          text: "Viết pinyin cho chữ 社区:",
+          character: "社区",
+        },
+        answer: { correct: "shèqū" },
+        explanation: "社区 (shèqū) = cộng đồng dân cư, khu dân cư. 社 = cộng đồng (thanh 4), 区 = khu vực (thanh 1). 社区服务 = dịch vụ cộng đồng.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 4,
+        question: {
+          text: "大城市的___越来越贵，许多年轻人买不起房。(Giá nhà ở các thành phố lớn ngày càng đắt, nhiều người trẻ không mua được nhà.)",
+          hint: "Giá nhà đất",
+        },
+        answer: { correct: "房价" },
+        explanation: "房价 (fángjià) = giá nhà. 越来越贵 = ngày càng đắt. 买不起 = không đủ tiền mua.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 4,
+        question: {
+          text: "交通拥堵 (jiāotōng yōngdǔ) có nghĩa là gì?",
+          options: ["Giao thông thuận tiện", "Tắc nghẽn giao thông", "Phương tiện giao thông", "Luật giao thông"],
+        },
+        answer: { correct: 1 },
+        explanation: "交通拥堵 (jiāotōng yōngdǔ) = tắc nghẽn giao thông. 拥堵 = tắc, ùn tắc. Đây là vấn đề nhức nhối của các đô thị lớn Trung Quốc.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 4,
+        question: {
+          text: "\"高楼大厦\"这个词描述的是什么？",
+          options: ["Nhà cao tầng, tòa nhà lớn", "Cây cầu dài và rộng", "Đường phố rộng lớn", "Công viên rộng rãi"],
+        },
+        answer: { correct: 0 },
+        explanation: "高楼大厦 (gāolóu dàshà) = nhà cao tầng, tòa nhà cao và lớn. 高楼 = tòa nhà cao, 大厦 = tòa nhà lớn. Từ ghép mô tả kiến trúc đô thị hiện đại.",
+      },
+    ],
+  },
+];

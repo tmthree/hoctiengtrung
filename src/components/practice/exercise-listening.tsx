@@ -1,7 +1,7 @@
 "use client";
-// Listening exercise — shows character as hint (no real audio yet) with answer input
+// Listening exercise — plays Chinese TTS audio with answer input
 import { useState } from "react";
-import { Volume2 } from "lucide-react";
+import { AudioPlayButton } from "@/components/shared/audio-play-button";
 import type { AnswerResult } from "@/hooks/use-quiz-state";
 
 interface ListeningQuestion {
@@ -54,15 +54,9 @@ export function ExerciseListening({
     <div className="space-y-4">
       <p className="text-sm text-muted-foreground">Nghe và trả lời</p>
 
-      {/* Audio placeholder — shows character as visual hint */}
+      {/* Audio player — TTS for the question text */}
       <div className="flex flex-col items-center gap-3 p-6 rounded-xl border bg-muted/30">
-        <button
-          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary text-sm hover:bg-primary/20 transition-colors"
-          onClick={() => {/* placeholder — no real audio */}}
-        >
-          <Volume2 className="w-4 h-4" />
-          Phát âm
-        </button>
+        <AudioPlayButton text={question.text} size="lg" />
         <p className="text-5xl font-normal text-foreground font-chinese">
           {question.text}
         </p>

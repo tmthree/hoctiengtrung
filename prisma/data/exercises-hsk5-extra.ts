@@ -1,0 +1,1038 @@
+// HSK 5 Extra Exercises — 7 new practice lessons (orders 80-86)
+// Topics: Philosophy & Ethics, Politics & Society, Science & Research,
+//         Psychology & Behavior, Classical Chinese Literature, Advanced Grammar, Culture & History
+// 10 exercises per lesson = 70 total
+
+import type { LessonData } from "./lessons";
+
+export const exerciseLessonsHsk5Extra: LessonData[] = [
+  // ─── LESSON 1: Triết học và đạo đức ─────────────────────────
+  {
+    title: "Luyện tập nâng cao HSK 5 (1)",
+    description: "Luyện tập từ vựng triết học, đạo đức học và tư tưởng học thuật nâng cao",
+    hskLevel: 5,
+    order: 80,
+    type: "READING",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "辩证法 (biànzhèngfǎ) có nghĩa là gì?",
+          options: ["Phép biện chứng", "Phép quy nạp", "Phép diễn dịch", "Phép so sánh"],
+        },
+        answer: { correct: 0 },
+        explanation: "辩证法 (biànzhèngfǎ) = phép biện chứng. 辩证 = biện chứng/phân tích mâu thuẫn, 法 = phương pháp. Đây là khái niệm triết học cốt lõi.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 辩:",
+          character: "辩",
+          options: ["biān", "bián", "biǎn", "biàn"],
+        },
+        answer: { correct: 3 },
+        explanation: "辩 (biàn) = biện luận, phân biệt. Đọc thanh thứ tư. 辩证 (biànzhèng) = biện chứng. 辩论 (biànlùn) = tranh luận.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 4,
+        question: {
+          text: "任何事物都有其___，我们要用全面的眼光来看待问题。(Mọi sự vật đều có tính hai mặt của nó, chúng ta phải nhìn nhận vấn đề một cách toàn diện.)",
+          hint: "Tính hai mặt, mặt này mặt kia",
+        },
+        answer: { correct: "两面性" },
+        explanation: "两面性 (liǎng miànxìng) = tính hai mặt. 全面的眼光 = cái nhìn toàn diện. Đây là nguyên lý biện chứng cơ bản.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 4,
+        question: {
+          pairs: [
+            { left: "客观", right: "Khách quan" },
+            { left: "主观", right: "Chủ quan" },
+            { left: "抽象", right: "Trừu tượng" },
+            { left: "具体", right: "Cụ thể" },
+            { left: "矛盾", right: "Mâu thuẫn" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Các khái niệm triết học: 客观 (kèguān), 主观 (zhǔguān), 抽象 (chōuxiàng), 具体 (jùtǐ), 矛盾 (máodùn).",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 4,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"道德是社会行为规范的总和，它约束人们的行为，维护社会秩序。\"",
+          options: [
+            "Đạo đức là tổng hợp các chuẩn mực hành vi xã hội, nó ràng buộc hành vi người ta, duy trì trật tự xã hội.",
+            "Pháp luật là công cụ duy nhất để duy trì trật tự xã hội.",
+            "Đạo đức và pháp luật có vai trò như nhau trong xã hội.",
+            "Mỗi cá nhân có đạo đức riêng không phụ thuộc xã hội.",
+          ],
+          hint: "道德 = đạo đức, 约束 = ràng buộc, 社会秩序 = trật tự xã hội",
+        },
+        answer: { correct: 0 },
+        explanation: "道德 (dàodé) = đạo đức. 约束 (yuēshù) = ràng buộc. 维护 (wéihù) = duy trì. 社会秩序 (shèhuì zhìxù) = trật tự xã hội.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 6,
+        difficulty: 4,
+        question: {
+          text: "价值观 (jiàzhíguān) có nghĩa là gì?",
+          options: ["Quan điểm giá trị, hệ thống giá trị", "Giá cả thị trường", "Quan điểm kinh tế", "Thế giới quan"],
+        },
+        answer: { correct: 0 },
+        explanation: "价值观 (jiàzhíguān) = quan điểm giá trị, hệ giá trị. 价值 = giá trị, 观 = quan điểm/cách nhìn. Đây là khái niệm triết học quan trọng về những gì con người coi trọng.",
+      },
+      {
+        type: "PINYIN",
+        order: 7,
+        difficulty: 4,
+        question: {
+          text: "Viết pinyin cho chữ 伦理:",
+          character: "伦理",
+        },
+        answer: { correct: "lúnlǐ" },
+        explanation: "伦理 (lúnlǐ) = luân lý, đạo đức học. 伦 = mối quan hệ giữa người (thanh 2), 理 = lý lẽ/nguyên tắc (thanh 3). 伦理学 = đạo đức học.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "在面对利益冲突时，一个有___的人会选择诚实而非欺骗。(Khi đối mặt với xung đột lợi ích, người có đạo đức sẽ chọn thành thật thay vì lừa dối.)",
+          hint: "Phẩm chất đạo đức",
+        },
+        answer: { correct: "道德" },
+        explanation: "道德 (dàodé) = đạo đức. 利益冲突 = xung đột lợi ích. 诚实 = thành thật. 欺骗 (qīpiàn) = lừa dối.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 5,
+        question: {
+          text: "功利主义 (gōnglì zhǔyì) có nghĩa là gì?",
+          options: [
+            "Chủ nghĩa công lợi (đề cao kết quả thực tế)",
+            "Chủ nghĩa cá nhân",
+            "Chủ nghĩa cộng đồng",
+            "Chủ nghĩa lý tưởng",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "功利主义 (gōnglì zhǔyì) = chủ nghĩa công lợi (utilitarianism). Triết học đề cao hành động mang lại lợi ích tối đa cho số đông. Do Jeremy Bentham và John Stuart Mill phát triển.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "\"知行合一\"这个哲学概念最初由谁提出？",
+          options: ["王阳明", "孔子", "老子", "孟子"],
+        },
+        answer: { correct: 0 },
+        explanation: "知行合一 (zhī xíng hé yī) = tri hành hợp nhất, lý thuyết và thực hành phải thống nhất. Đây là tư tưởng cốt lõi của 王阳明 (Vương Dương Minh), triết gia Nho gia đời Minh.",
+      },
+    ],
+  },
+
+  // ─── LESSON 2: Chính trị và xã hội ──────────────────────────
+  {
+    title: "Luyện tập nâng cao HSK 5 (2)",
+    description: "Luyện tập từ vựng về hệ thống chính trị, quan hệ xã hội và vấn đề toàn cầu",
+    hskLevel: 5,
+    order: 81,
+    type: "READING",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "民主 (mínzhǔ) có nghĩa là gì?",
+          options: ["Dân chủ", "Độc tài", "Cộng hòa", "Liên bang"],
+        },
+        answer: { correct: 0 },
+        explanation: "民主 (mínzhǔ) = dân chủ. 民 = dân, 主 = chủ/cai trị. 民主制度 = chế độ dân chủ.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 权:",
+          character: "权",
+          options: ["quān", "quán", "quǎn", "quàn"],
+        },
+        answer: { correct: 1 },
+        explanation: "权 (quán) = quyền lực, quyền lợi. Đọc thanh thứ hai. 权利 (quánlì) = quyền lợi, 权力 (quánlì) = quyền lực (chú ý phân biệt).",
+      },
+      {
+        type: "MATCHING",
+        order: 3,
+        difficulty: 4,
+        question: {
+          pairs: [
+            { left: "立法", right: "Lập pháp" },
+            { left: "司法", right: "Tư pháp" },
+            { left: "行政", right: "Hành pháp" },
+            { left: "宪法", right: "Hiến pháp" },
+            { left: "公民", right: "Công dân" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Thuật ngữ chính trị: 立法 (lìfǎ), 司法 (sīfǎ), 行政 (xíngzhèng), 宪法 (xiànfǎ), 公民 (gōngmín).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 4,
+        difficulty: 4,
+        question: {
+          text: "法律面前，人人___。这是法治社会的基本原则。(Trước pháp luật, mọi người đều bình đẳng. Đây là nguyên tắc cơ bản của xã hội pháp quyền.)",
+          hint: "Bình đẳng",
+        },
+        answer: { correct: "平等" },
+        explanation: "平等 (píngděng) = bình đẳng. 法律面前 = trước pháp luật. 法治社会 (fǎzhì shèhuì) = xã hội pháp quyền.",
+      },
+      {
+        type: "PINYIN",
+        order: 5,
+        difficulty: 4,
+        question: {
+          text: "Viết pinyin cho chữ 政策:",
+          character: "政策",
+        },
+        answer: { correct: "zhèngcè" },
+        explanation: "政策 (zhèngcè) = chính sách. 政 = chính trị (thanh 4), 策 = kế sách/chính sách (thanh 4). 经济政策 = chính sách kinh tế.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 4,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"全球化使各国之间的经济联系更加紧密，但同时也带来了新的挑战。\"",
+          options: [
+            "Toàn cầu hóa khiến quan hệ kinh tế giữa các nước chặt chẽ hơn, nhưng cũng mang lại thách thức mới.",
+            "Toàn cầu hóa chỉ mang lại lợi ích cho các nước phát triển.",
+            "Toàn cầu hóa làm giảm khoảng cách giữa các quốc gia nghèo và giàu.",
+            "Toàn cầu hóa là xu hướng đã lỗi thời trong thế giới hiện đại.",
+          ],
+          hint: "全球化 = toàn cầu hóa, 挑战 = thách thức",
+        },
+        answer: { correct: 0 },
+        explanation: "全球化 (quánqiúhuà) = toàn cầu hóa. 紧密 (jǐnmì) = chặt chẽ. 同时 = đồng thời. 挑战 (tiǎozhàn) = thách thức.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 7,
+        difficulty: 4,
+        question: {
+          text: "人权 (rénquán) có nghĩa là gì?",
+          options: ["Quyền con người", "Quyền công dân", "Quyền kinh tế", "Quyền bầu cử"],
+        },
+        answer: { correct: 0 },
+        explanation: "人权 (rénquán) = quyền con người (human rights). 人 = người, 权 = quyền. Đây là khái niệm quan trọng trong luật quốc tế.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "社会___是衡量一个国家文明程度的重要标志。(Công bằng xã hội là tiêu chí quan trọng để đánh giá trình độ văn minh của một quốc gia.)",
+          hint: "Công bằng",
+        },
+        answer: { correct: "公平" },
+        explanation: "公平 (gōngpíng) = công bằng. 衡量 (héngliáng) = đo lường, đánh giá. 文明程度 = trình độ văn minh.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 5,
+        question: {
+          text: "\"外交政策\"中\"外交\"是什么意思？",
+          options: ["Ngoại giao", "Kinh tế đối ngoại", "Chính sách quốc phòng", "Quan hệ thương mại"],
+        },
+        answer: { correct: 0 },
+        explanation: "外交 (wàijiāo) = ngoại giao. 外 = ngoài/đối ngoại, 交 = giao tiếp. 外交政策 = chính sách ngoại giao. 外交部长 = Bộ trưởng Ngoại giao.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Câu nào sử dụng 尽管...还是... (dù...nhưng vẫn...) đúng?",
+          options: [
+            "尽管面临很多困难，他还是坚持了下来。",
+            "尽管他坚持了，还是面临困难。",
+            "他还是尽管坚持了下来。",
+            "尽管还是面临困难，他坚持了。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "尽管...还是... (jǐnguǎn...háishi...) = dù/mặc dù...nhưng vẫn... Cấu trúc: 尽管 + điều kiện bất lợi, 还是 + kết quả. Câu A đúng cấu trúc.",
+      },
+    ],
+  },
+
+  // ─── LESSON 3: Khoa học và nghiên cứu ────────────────────────
+  {
+    title: "Luyện tập nâng cao HSK 5 (3)",
+    description: "Luyện tập từ vựng nghiên cứu khoa học, phương pháp luận và công nghệ tiên tiến",
+    hskLevel: 5,
+    order: 82,
+    type: "READING",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "假设 (jiǎshè) trong nghiên cứu khoa học có nghĩa là gì?",
+          options: ["Kết luận", "Giả thuyết", "Bằng chứng", "Phương pháp"],
+        },
+        answer: { correct: 1 },
+        explanation: "假设 (jiǎshè) = giả thuyết, giả định. 假 = giả/tạm, 设 = đặt ra. Trong nghiên cứu, giả thuyết cần được kiểm chứng bằng thực nghiệm.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 验:",
+          character: "验",
+          options: ["yān", "yán", "yǎn", "yàn"],
+        },
+        answer: { correct: 3 },
+        explanation: "验 (yàn) = kiểm nghiệm, xác nhận. Đọc thanh thứ tư. 实验 (shíyàn) = thí nghiệm, 验证 (yànzhèng) = kiểm chứng.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 4,
+        question: {
+          text: "科学研究需要大量___来支持或推翻假设。(Nghiên cứu khoa học cần nhiều bằng chứng để ủng hộ hoặc bác bỏ giả thuyết.)",
+          hint: "Bằng chứng, chứng cứ",
+        },
+        answer: { correct: "证据" },
+        explanation: "证据 (zhèngjù) = bằng chứng, chứng cứ. 支持 = ủng hộ. 推翻 (tuīfān) = bác bỏ, lật đổ. 假设 = giả thuyết.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 4,
+        question: {
+          pairs: [
+            { left: "实验", right: "Thí nghiệm" },
+            { left: "观察", right: "Quan sát" },
+            { left: "推论", right: "Suy luận" },
+            { left: "发表", right: "Công bố" },
+            { left: "引用", right: "Trích dẫn" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Phương pháp nghiên cứu: 实验 (shíyàn), 观察 (guānchá), 推论 (tuīlùn), 发表 (fābiǎo), 引用 (yǐnyòng).",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 4,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"这项研究的局限性在于样本量太小，结论可能不具有普遍意义。\"",
+          options: [
+            "Hạn chế của nghiên cứu này là cỡ mẫu quá nhỏ, kết luận có thể không có ý nghĩa phổ quát.",
+            "Nghiên cứu này rất hoàn chỉnh và kết quả đáng tin cậy.",
+            "Cỡ mẫu lớn hơn sẽ không thay đổi kết quả nghiên cứu.",
+            "Nghiên cứu cần được lặp lại nhiều lần để có kết quả chính xác.",
+          ],
+          hint: "局限性 = hạn chế, 样本量 = cỡ mẫu, 普遍意义 = ý nghĩa phổ quát",
+        },
+        answer: { correct: 0 },
+        explanation: "局限性 (júxiànxìng) = hạn chế. 样本量 (yàngběn liàng) = cỡ mẫu. 普遍意义 (pǔbiàn yìyì) = ý nghĩa phổ quát.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 6,
+        difficulty: 4,
+        question: {
+          text: "量子计算 (liàngzǐ jìsuàn) có nghĩa là gì?",
+          options: ["Tính toán lượng tử", "Siêu máy tính", "Trí tuệ nhân tạo", "Điện toán đám mây"],
+        },
+        answer: { correct: 0 },
+        explanation: "量子计算 (liàngzǐ jìsuàn) = tính toán lượng tử (quantum computing). 量子 = lượng tử, 计算 = tính toán. Công nghệ tiên tiến nhất hiện nay.",
+      },
+      {
+        type: "PINYIN",
+        order: 7,
+        difficulty: 4,
+        question: {
+          text: "Viết pinyin cho chữ 基因:",
+          character: "基因",
+        },
+        answer: { correct: "jīyīn" },
+        explanation: "基因 (jīyīn) = gen, gene. 基 = cơ sở (thanh 1), 因 = nhân/nguyên nhân (thanh 1). 基因工程 = công nghệ gen.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "人类___的破译开启了生命科学的新纪元。(Việc giải mã bộ gen người đã mở ra kỷ nguyên mới của khoa học sự sống.)",
+          hint: "Bộ gen, hệ gen",
+        },
+        answer: { correct: "基因组" },
+        explanation: "基因组 (jīyīnzǔ) = bộ gen, hệ gen (genome). 破译 (pòyì) = giải mã. 开启 (kāiqǐ) = mở ra. 新纪元 = kỷ nguyên mới.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 5,
+        question: {
+          text: "\"同行评审\"（peer review）在学术界的作用是什么？",
+          options: [
+            "Đảm bảo chất lượng nghiên cứu trước khi công bố",
+            "Xếp hạng tầm quan trọng của các tạp chí học thuật",
+            "Cấp tài trợ cho dự án nghiên cứu",
+            "Đào tạo nhà nghiên cứu mới",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "同行评审 (tóngháng píngshen) = phản biện đồng nghiệp (peer review). Đây là quy trình đảm bảo chất lượng học thuật, trong đó các chuyên gia trong cùng lĩnh vực đánh giá nghiên cứu trước khi xuất bản.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Câu nào dùng đúng cấu trúc 在...方面 (về mặt/trong lĩnh vực...)?",
+          options: [
+            "在环境保护方面，中国已经取得了显著进步。",
+            "在环境保护，中国已经取得了方面显著进步。",
+            "中国在方面环境保护已经取得了显著进步。",
+            "中国已经取得了显著进步在环境保护方面。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "在...方面 (zài...fāngmiàn) = về mặt..., trong lĩnh vực... Cấu trúc: 在 + [lĩnh vực] + 方面 + [mệnh đề]. Câu A đặt đúng vị trí của cụm này.",
+      },
+    ],
+  },
+
+  // ─── LESSON 4: Tâm lý học và hành vi ────────────────────────
+  {
+    title: "Luyện tập nâng cao HSK 5 (4)",
+    description: "Luyện tập từ vựng tâm lý học, hành vi con người và cảm xúc phức tạp",
+    hskLevel: 5,
+    order: 83,
+    type: "READING",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "潜意识 (qiányìshi) có nghĩa là gì?",
+          options: ["Ý thức", "Tiềm thức", "Nhận thức", "Bản năng"],
+        },
+        answer: { correct: 1 },
+        explanation: "潜意识 (qiányìshi) = tiềm thức (subconscious). 潜 = tiềm ẩn, 意识 = ý thức. Khái niệm tâm lý học quan trọng của Freud.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 潜:",
+          character: "潜",
+          options: ["qiān", "qián", "qiǎn", "qiàn"],
+        },
+        answer: { correct: 1 },
+        explanation: "潜 (qián) = tiềm ẩn, lặn ngầm. Đọc thanh thứ hai. 潜意识 = tiềm thức, 潜力 (qiánlì) = tiềm năng.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 4,
+        question: {
+          text: "长期处于高压状态会导致___，影响身心健康。(Ở trạng thái áp lực cao kéo dài sẽ dẫn đến lo âu, ảnh hưởng đến sức khỏe thể chất và tinh thần.)",
+          hint: "Lo lắng, lo âu",
+        },
+        answer: { correct: "焦虑" },
+        explanation: "焦虑 (jiāolǜ) = lo âu, lo lắng quá mức. 高压状态 = trạng thái áp lực cao. 身心健康 = sức khỏe thể chất và tinh thần.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 4,
+        question: {
+          pairs: [
+            { left: "动机", right: "Động cơ" },
+            { left: "情绪", right: "Cảm xúc" },
+            { left: "性格", right: "Tính cách" },
+            { left: "记忆", right: "Ký ức, trí nhớ" },
+            { left: "认知", right: "Nhận thức" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Từ vựng tâm lý học: 动机 (dòngjī), 情绪 (qíngxù), 性格 (xìnggé), 记忆 (jìyì), 认知 (rènzhī).",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 4,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"心理健康与身体健康同等重要，我们不应该忽视内心世界的需求。\"",
+          options: [
+            "Sức khỏe tâm lý quan trọng ngang với sức khỏe thể chất, chúng ta không nên bỏ qua nhu cầu của thế giới nội tâm.",
+            "Sức khỏe thể chất quan trọng hơn sức khỏe tâm lý.",
+            "Chỉ khi thể chất khỏe mạnh thì tinh thần mới tốt.",
+            "Sức khỏe tâm lý chỉ quan trọng với người lớn tuổi.",
+          ],
+          hint: "心理健康 = sức khỏe tâm lý, 忽视 = bỏ qua, 内心世界 = thế giới nội tâm",
+        },
+        answer: { correct: 0 },
+        explanation: "心理健康 (xīnlǐ jiànkāng) = sức khỏe tâm lý. 同等重要 = quan trọng như nhau. 忽视 (hūshì) = bỏ qua, coi nhẹ. 内心世界 = thế giới nội tâm.",
+      },
+      {
+        type: "PINYIN",
+        order: 6,
+        difficulty: 4,
+        question: {
+          text: "Viết pinyin cho chữ 压力:",
+          character: "压力",
+        },
+        answer: { correct: "yālì" },
+        explanation: "压力 (yālì) = áp lực, sức ép. 压 = ép/áp (thanh 1), 力 = lực/sức (thanh 4). 减轻压力 = giảm bớt áp lực.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 7,
+        difficulty: 4,
+        question: {
+          text: "Câu nào đúng khi mô tả hiện tượng tâm lý học \"自我实现\"?",
+          options: [
+            "一个人达到自己的最高潜能，实现人生目标。",
+            "一个人完全忽略他人的需求。",
+            "一个人靠自己的力量解决所有问题。",
+            "一个人不需要他人帮助就能成功。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "自我实现 (zìwǒ shíxiàn) = tự hiện thực hóa bản thân (self-actualization). Theo thuyết phân cấp nhu cầu của Maslow, đây là mức độ cao nhất — phát huy tối đa tiềm năng của bản thân.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "人格___理论认为人的性格可以分为内向和外向两种主要类型。(Lý thuyết loại hình nhân cách cho rằng tính cách con người có thể chia thành hai loại chính là hướng nội và hướng ngoại.)",
+          hint: "Loại hình",
+        },
+        answer: { correct: "类型" },
+        explanation: "类型 (lèixíng) = loại hình, kiểu. 人格类型 = loại hình nhân cách. 内向 (nèixiàng) = hướng nội, 外向 (wàixiàng) = hướng ngoại.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 5,
+        question: {
+          text: "\"心理咨询\"的主要目的是什么？",
+          options: [
+            "Giúp người tư vấn hiểu và giải quyết các vấn đề tâm lý",
+            "Kê đơn thuốc cho người mắc bệnh tâm thần",
+            "Đánh giá trí thông minh của người được tư vấn",
+            "Cung cấp lời khuyên về lối sống lành mạnh",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "心理咨询 (xīnlǐ zīxún) = tư vấn tâm lý. Mục đích chính là giúp người tìm đến tư vấn hiểu rõ bản thân và giải quyết các vấn đề tâm lý, cảm xúc.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "\"共情\"（empathy）在心理学中指的是？",
+          options: [
+            "Khả năng hiểu và chia sẻ cảm xúc của người khác",
+            "Khả năng kiểm soát cảm xúc của bản thân",
+            "Xu hướng so sánh bản thân với người khác",
+            "Phản ứng cảm xúc quá mức trước các tình huống",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "共情 (gòngqíng) = đồng cảm (empathy). Trong tâm lý học, đây là khả năng đặt mình vào vị trí của người khác và hiểu cảm xúc của họ. Từ quan trọng trong tâm lý trị liệu.",
+      },
+    ],
+  },
+
+  // ─── LESSON 5: Văn học cổ điển Trung Hoa ─────────────────────
+  {
+    title: "Luyện tập nâng cao HSK 5 (5)",
+    description: "Luyện tập từ vựng văn học cổ điển, thành ngữ và điển tích văn học Trung Hoa",
+    hskLevel: 5,
+    order: 84,
+    type: "CULTURE",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "\"掩耳盗铃\"这个成语的意思是？",
+          options: [
+            "Tự lừa dối mình và người khác",
+            "Nghe người khác nói mà không phản ứng",
+            "Trộm cắp vặt vãnh",
+            "Che tai không nghe ý kiến phê bình",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "掩耳盗铃 (yǎn ěr dào líng) = bịt tai trộm chuông — chỉ hành động tự lừa dối. Bịt tai mình để không nghe tiếng chuông khi đang trộm nó, nghĩa ví von là tự lừa dối.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 寓:",
+          character: "寓",
+          options: ["yū", "yú", "yǔ", "yù"],
+        },
+        answer: { correct: 3 },
+        explanation: "寓 (yù) = cư trú, ký thác. Đọc thanh thứ tư. 寓言 (yùyán) = truyện ngụ ngôn. 寓意 (yùyì) = hàm ý, ý nghĩa ẩn dụ.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 4,
+        question: {
+          text: "\"亡羊补牢\"这个成语告诉我们，即使出了问题，及时补救也___晚。(Thành ngữ 'mất dê mới sửa chuồng' nói với chúng ta rằng dù đã xảy ra vấn đề, khắc phục kịp thời cũng chưa muộn.)",
+          hint: "Chưa",
+        },
+        answer: { correct: "不" },
+        explanation: "亡羊补牢 (wáng yáng bǔ láo) = mất dê mới sửa chuồng. Ý nghĩa tích cực: dù muộn nhưng vẫn nên sửa chữa. 不晚 = không muộn.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 4,
+        question: {
+          pairs: [
+            { left: "叶公好龙", right: "Yêu điều chưa thực sự biết" },
+            { left: "画蛇添足", right: "Thêm thừa, làm hỏng việc" },
+            { left: "守株待兔", right: "Thụ động chờ may mắn" },
+            { left: "半途而废", right: "Bỏ cuộc nửa chừng" },
+            { left: "班门弄斧", right: "Múa rìu qua mắt thợ" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Các thành ngữ Trung Hoa: 叶公好龙 (yèGōng hào lóng), 画蛇添足 (huà shé tiān zú), 守株待兔 (shǒu zhū dài tù), 半途而废 (bàntú éfèi), 班门弄斧 (bān mén nòng fǔ).",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 4,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"《诗经》是中国最早的诗歌总集，收录了西周至春秋时期的诗歌。\"",
+          options: [
+            "Kinh Thi là tuyển tập thơ sớm nhất của Trung Quốc, thu thập thơ ca từ thời Tây Chu đến Xuân Thu.",
+            "Kinh Thi là tác phẩm văn xuôi đầu tiên của Trung Quốc.",
+            "Kinh Thi được viết trong thời nhà Hán.",
+            "Kinh Thi ghi chép lịch sử triều đại Tây Chu.",
+          ],
+          hint: "诗经 = Kinh Thi, 诗歌总集 = tuyển tập thơ",
+        },
+        answer: { correct: 0 },
+        explanation: "诗经 (Shījīng) = Kinh Thi — tuyển tập thơ cổ nhất Trung Quốc. 收录 (shōulù) = thu thập, bao gồm. 西周至春秋 = từ Tây Chu đến Xuân Thu (~1000-600 TCN).",
+      },
+      {
+        type: "PINYIN",
+        order: 6,
+        difficulty: 4,
+        question: {
+          text: "Viết pinyin cho chữ 典故:",
+          character: "典故",
+        },
+        answer: { correct: "diǎngù" },
+        explanation: "典故 (diǎngù) = điển tích, điển cố. 典 = kinh điển (thanh 3), 故 = cũ/sự tích (thanh 4). Dùng điển tích trong viết văn để làm phong phú ý nghĩa.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 7,
+        difficulty: 4,
+        question: {
+          text: "\"千里之行，始于足下\" (Hành trình ngàn dặm bắt đầu từ một bước chân) là câu nói của ai?",
+          options: ["老子 (Lão Tử)", "孔子 (Khổng Tử)", "孟子 (Mạnh Tử)", "庄子 (Trang Tử)"],
+        },
+        answer: { correct: 0 },
+        explanation: "\"千里之行，始于足下\" xuất phát từ《道德经》(Đạo Đức Kinh) của 老子 (Lǎozǐ/Lão Tử). Ý nghĩa: mọi việc lớn đều bắt đầu từ những bước nhỏ.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "《红楼梦》是中国古典文学四大___之一，被誉为中国文学史上最伟大的小说。(Hồng Lâu Mộng là một trong bốn tác phẩm kiệt xuất của văn học cổ điển Trung Quốc, được coi là tiểu thuyết vĩ đại nhất trong lịch sử văn học Trung Quốc.)",
+          hint: "Kiệt tác",
+        },
+        answer: { correct: "名著" },
+        explanation: "名著 (míngzhù) = danh tác, kiệt tác. 四大名著 = bốn tác phẩm kiệt xuất gồm: 红楼梦, 西游记, 水浒传, 三国演义. 被誉为 = được coi là.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 5,
+        question: {
+          text: "\"比兴\"是中国古代诗歌的重要表现手法，\"兴\"指的是？",
+          options: [
+            "Dùng hình ảnh thiên nhiên để gợi cảm xúc/chủ đề",
+            "So sánh trực tiếp giữa hai sự vật",
+            "Mô tả chi tiết cảnh vật",
+            "Sử dụng điệp ngữ để nhấn mạnh",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "兴 (xìng) trong \"比兴\" (bǐxìng) = khởi hứng — dùng hình ảnh thiên nhiên hoặc sự vật bên ngoài để gợi lên cảm xúc hoặc chủ đề của bài thơ. Đây là kỹ thuật thơ ca cổ điển quan trọng.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Câu nào sử dụng chính xác cấu trúc 非...不可 (nhất định phải...)?",
+          options: [
+            "这件事非亲自去一趟不可。",
+            "这件事非不可亲自去一趟。",
+            "非这件事亲自去一趟不可。",
+            "这件事亲自不可非去一趟。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "非...不可 (fēi...bùkě) = nhất định phải... Cấu trúc nhấn mạnh sự bắt buộc: 非 + [hành động] + 不可. Câu A: 非亲自去一趟不可 = nhất định phải đích thân đi một lần.",
+      },
+    ],
+  },
+
+  // ─── LESSON 6: Ngữ pháp nâng cao ────────────────────────────
+  {
+    title: "Luyện tập nâng cao HSK 5 (6)",
+    description: "Luyện tập các cấu trúc ngữ pháp phức tạp và cách dùng từ tinh tế ở cấp độ nâng cao",
+    hskLevel: 5,
+    order: 85,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "Câu nào dùng đúng cấu trúc 宁可...也不... (thà...chứ không...)?",
+          options: [
+            "他宁可骑自行车上班，也不开车堵在路上。",
+            "他宁可不骑自行车，也开车上班。",
+            "他也不宁可骑自行车，开车上班。",
+            "宁可他骑自行车，也不上班开车。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "宁可...也不... (nìngkě...yě bù...) = thà...chứ không... Cấu trúc: 宁可 + [lựa chọn ưa hơn], 也不 + [điều muốn tránh]. Câu A đúng.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 否:",
+          character: "否",
+          options: ["fō", "fó", "fǒ", "fò"],
+        },
+        answer: { correct: 2 },
+        explanation: "否 (fǒu) = không, phủ định. Đọc thanh thứ ba. 否则 (fǒuzé) = nếu không/bằng không. 是否 (shìfǒu) = có hay không.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 4,
+        question: {
+          text: "尽管天气非常恶劣，他___坚持完成了马拉松比赛。(Mặc dù thời tiết rất xấu, anh ấy vẫn kiên trì hoàn thành cuộc thi marathon.)",
+          hint: "Vẫn, vẫn cứ",
+        },
+        answer: { correct: "仍然" },
+        explanation: "仍然 (réngrán) = vẫn, vẫn cứ. 尽管...仍然... = mặc dù...vẫn... 恶劣 (èliè) = tồi tệ, xấu. 坚持 = kiên trì.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 4,
+        question: {
+          pairs: [
+            { left: "况且", right: "Hơn nữa, vả lại" },
+            { left: "何况", right: "Huống chi, huống hồ" },
+            { left: "即使", right: "Dù cho, ngay cả nếu" },
+            { left: "无论", right: "Dù...cũng, bất kể" },
+            { left: "倘若", right: "Nếu như, giả sử" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Các từ nối: 况且 (kuàngqiě), 何况 (hékuàng), 即使 (jíshǐ), 无论 (wúlùn), 倘若 (tǎngruò).",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 4,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"他之所以成功，是因为他比别人更加努力，而且从不轻言放弃。\"",
+          options: [
+            "Lý do anh ấy thành công là vì anh ấy nỗ lực hơn người khác và không bao giờ dễ dàng bỏ cuộc.",
+            "Anh ấy thành công nhờ may mắn và sự giúp đỡ của người khác.",
+            "Anh ấy thành công vì anh ấy thông minh hơn người khác.",
+            "Anh ấy không bao giờ thất bại vì luôn có người hỗ trợ.",
+          ],
+          hint: "之所以...是因为... = lý do...là vì..., 轻言放弃 = dễ dàng bỏ cuộc",
+        },
+        answer: { correct: 0 },
+        explanation: "之所以...是因为... (zhī suǒyǐ...shì yīnwèi...) = lý do...là vì... 比别人更加努力 = nỗ lực hơn người khác. 轻言放弃 (qīng yán fàngqì) = dễ dàng bỏ cuộc.",
+      },
+      {
+        type: "PINYIN",
+        order: 6,
+        difficulty: 4,
+        question: {
+          text: "Viết pinyin cho chữ 转折:",
+          character: "转折",
+        },
+        answer: { correct: "zhuǎnzhé" },
+        explanation: "转折 (zhuǎnzhé) = bước ngoặt, chuyển hướng. 转 = quay (thanh 3), 折 = gấp/bẻ (thanh 2). 转折点 = bước ngoặt. 转折关系 = quan hệ tương phản trong ngữ pháp.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 7,
+        difficulty: 4,
+        question: {
+          text: "Câu nào dùng đúng cấu trúc 被 (bị) với hàm ý tiêu cực?",
+          options: [
+            "他的钱包被小偷偷走了。",
+            "他被授予了最高奖励。",
+            "这首歌被很多人喜爱。",
+            "这个消息被全国人民知道了。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "被 câu truyền thống mang hàm ý tiêu cực/bất lợi cho chủ ngữ. 被小偷偷走 = bị kẻ trộm lấy mất — đây là sự kiện bất lợi điển hình. Các câu B, C, D dùng 被 theo nghĩa trung tính/tích cực.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "这篇文章逻辑严密，论证___，令读者信服。(Bài viết này logic chặt chẽ, lập luận có sức thuyết phục, khiến người đọc tin tưởng.)",
+          hint: "Sức thuyết phục",
+        },
+        answer: { correct: "有力" },
+        explanation: "有力 (yǒulì) = có sức mạnh, có sức thuyết phục. 逻辑严密 (luójí yánmì) = logic chặt chẽ. 令读者信服 = khiến người đọc tin tưởng.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 5,
+        question: {
+          text: "\"是...的\"结构在句子中的主要作用是什么？",
+          options: [
+            "Nhấn mạnh thời gian, địa điểm hoặc cách thức của hành động đã xảy ra",
+            "Chỉ hành động đang diễn ra",
+            "Biểu thị điều kiện giả định",
+            "Mô tả trạng thái kéo dài",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "是...的结构 (shì...de jùgòu) dùng để nhấn mạnh thông tin về thời gian (什么时候), địa điểm (在哪里) hoặc cách thức (怎么/用什么) của sự việc đã xảy ra. Ví dụ: 他是昨天来的 (nhấn mạnh thời gian).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "哪个句子正确地使用了\"不得不\"(bất đắc dĩ phải)?",
+          options: [
+            "由于生病，他不得不取消了这次旅行。",
+            "他非常喜欢旅行，不得不经常出门。",
+            "她不得不买了很多漂亮的衣服。",
+            "为了享受假期，他不得不休息。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "不得不 (bùdébù) = bất đắc dĩ phải, không thể không. Dùng khi buộc phải làm gì đó vì hoàn cảnh bất lợi. Câu A: vì bệnh (nguyên nhân bất lợi) nên 不得不取消 = bất đắc dĩ phải hủy bỏ.",
+      },
+    ],
+  },
+
+  // ─── LESSON 7: Văn hóa và lịch sử Trung Quốc ────────────────
+  {
+    title: "Luyện tập nâng cao HSK 5 (7)",
+    description: "Luyện tập từ vựng về lịch sử, văn hóa truyền thống và di sản Trung Quốc",
+    hskLevel: 5,
+    order: 86,
+    type: "CULTURE",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "丝绸之路 (Sīchóu zhī lù) có nghĩa là gì?",
+          options: ["Con đường tơ lụa", "Con đường biển", "Con đường thương mại", "Con đường lịch sử"],
+        },
+        answer: { correct: 0 },
+        explanation: "丝绸之路 (Sīchóu zhī lù) = Con đường Tơ lụa. 丝绸 = tơ lụa, 之路 = con đường của. Tuyến đường thương mại cổ đại nối Đông Tây.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 遗:",
+          character: "遗",
+          options: ["yī", "yí", "yǐ", "yì"],
+        },
+        answer: { correct: 1 },
+        explanation: "遗 (yí) = để lại, di. Đọc thanh thứ hai. 遗产 (yíchǎn) = di sản, 文化遗产 = di sản văn hóa, 遗址 (yízhǐ) = di chỉ khảo cổ.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 4,
+        question: {
+          text: "故宫是明清两代的皇家___，现在已成为著名的博物馆。(Tử Cấm Thành là cung điện hoàng gia của hai triều đại Minh-Thanh, nay đã trở thành bảo tàng nổi tiếng.)",
+          hint: "Cung điện",
+        },
+        answer: { correct: "宫殿" },
+        explanation: "宫殿 (gōngdiàn) = cung điện. 故宫 (Gùgōng) = Tử Cấm Thành. 明清两代 = hai triều đại Minh-Thanh. 博物馆 (bówùguǎn) = bảo tàng.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 4,
+        question: {
+          pairs: [
+            { left: "春节", right: "Tết Nguyên Đán" },
+            { left: "中秋节", right: "Tết Trung Thu" },
+            { left: "端午节", right: "Tết Đoan Ngọ" },
+            { left: "清明节", right: "Lễ Thanh Minh" },
+            { left: "元宵节", right: "Tết Nguyên Tiêu" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Các lễ tết Trung Quốc: 春节 (Chūnjié), 中秋节 (Zhōngqiūjié), 端午节 (Duānwǔjié), 清明节 (Qīngmíngjié), 元宵节 (Yuánxiāojié).",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 4,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"中国的四大发明——造纸术、印刷术、火药、指南针——对世界文明产生了深远影响。\"",
+          options: [
+            "Bốn phát minh lớn của Trung Quốc — giấy, in ấn, thuốc súng, la bàn — đã có ảnh hưởng sâu rộng đến văn minh thế giới.",
+            "Bốn phát minh lớn của Trung Quốc bao gồm lụa, gốm sứ, trà và đồ đồng.",
+            "Bốn phát minh này chỉ được sử dụng ở Trung Quốc.",
+            "Các phát minh này xuất phát từ thời nhà Hán.",
+          ],
+          hint: "四大发明 = bốn phát minh lớn",
+        },
+        answer: { correct: 0 },
+        explanation: "四大发明 (sì dà fāmíng) = bốn phát minh lớn: 造纸术 = giấy, 印刷术 = in ấn, 火药 = thuốc súng, 指南针 = la bàn. 深远影响 = ảnh hưởng sâu rộng.",
+      },
+      {
+        type: "PINYIN",
+        order: 6,
+        difficulty: 4,
+        question: {
+          text: "Viết pinyin cho chữ 传统:",
+          character: "传统",
+        },
+        answer: { correct: "chuántǒng" },
+        explanation: "传统 (chuántǒng) = truyền thống. 传 = truyền (thanh 2), 统 = thống nhất (thanh 3). 传统文化 = văn hóa truyền thống.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 7,
+        difficulty: 4,
+        question: {
+          text: "儒家思想对中国社会最深远的影响是什么？",
+          options: [
+            "强调家庭、等级秩序和社会和谐",
+            "鼓励个人自由和独立精神",
+            "推崇技术创新和商业发展",
+            "提倡无为而治的政治理念",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "儒家思想 (Rújiā sīxiǎng) = tư tưởng Nho gia. Ảnh hưởng lớn nhất là nhấn mạnh 家庭 (gia đình), 等级秩序 (trật tự đẳng cấp) và 社会和谐 (hài hòa xã hội). Câu D mô tả Đạo gia.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "万里长城是中国古代劳动人民智慧和___的结晶。(Vạn Lý Trường Thành là kết tinh trí tuệ và sức lao động của người lao động Trung Quốc cổ đại.)",
+          hint: "Sức mạnh lao động",
+        },
+        answer: { correct: "血汗" },
+        explanation: "血汗 (xuèhàn) = mồ hôi và máu, biểu thị sức lao động vất vả. 结晶 (jiéjīng) = kết tinh, thành quả. 劳动人民 = người lao động.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 5,
+        question: {
+          text: "\"天人合一\"这一思想体现了中国哲学中怎样的理念？",
+          options: [
+            "Con người và thiên nhiên là một thể thống nhất hài hòa",
+            "Con người phải chinh phục thiên nhiên",
+            "Trời và đất được tạo ra vì con người",
+            "Con người phải phụ thuộc hoàn toàn vào thiên nhiên",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "天人合一 (tiān rén hé yī) = trời người hợp nhất — tư tưởng con người là một phần của tự nhiên, cần sống hài hòa với thiên nhiên. Đây là lý niệm cốt lõi của triết học Trung Hoa cổ đại.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Câu nào dùng đúng cấu trúc 无论...都... (dù...đều...)?",
+          options: [
+            "无论遇到什么困难，他都不会放弃。",
+            "无论他不会放弃，遇到什么困难都。",
+            "他都不会放弃，无论遇到什么困难。",
+            "遇到困难无论，他都什么不会放弃。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "无论...都... (wúlùn...dōu...) = dù/bất kể...đều... Cấu trúc: 无论 + [điều kiện bất kể], 都 + [kết quả không đổi]. Câu A đúng cấu trúc.",
+      },
+    ],
+  },
+];

@@ -1,6 +1,7 @@
 "use client";
 // Flashcard deck component with CSS 3D flip animation and SM-2 rating buttons
 import { FlashcardStats } from "./flashcard-stats";
+import { AudioPlayButton } from "@/components/shared/audio-play-button";
 import { useFlashcardSession } from "@/hooks/use-flashcard-session";
 
 interface VocabularyCard {
@@ -71,9 +72,12 @@ export function FlashcardDeck({ cards }: FlashcardDeckProps) {
             className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border bg-card shadow-md p-8"
             style={{ backfaceVisibility: "hidden" }}
           >
-            <p className="text-7xl font-normal text-foreground mb-4 font-chinese">
-              {currentCard.simplified}
-            </p>
+            <div className="flex items-center gap-2 mb-4">
+              <p className="text-7xl font-normal text-foreground font-chinese">
+                {currentCard.simplified}
+              </p>
+              <AudioPlayButton text={currentCard.simplified} size="lg" />
+            </div>
             <p className="text-sm text-muted-foreground">Nhấn để lật thẻ</p>
           </div>
 
@@ -82,16 +86,22 @@ export function FlashcardDeck({ cards }: FlashcardDeckProps) {
             className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border bg-card shadow-md p-8 gap-3"
             style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
           >
-            <p className="text-5xl font-normal text-foreground font-chinese">
-              {currentCard.simplified}
-            </p>
+            <div className="flex items-center gap-2">
+              <p className="text-5xl font-normal text-foreground font-chinese">
+                {currentCard.simplified}
+              </p>
+              <AudioPlayButton text={currentCard.simplified} size="md" />
+            </div>
             <p className="text-lg text-primary font-medium">{currentCard.pinyin}</p>
             <p className="text-base text-foreground font-medium">{currentCard.meaning}</p>
             {currentCard.exampleSentence && (
               <div className="text-center border-t pt-3 mt-1 w-full">
-                <p className="text-sm text-muted-foreground font-chinese">
-                  {currentCard.exampleSentence}
-                </p>
+                <div className="flex items-start justify-center gap-1">
+                  <p className="text-sm text-muted-foreground font-chinese">
+                    {currentCard.exampleSentence}
+                  </p>
+                  <AudioPlayButton text={currentCard.exampleSentence} size="sm" />
+                </div>
                 {currentCard.examplePinyin && (
                   <p className="text-xs text-muted-foreground mt-0.5">{currentCard.examplePinyin}</p>
                 )}

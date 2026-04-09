@@ -1,0 +1,998 @@
+// HSK 3 Extra Exercises — 7 new practice lessons (orders 66-72)
+// Topics: Daily Routines, Shopping & Money, Transport, Food & Restaurants,
+//         Weather & Seasons, Family & Relationships, Health & Body
+// 10 exercises per lesson = 70 total
+
+import type { LessonData } from "./lessons";
+
+export const exerciseLessonsHsk3Extra: LessonData[] = [
+  // ─── LESSON 1: Thói quen hàng ngày ──────────────────────────
+  {
+    title: "Luyện tập tổng hợp HSK 3 (1)",
+    description: "Luyện tập từ vựng và ngữ pháp về thói quen sinh hoạt hàng ngày",
+    hskLevel: 3,
+    order: 66,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 2,
+        question: {
+          text: "习惯 (xíguàn) có nghĩa là gì?",
+          options: ["Thói quen", "Sở thích", "Kế hoạch", "Quy định"],
+        },
+        answer: { correct: 0 },
+        explanation: "习惯 (xíguàn) = thói quen. 习 = luyện tập, 惯 = quen thuộc. Ví dụ: 我有早起的习惯 = Tôi có thói quen dậy sớm.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 2,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 惯:",
+          character: "惯",
+          options: ["guān", "guán", "guǎn", "guàn"],
+        },
+        answer: { correct: 3 },
+        explanation: "习惯 (xíguàn) — 惯 đọc thanh thứ tư (nặng xuống). Nghĩa: thói quen.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 2,
+        question: {
+          text: "我每天___点起床，然后去跑步。(Tôi mỗi ngày dậy lúc 6 giờ, sau đó đi chạy bộ.)",
+          hint: "Một chữ số",
+        },
+        answer: { correct: "六" },
+        explanation: "六 (liù) = sáu. Câu hoàn chỉnh: 我每天六点起床，然后去跑步。",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 4,
+        difficulty: 2,
+        question: {
+          text: "Câu nào diễn đạt đúng \"Tôi thường xuyên tập thể dục vào buổi sáng\"?",
+          options: [
+            "我早上经常锻炼身体。",
+            "我早上很少锻炼身体。",
+            "我晚上经常锻炼身体。",
+            "我从来不锻炼身体。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "经常 (jīngcháng) = thường xuyên. 早上 = buổi sáng. 锻炼身体 = tập thể dục.",
+      },
+      {
+        type: "PINYIN",
+        order: 5,
+        difficulty: 2,
+        question: {
+          text: "Viết pinyin cho chữ 锻炼:",
+          character: "锻炼",
+        },
+        answer: { correct: "duànliàn" },
+        explanation: "锻炼 (duànliàn) = tập luyện, rèn luyện. Chú ý: 锻 = duàn (thanh 4), 炼 = liàn (thanh 4).",
+      },
+      {
+        type: "MATCHING",
+        order: 6,
+        difficulty: 2,
+        question: {
+          pairs: [
+            { left: "起床", right: "Thức dậy" },
+            { left: "刷牙", right: "Đánh răng" },
+            { left: "吃早饭", right: "Ăn sáng" },
+            { left: "上班", right: "Đi làm" },
+            { left: "睡觉", right: "Đi ngủ" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Các hoạt động trong ngày: 起床 (qǐchuáng), 刷牙 (shuāyá), 吃早饭 (chī zǎofàn), 上班 (shàngbān), 睡觉 (shuìjiào).",
+      },
+      {
+        type: "LISTENING",
+        order: 7,
+        difficulty: 2,
+        question: {
+          text: "Nghe và chọn nghĩa đúng của câu: \"我每天晚上十一点睡觉。\"",
+          options: [
+            "Mỗi ngày tôi ngủ lúc 11 giờ tối.",
+            "Mỗi ngày tôi thức dậy lúc 11 giờ.",
+            "Mỗi ngày tôi đi làm lúc 11 giờ.",
+            "Mỗi ngày tôi ăn tối lúc 11 giờ.",
+          ],
+          hint: "Chú ý: 晚上 = buổi tối, 睡觉 = ngủ",
+        },
+        answer: { correct: 0 },
+        explanation: "每天晚上十一点睡觉 = mỗi ngày tối đi ngủ lúc 11 giờ. 晚上 = tối, 十一点 = 11 giờ, 睡觉 = ngủ.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 3,
+        question: {
+          text: "他___喝咖啡，因为喝了睡不着觉。(Anh ấy không bao giờ uống cà phê vì uống rồi không ngủ được.)",
+          hint: "Không bao giờ",
+        },
+        answer: { correct: "从来不" },
+        explanation: "从来不 (cónglái bù) = không bao giờ. 因为...所以... = vì...nên... Ví dụ: 他从来不喝咖啡。",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 3,
+        question: {
+          text: "我已经___了，你不用等我。(Tôi đã ăn rồi, anh không cần đợi tôi.)",
+          options: ["吃饭", "吃过饭", "要吃饭", "在吃饭"],
+        },
+        answer: { correct: 1 },
+        explanation: "吃过饭 dùng 过 chỉ kinh nghiệm/đã xảy ra. 已经...了 = đã... rồi. Câu nghĩa: Tôi đã ăn xong rồi.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 3,
+        question: {
+          text: "Đâu là nghĩa đúng của 养成好习惯?",
+          options: [
+            "Phá bỏ thói quen xấu",
+            "Hình thành thói quen tốt",
+            "Giữ gìn sức khỏe tốt",
+            "Duy trì kế hoạch tốt",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "养成 (yǎngchéng) = hình thành, tạo dựng. 好习惯 = thói quen tốt. 养成好习惯 = hình thành thói quen tốt.",
+      },
+    ],
+  },
+
+  // ─── LESSON 2: Mua sắm và tiền bạc ──────────────────────────
+  {
+    title: "Luyện tập tổng hợp HSK 3 (2)",
+    description: "Luyện tập từ vựng về mua sắm, giá cả và giao dịch tiền tệ",
+    hskLevel: 3,
+    order: 67,
+    type: "CONVERSATION",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 2,
+        question: {
+          text: "便宜 (piányí) có nghĩa là gì?",
+          options: ["Đắt", "Rẻ", "Miễn phí", "Giảm giá"],
+        },
+        answer: { correct: 1 },
+        explanation: "便宜 (piányí) = rẻ, giá rẻ. Trái nghĩa là 贵 (guì) = đắt. Ví dụ: 这件衣服很便宜 = Cái áo này rất rẻ.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 2,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 贵:",
+          character: "贵",
+          options: ["guī", "guí", "guǐ", "guì"],
+        },
+        answer: { correct: 3 },
+        explanation: "贵 (guì) = đắt, quý. Đọc thanh thứ tư. Ví dụ: 太贵了 = Đắt quá.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 2,
+        question: {
+          text: "这件衬衫多少___？(Cái áo sơ mi này bao nhiêu tiền?)",
+          hint: "Tiền",
+        },
+        answer: { correct: "钱" },
+        explanation: "钱 (qián) = tiền. 多少钱？= Bao nhiêu tiền? Đây là câu hỏi cơ bản khi mua hàng.",
+      },
+      {
+        type: "LISTENING",
+        order: 4,
+        difficulty: 2,
+        question: {
+          text: "Nghe và chọn câu trả lời đúng cho: \"这双鞋多少钱？\"",
+          options: [
+            "三百八十块。",
+            "这双鞋很漂亮。",
+            "我喜欢红色的。",
+            "商店在二楼。",
+          ],
+          hint: "多少钱 = bao nhiêu tiền",
+        },
+        answer: { correct: 0 },
+        explanation: "当问多少钱时，应该回答价格。三百八十块 = 380 tệ. 块 (kuài) = đồng (đơn vị tiền tệ khẩu ngữ).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 2,
+        question: {
+          text: "打折 (dǎzhé) có nghĩa là gì?",
+          options: ["Giảm giá", "Tăng giá", "Hoàn tiền", "Đặt hàng"],
+        },
+        answer: { correct: 0 },
+        explanation: "打折 (dǎzhé) = giảm giá, chiết khấu. 打八折 = giảm còn 80% (tức giảm 20%). Đây là từ thường gặp khi mua sắm.",
+      },
+      {
+        type: "PINYIN",
+        order: 6,
+        difficulty: 2,
+        question: {
+          text: "Viết pinyin cho chữ 便宜:",
+          character: "便宜",
+        },
+        answer: { correct: "piányí" },
+        explanation: "便宜 (piányí) = rẻ. Chú ý: 便 đọc là 'pián' (không phải 'biàn') trong từ 便宜.",
+      },
+      {
+        type: "MATCHING",
+        order: 7,
+        difficulty: 2,
+        question: {
+          pairs: [
+            { left: "付钱", right: "Trả tiền" },
+            { left: "找零", right: "Thối tiền" },
+            { left: "收据", right: "Hóa đơn" },
+            { left: "购物袋", right: "Túi mua sắm" },
+            { left: "试穿", right: "Thử mặc" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Từ vựng mua sắm: 付钱 (fùqián), 找零 (zhǎolíng), 收据 (shōujù), 购物袋 (gòuwù dài), 试穿 (shìchuān).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 3,
+        question: {
+          text: "这件大衣原价五百，现在___，只要三百五。(Cái áo khoác này giá gốc 500, hiện đang giảm giá, chỉ còn 350.)",
+          hint: "Đang bán giảm giá",
+        },
+        answer: { correct: "打折" },
+        explanation: "打折 = giảm giá. Câu hoàn chỉnh: 这件大衣原价五百，现在打折，只要三百五。",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 3,
+        question: {
+          text: "顾客说「能不能便宜一点？」，售货员应该怎么回答？",
+          options: [
+            "已经是最低价了，不能再便宜了。",
+            "你想买什么？",
+            "我们不卖这个。",
+            "请明天再来。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "顾客要求砍价时，售货员可以说「已经是最低价了」(Đây đã là giá thấp nhất rồi). Đây là phản hồi tự nhiên và phù hợp nhất.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 3,
+        question: {
+          text: "我想___这件衣服，可以吗？(Tôi muốn thử cái áo này được không?)",
+          options: ["试穿", "购买", "退换", "打折"],
+        },
+        answer: { correct: 0 },
+        explanation: "试穿 (shìchuān) = thử mặc quần áo. 退换 = đổi trả hàng. Câu hỏi lịch sự khi mua quần áo.",
+      },
+    ],
+  },
+
+  // ─── LESSON 3: Phương tiện giao thông ────────────────────────
+  {
+    title: "Luyện tập tổng hợp HSK 3 (3)",
+    description: "Luyện tập từ vựng và cách hỏi đường, đi lại bằng các phương tiện giao thông",
+    hskLevel: 3,
+    order: 68,
+    type: "CONVERSATION",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 2,
+        question: {
+          text: "地铁 (dìtiě) có nghĩa là gì?",
+          options: ["Xe buýt", "Tàu điện ngầm", "Taxi", "Xe đạp"],
+        },
+        answer: { correct: 1 },
+        explanation: "地铁 (dìtiě) = tàu điện ngầm (metro). 地 = dưới đất, 铁 = sắt/thép. Phương tiện giao thông phổ biến ở các thành phố lớn Trung Quốc.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 2,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 站:",
+          character: "站",
+          options: ["zhān", "zhán", "zhǎn", "zhàn"],
+        },
+        answer: { correct: 3 },
+        explanation: "站 (zhàn) = trạm, bến, ga. Đọc thanh thứ tư. Ví dụ: 下一站 = trạm tiếp theo.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 2,
+        question: {
+          text: "请问，去火车站___坐几路车？(Xin hỏi, đến ga tàu hỏa thì đi xe buýt số mấy?)",
+          hint: "Nên/cần",
+        },
+        answer: { correct: "应该" },
+        explanation: "应该 (yīnggāi) = nên, cần. Câu hỏi lịch sự khi hỏi đường: 请问，去...应该坐几路车？",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 4,
+        difficulty: 2,
+        question: {
+          text: "Câu nào đúng khi hỏi đường đến bệnh viện?",
+          options: [
+            "请问，医院怎么走？",
+            "请问，医院有多好？",
+            "请问，医院是谁的？",
+            "请问，医院开门了吗？",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "怎么走 (zěnme zǒu) = đi thế nào, đi đường nào. Đây là cách hỏi đường cơ bản và phổ biến nhất.",
+      },
+      {
+        type: "PINYIN",
+        order: 5,
+        difficulty: 2,
+        question: {
+          text: "Viết pinyin cho chữ 公共汽车:",
+          character: "公共汽车",
+        },
+        answer: { correct: "gōnggòng qìchē" },
+        explanation: "公共汽车 (gōnggòng qìchē) = xe buýt. 公共 = công cộng, 汽车 = ô tô. Còn gọi tắt là 公交车.",
+      },
+      {
+        type: "MATCHING",
+        order: 6,
+        difficulty: 2,
+        question: {
+          pairs: [
+            { left: "出租车", right: "Taxi" },
+            { left: "自行车", right: "Xe đạp" },
+            { left: "飞机", right: "Máy bay" },
+            { left: "高铁", right: "Tàu cao tốc" },
+            { left: "轮船", right: "Tàu thuyền" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Các phương tiện giao thông: 出租车 (chūzū chē), 自行车 (zìxíng chē), 飞机 (fēijī), 高铁 (gāotiě), 轮船 (lúnchuán).",
+      },
+      {
+        type: "LISTENING",
+        order: 7,
+        difficulty: 2,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"前面左转，就是地铁站。\"",
+          options: [
+            "Rẽ trái phía trước là ga tàu điện ngầm.",
+            "Rẽ phải phía sau là ga tàu điện ngầm.",
+            "Đi thẳng phía trước là ga tàu điện ngầm.",
+            "Phía trái có ga tàu điện ngầm.",
+          ],
+          hint: "前面 = phía trước, 左转 = rẽ trái",
+        },
+        answer: { correct: 0 },
+        explanation: "前面 = phía trước, 左转 = rẽ trái, 地铁站 = ga tàu điện ngầm. Câu nghĩa: Phía trước rẽ trái là ga metro.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 3,
+        question: {
+          text: "从这里到机场大约需要___个小时。(Từ đây đến sân bay cần khoảng một tiếng đồng hồ.)",
+          hint: "Một (số)",
+        },
+        answer: { correct: "一" },
+        explanation: "一个小时 = một tiếng. 大约 (dàyuē) = khoảng, xấp xỉ. 从...到... = từ...đến...",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 3,
+        question: {
+          text: "堵车 (dǔchē) có nghĩa là gì?",
+          options: ["Sửa xe", "Tắc đường", "Đỗ xe", "Đổ xăng"],
+        },
+        answer: { correct: 1 },
+        explanation: "堵车 (dǔchē) = tắc đường, kẹt xe. 堵 = chặn, bít. Ví dụ: 今天堵车很严重 = Hôm nay kẹt xe rất nghiêm trọng.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 3,
+        question: {
+          text: "请问，去天安门___坐几号地铁？",
+          options: ["应该", "需要", "可以", "以上都对"],
+        },
+        answer: { correct: 3 },
+        explanation: "应该/需要/可以 đều có thể dùng trong câu hỏi này. 应该 = nên, 需要 = cần, 可以 = có thể. Cả ba đều tự nhiên và đúng ngữ pháp.",
+      },
+    ],
+  },
+
+  // ─── LESSON 4: Ẩm thực và nhà hàng ──────────────────────────
+  {
+    title: "Luyện tập tổng hợp HSK 3 (4)",
+    description: "Luyện tập gọi món, nói về ẩm thực và các tình huống trong nhà hàng",
+    hskLevel: 3,
+    order: 69,
+    type: "CONVERSATION",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 2,
+        question: {
+          text: "点菜 (diǎncài) có nghĩa là gì?",
+          options: ["Nấu ăn", "Gọi món", "Thanh toán", "Đặt bàn"],
+        },
+        answer: { correct: 1 },
+        explanation: "点菜 (diǎncài) = gọi món ăn. 点 = chỉ định/chọn, 菜 = món ăn/rau. Khi vào nhà hàng, phục vụ sẽ hỏi: 您要点菜吗？",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 2,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 辣:",
+          character: "辣",
+          options: ["lā", "lá", "lǎ", "là"],
+        },
+        answer: { correct: 3 },
+        explanation: "辣 (là) = cay. Đọc thanh thứ tư. Ví dụ: 这道菜很辣 = Món này rất cay.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 2,
+        question: {
+          text: "我不能吃___的食物，因为肠胃不好。(Tôi không thể ăn đồ cay vì dạ dày không tốt.)",
+          hint: "Cay",
+        },
+        answer: { correct: "辣" },
+        explanation: "辣 (là) = cay. 肠胃 (chángwèi) = dạ dày, ruột. 食物 (shíwù) = thức ăn.",
+      },
+      {
+        type: "LISTENING",
+        order: 4,
+        difficulty: 2,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"服务员，买单！\"",
+          options: [
+            "Phục vụ ơi, tính tiền!",
+            "Phục vụ ơi, gọi món!",
+            "Phục vụ ơi, thêm nước!",
+            "Phục vụ ơi, menu đâu!",
+          ],
+          hint: "买单 = thanh toán",
+        },
+        answer: { correct: 0 },
+        explanation: "买单 (mǎidān) = tính tiền, thanh toán. 服务员 (fúwùyuán) = nhân viên phục vụ. Cũng có thể nói: 结账！",
+      },
+      {
+        type: "MATCHING",
+        order: 5,
+        difficulty: 2,
+        question: {
+          pairs: [
+            { left: "甜", right: "Ngọt" },
+            { left: "酸", right: "Chua" },
+            { left: "苦", right: "Đắng" },
+            { left: "咸", right: "Mặn" },
+            { left: "鲜", right: "Tươi ngon" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Năm vị cơ bản: 甜 (tián) = ngọt, 酸 (suān) = chua, 苦 (kǔ) = đắng, 咸 (xián) = mặn, 鲜 (xiān) = tươi/ngon.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 6,
+        difficulty: 2,
+        question: {
+          text: "Câu nào phù hợp nhất để yêu cầu thêm một bát cơm?",
+          options: [
+            "再来一碗米饭，谢谢。",
+            "我不要米饭了。",
+            "米饭多少钱？",
+            "这米饭不好吃。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "再来 (zài lái) = lại/thêm (yêu cầu thêm). 一碗 = một bát. 再来一碗米饭 = cho thêm một bát cơm nữa.",
+      },
+      {
+        type: "PINYIN",
+        order: 7,
+        difficulty: 2,
+        question: {
+          text: "Viết pinyin cho chữ 饺子:",
+          character: "饺子",
+        },
+        answer: { correct: "jiǎozi" },
+        explanation: "饺子 (jiǎozi) = sủi cảo, bánh chẻo. Món ăn truyền thống Trung Quốc, đặc biệt phổ biến dịp Tết. 饺 = thanh 3, 子 = nhẹ (thanh nhẹ).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 3,
+        question: {
+          text: "这家餐厅的招牌菜是___鸭，非常有名。(Món đặc trưng của nhà hàng này là vịt quay, rất nổi tiếng.)",
+          hint: "Quay/nướng",
+        },
+        answer: { correct: "烤" },
+        explanation: "烤 (kǎo) = nướng, quay. 烤鸭 (kǎoyā) = vịt quay — món ăn nổi tiếng nhất của Bắc Kinh.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 3,
+        question: {
+          text: "请问，这道菜里有没有___？我对花生过敏。(Xin hỏi, món này có lạc không? Tôi dị ứng với lạc.)",
+          options: ["辣椒", "花生", "大蒜", "洋葱"],
+        },
+        answer: { correct: 1 },
+        explanation: "花生 (huāshēng) = lạc, đậu phộng. 过敏 (guòmǐn) = dị ứng. Câu hỏi quan trọng khi có vấn đề dị ứng thực phẩm.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 3,
+        question: {
+          text: "餐厅服务员说「这道菜需要等二十分钟」，意思是什么？",
+          options: [
+            "Món này cần đợi 20 phút.",
+            "Nhà hàng đóng cửa sau 20 phút.",
+            "Món này giá 20 tệ.",
+            "Đặt bàn sau 20 phút.",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "需要等 = cần đợi. 二十分钟 = 20 phút. Câu nghĩa: Món này cần đợi 20 phút.",
+      },
+    ],
+  },
+
+  // ─── LESSON 5: Thời tiết và các mùa ─────────────────────────
+  {
+    title: "Luyện tập tổng hợp HSK 3 (5)",
+    description: "Luyện tập từ vựng về thời tiết, khí hậu và bốn mùa trong năm",
+    hskLevel: 3,
+    order: 70,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 2,
+        question: {
+          text: "晴天 (qíngtiān) có nghĩa là gì?",
+          options: ["Trời mưa", "Trời nắng", "Trời tuyết", "Trời có mây"],
+        },
+        answer: { correct: 1 },
+        explanation: "晴天 (qíngtiān) = trời nắng, trời quang. 晴 = quang đãng, 天 = bầu trời/ngày. Trái nghĩa: 阴天 (yīntiān) = trời âm u.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 2,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 雪:",
+          character: "雪",
+          options: ["xuē", "xuě", "xuè", "xué"],
+        },
+        answer: { correct: 1 },
+        explanation: "雪 (xuě) = tuyết. Đọc thanh thứ ba. Ví dụ: 下雪了 = Tuyết rơi rồi.",
+      },
+      {
+        type: "MATCHING",
+        order: 3,
+        difficulty: 2,
+        question: {
+          pairs: [
+            { left: "春天", right: "Mùa xuân" },
+            { left: "夏天", right: "Mùa hè" },
+            { left: "秋天", right: "Mùa thu" },
+            { left: "冬天", right: "Mùa đông" },
+            { left: "季节", right: "Mùa, tiết" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Bốn mùa: 春天 (chūntiān), 夏天 (xiàtiān), 秋天 (qiūtiān), 冬天 (dōngtiān). 季节 (jìjié) = mùa, tiết.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 4,
+        difficulty: 2,
+        question: {
+          text: "今天___很大，你出门要带伞。(Hôm nay mưa to lắm, bạn ra ngoài phải mang ô.)",
+          hint: "Mưa",
+        },
+        answer: { correct: "雨" },
+        explanation: "雨 (yǔ) = mưa. 今天雨很大 = hôm nay mưa to. 带伞 (dài sǎn) = mang ô.",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 2,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"今天气温三十五度，非常热。\"",
+          options: [
+            "Hôm nay nhiệt độ 35 độ, rất nóng.",
+            "Hôm nay nhiệt độ 35 độ, rất lạnh.",
+            "Hôm nay trời mưa và rất nóng.",
+            "Hôm nay nhiệt độ 30 độ.",
+          ],
+          hint: "气温 = nhiệt độ, 度 = độ",
+        },
+        answer: { correct: 0 },
+        explanation: "气温 (qìwēn) = nhiệt độ. 三十五度 = 35 độ. 非常热 = rất nóng. Câu nghĩa hoàn toàn rõ ràng.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 6,
+        difficulty: 2,
+        question: {
+          text: "天气预报 (tiānqì yùbào) có nghĩa là gì?",
+          options: ["Thời tiết hôm nay", "Dự báo thời tiết", "Nhiệt độ trung bình", "Khí hậu địa phương"],
+        },
+        answer: { correct: 1 },
+        explanation: "天气预报 (tiānqì yùbào) = dự báo thời tiết. 天气 = thời tiết, 预报 = dự báo. Nguồn thông tin quan trọng hàng ngày.",
+      },
+      {
+        type: "PINYIN",
+        order: 7,
+        difficulty: 2,
+        question: {
+          text: "Viết pinyin cho chữ 温度:",
+          character: "温度",
+        },
+        answer: { correct: "wēndù" },
+        explanation: "温度 (wēndù) = nhiệt độ. 温 = ấm/nhiệt (thanh 1), 度 = độ (thanh 4). Ví dụ: 今天温度很低 = Hôm nay nhiệt độ rất thấp.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 3,
+        question: {
+          text: "秋天___叶子变黄，非常漂亮。(Mùa thu lá cây chuyển vàng, rất đẹp.)",
+          hint: "Cây",
+        },
+        answer: { correct: "树" },
+        explanation: "树 (shù) = cây. 树叶 (shùyè) = lá cây. 变黄 (biàn huáng) = chuyển màu vàng.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 3,
+        question: {
+          text: "Câu nào diễn đạt đúng \"Mùa đông ở Bắc Kinh rất lạnh, thường có tuyết\"?",
+          options: [
+            "北京的冬天很冷，经常下雪。",
+            "北京的夏天很冷，经常下雪。",
+            "北京的冬天很热，很少下雪。",
+            "北京的冬天很暖和，偶尔下雪。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "北京的冬天 = mùa đông Bắc Kinh. 很冷 = rất lạnh. 经常下雪 = thường hay tuyết rơi. Đây là đặc điểm thời tiết thực tế của Bắc Kinh.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 3,
+        question: {
+          text: "刮大风 (guā dà fēng) có nghĩa là gì?",
+          options: ["Trời nóng", "Gió to", "Mưa đá", "Sương mù"],
+        },
+        answer: { correct: 1 },
+        explanation: "刮大风 = gió to. 刮风 (guāfēng) = có gió, gió thổi. 大 = to/mạnh. Ví dụ: 今天刮大风，要多穿衣服 = Hôm nay gió to, cần mặc thêm quần áo.",
+      },
+    ],
+  },
+
+  // ─── LESSON 6: Gia đình và các mối quan hệ ──────────────────
+  {
+    title: "Luyện tập tổng hợp HSK 3 (6)",
+    description: "Luyện tập từ vựng về các mối quan hệ gia đình và xã hội",
+    hskLevel: 3,
+    order: 71,
+    type: "CULTURE",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 2,
+        question: {
+          text: "岳母 (yuèmǔ) có nghĩa là gì?",
+          options: ["Mẹ ruột", "Mẹ vợ", "Mẹ chồng", "Bà nội"],
+        },
+        answer: { correct: 1 },
+        explanation: "岳母 (yuèmǔ) = mẹ vợ (tiếng Trung dùng cho nhà vợ). Mẹ chồng là 婆婆 (pópo). Cha vợ là 岳父 (yuèfù).",
+      },
+      {
+        type: "MATCHING",
+        order: 2,
+        difficulty: 2,
+        question: {
+          pairs: [
+            { left: "丈夫", right: "Chồng" },
+            { left: "妻子", right: "Vợ" },
+            { left: "兄弟", right: "Anh em trai" },
+            { left: "姐妹", right: "Chị em gái" },
+            { left: "邻居", right: "Hàng xóm" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Các mối quan hệ: 丈夫 (zhàngfu) = chồng, 妻子 (qīzi) = vợ, 兄弟 (xiōngdì) = anh em trai, 姐妹 (jiěmèi) = chị em gái, 邻居 (línjū) = hàng xóm.",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 2,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 妻:",
+          character: "妻",
+          options: ["qī", "qí", "qǐ", "qì"],
+        },
+        answer: { correct: 0 },
+        explanation: "妻 (qī) = vợ. Đọc thanh thứ nhất. 妻子 (qīzi) = vợ (lịch sự hơn 老婆).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 4,
+        difficulty: 2,
+        question: {
+          text: "我和我的___关系非常好，经常一起出去玩。(Tôi và hàng xóm quan hệ rất tốt, thường hay cùng đi chơi.)",
+          hint: "Người sống cạnh nhà",
+        },
+        answer: { correct: "邻居" },
+        explanation: "邻居 (línjū) = hàng xóm, láng giềng. 关系好 = quan hệ tốt. 一起出去玩 = cùng nhau đi chơi.",
+      },
+      {
+        type: "PINYIN",
+        order: 5,
+        difficulty: 2,
+        question: {
+          text: "Viết pinyin cho chữ 朋友:",
+          character: "朋友",
+        },
+        answer: { correct: "péngyou" },
+        explanation: "朋友 (péngyou) = bạn bè. 朋 = bạn (thanh 2), 友 = bạn/thân thiện (thanh nhẹ trong từ ghép).",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 2,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"他们结婚十年了，感情非常好。\"",
+          options: [
+            "Họ kết hôn được 10 năm, tình cảm rất tốt.",
+            "Họ quen nhau được 10 năm, mới cưới.",
+            "Họ có con được 10 năm rồi.",
+            "Họ ly hôn sau 10 năm.",
+          ],
+          hint: "结婚 = kết hôn, 感情 = tình cảm",
+        },
+        answer: { correct: 0 },
+        explanation: "结婚 (jiéhūn) = kết hôn. 十年了 = 10 năm rồi. 感情 (gǎnqíng) = tình cảm. 非常好 = rất tốt.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 7,
+        difficulty: 2,
+        question: {
+          text: "Câu nào đúng khi nói về gia đình gồm 4 người?",
+          options: [
+            "我家有四口人。",
+            "我家有四个人口。",
+            "我家有四位人。",
+            "我家有四人口。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "口 (kǒu) là lượng từ đặc biệt để đếm thành viên gia đình. 我家有四口人 = Nhà tôi có bốn người. Đây là cách nói chuẩn mực.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 3,
+        question: {
+          text: "我父母都___退休了，在家享受晚年生活。(Bố mẹ tôi đã về hưu cả rồi, ở nhà tận hưởng cuộc sống tuổi già.)",
+          hint: "Đã/rồi",
+        },
+        answer: { correct: "已经" },
+        explanation: "已经 (yǐjīng) = đã, rồi. 退休 (tuìxiū) = nghỉ hưu. 享受 (xiǎngshòu) = tận hưởng.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 3,
+        question: {
+          text: "孝顺 (xiàoshùn) có nghĩa là gì?",
+          options: ["Vâng lời", "Hiếu thuận với cha mẹ", "Kính trọng thầy cô", "Quan tâm bạn bè"],
+        },
+        answer: { correct: 1 },
+        explanation: "孝顺 (xiàoshùn) = hiếu thảo với cha mẹ. Đây là giá trị đạo đức quan trọng trong văn hóa Trung Hoa. 孝 = hiếu, 顺 = thuận.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 3,
+        question: {
+          text: "在中国文化中，过春节时，长辈给晚辈___。",
+          options: ["红包", "鲜花", "书本", "衣服"],
+        },
+        answer: { correct: 0 },
+        explanation: "红包 (hóngbāo) = phong bao đỏ, tiền mừng tuổi. Trong văn hóa Trung Hoa, dịp Tết người lớn tặng phong bì đỏ cho trẻ nhỏ và người ít tuổi hơn.",
+      },
+    ],
+  },
+
+  // ─── LESSON 7: Sức khỏe và cơ thể ───────────────────────────
+  {
+    title: "Luyện tập tổng hợp HSK 3 (7)",
+    description: "Luyện tập từ vựng về cơ thể người, sức khỏe và mô tả triệu chứng bệnh",
+    hskLevel: 3,
+    order: 72,
+    type: "CONVERSATION",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 2,
+        question: {
+          text: "头疼 (tóuténg) có nghĩa là gì?",
+          options: ["Đau bụng", "Đau đầu", "Đau lưng", "Đau chân"],
+        },
+        answer: { correct: 1 },
+        explanation: "头疼 (tóuténg) = đau đầu. 头 (tóu) = đầu, 疼 (téng) = đau. Tương tự: 肚子疼 (dùzi téng) = đau bụng.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 2,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 疼:",
+          character: "疼",
+          options: ["tēng", "téng", "těng", "tèng"],
+        },
+        answer: { correct: 1 },
+        explanation: "疼 (téng) = đau. Đọc thanh thứ hai. Ví dụ: 我的腿很疼 = Chân tôi rất đau.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 2,
+        question: {
+          text: "医生，我___很高，已经三十八度了。(Bác sĩ, tôi sốt cao lắm, đã 38 độ rồi.)",
+          hint: "Sốt",
+        },
+        answer: { correct: "发烧" },
+        explanation: "发烧 (fāshāo) = sốt. 三十八度 = 38 độ. Đây là cách mô tả triệu chứng thường gặp khi khám bệnh.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 2,
+        question: {
+          pairs: [
+            { left: "眼睛", right: "Mắt" },
+            { left: "耳朵", right: "Tai" },
+            { left: "鼻子", right: "Mũi" },
+            { left: "嘴巴", right: "Miệng" },
+            { left: "肩膀", right: "Vai" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Các bộ phận khuôn mặt và cơ thể: 眼睛 (yǎnjīng), 耳朵 (ěrduō), 鼻子 (bízi), 嘴巴 (zuǐba), 肩膀 (jiānbǎng).",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 2,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"你要多喝水，多休息。\"",
+          options: [
+            "Bạn nên uống nhiều nước, nghỉ ngơi nhiều.",
+            "Bạn nên ăn nhiều, tập thể dục nhiều.",
+            "Bạn nên uống thuốc và đi ngủ sớm.",
+            "Bạn cần đến bệnh viện ngay.",
+          ],
+          hint: "喝水 = uống nước, 休息 = nghỉ ngơi",
+        },
+        answer: { correct: 0 },
+        explanation: "多喝水 = uống nhiều nước hơn. 多休息 = nghỉ ngơi nhiều hơn. Đây là lời khuyên sức khỏe cơ bản từ bác sĩ.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 6,
+        difficulty: 2,
+        question: {
+          text: "Câu nào diễn đạt đúng \"Tôi bị cảm cúm\"?",
+          options: [
+            "我感冒了。",
+            "我发烧了。",
+            "我肚子疼。",
+            "我过敏了。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "感冒 (gǎnmào) = cảm cúm. 了 chỉ trạng thái mới xảy ra. 发烧 = sốt, 肚子疼 = đau bụng, 过敏 = dị ứng.",
+      },
+      {
+        type: "PINYIN",
+        order: 7,
+        difficulty: 2,
+        question: {
+          text: "Viết pinyin cho chữ 医院:",
+          character: "医院",
+        },
+        answer: { correct: "yīyuàn" },
+        explanation: "医院 (yīyuàn) = bệnh viện. 医 = y/chữa bệnh (thanh 1), 院 = sân/viện (thanh 4).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 3,
+        question: {
+          text: "医生说我需要___几天，不能上班。(Bác sĩ nói tôi cần nghỉ ngơi vài ngày, không thể đi làm.)",
+          hint: "Nghỉ ngơi",
+        },
+        answer: { correct: "休息" },
+        explanation: "休息 (xiūxi) = nghỉ ngơi. 需要 = cần. 不能上班 = không thể đi làm.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 3,
+        question: {
+          text: "处方 (chǔfāng) có nghĩa là gì?",
+          options: ["Đơn thuốc", "Bệnh viện", "Kiểm tra sức khỏe", "Bảo hiểm y tế"],
+        },
+        answer: { correct: 0 },
+        explanation: "处方 (chǔfāng) = đơn thuốc, toa thuốc. 处 = xử lý, 方 = phương/công thức. Bác sĩ kê đơn thuốc là 开处方.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 3,
+        question: {
+          text: "病人对医生说：「大夫，我最近老是___，睡眠质量很差。」",
+          options: ["失眠", "过敏", "骨折", "感冒"],
+        },
+        answer: { correct: 0 },
+        explanation: "失眠 (shīmián) = mất ngủ. 老是 (lǎoshì) = cứ mãi/luôn luôn. 睡眠质量差 = chất lượng giấc ngủ kém. Triệu chứng mất ngủ là 失眠.",
+      },
+    ],
+  },
+];

@@ -1,0 +1,1063 @@
+// HSK 6 Extra Exercises — 7 new practice lessons (orders 87-93)
+// Topics: Advanced Philosophy, Literary Criticism, Jurisprudence, Advanced Science,
+//         Classical Poetry, Rhetoric & Argumentation, Contemporary Chinese Society
+// 10 exercises per lesson = 70 total
+
+import type { LessonData } from "./lessons";
+
+export const exerciseLessonsHsk6Extra: LessonData[] = [
+  // ─── LESSON 1: Triết học nâng cao ────────────────────────────
+  {
+    title: "Luyện tập chuyên sâu HSK 6 (1)",
+    description: "Luyện tập từ vựng triết học chuyên sâu, nhận thức luận và siêu hình học",
+    hskLevel: 6,
+    order: 87,
+    type: "READING",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "本体论 (běntǐlùn) trong triết học có nghĩa là gì?",
+          options: ["Siêu hình học/Bản thể luận", "Nhận thức luận", "Đạo đức học", "Logic học"],
+        },
+        answer: { correct: 0 },
+        explanation: "本体论 (běntǐlùn) = bản thể luận (ontology) — nghiên cứu về sự tồn tại và bản chất của thực thể. 本体 = bản thể/bản chất, 论 = lý luận.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 悟:",
+          character: "悟",
+          options: ["wū", "wú", "wǔ", "wù"],
+        },
+        answer: { correct: 3 },
+        explanation: "悟 (wù) = giác ngộ, hiểu thấu. Đọc thanh thứ tư. 顿悟 (dùnwù) = bỗng giác ngộ, 感悟 (gǎnwù) = nhận thức sâu sắc.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 5,
+        question: {
+          text: "柏拉图的\"理念论\"认为，现实世界只是___世界的倒影，真实的存在是永恒不变的理念。(Lý thuyết Ý niệm của Plato cho rằng thế giới thực tế chỉ là bóng phản chiếu của thế giới lý tưởng, sự tồn tại thật sự là các ý niệm vĩnh cửu bất biến.)",
+          hint: "Lý tưởng",
+        },
+        answer: { correct: "理念" },
+        explanation: "理念 (lǐniàn) = lý niệm, ý niệm. 柏拉图 (Bólātú) = Plato. 永恒不变 = vĩnh cửu bất biến. 倒影 = bóng phản chiếu.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          pairs: [
+            { left: "唯物主义", right: "Chủ nghĩa duy vật" },
+            { left: "唯心主义", right: "Chủ nghĩa duy tâm" },
+            { left: "认识论", right: "Nhận thức luận" },
+            { left: "形而上学", right: "Siêu hình học" },
+            { left: "现象学", right: "Hiện tượng luận" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Trường phái triết học: 唯物主义 (wéiwù zhǔyì), 唯心主义 (wéixīn zhǔyì), 认识论 (rènshílùn), 形而上学 (xíng ér shàng xué), 现象学 (xiànxiàngxué).",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"笛卡尔的名言'我思故我在'奠定了西方近代哲学的认识论基础。\"",
+          options: [
+            "Câu nói nổi tiếng của Descartes 'Tôi tư duy nên tôi tồn tại' đã đặt nền móng nhận thức luận cho triết học Tây phương cận đại.",
+            "Câu nói của Descartes phủ nhận sự tồn tại của thực thể bên ngoài ý thức.",
+            "Descartes cho rằng tư duy và tồn tại là hai phạm trù không liên quan.",
+            "Triết học Tây phương bắt đầu từ câu hỏi về sự tồn tại của Thượng đế.",
+          ],
+          hint: "我思故我在 = Tôi tư duy nên tôi tồn tại, 认识论 = nhận thức luận",
+        },
+        answer: { correct: 0 },
+        explanation: "笛卡尔 (Dícǎ'ěr) = Descartes. 我思故我在 = Cogito ergo sum. 奠定 (diàndìng) = đặt nền móng. 认识论基础 = nền tảng nhận thức luận.",
+      },
+      {
+        type: "PINYIN",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Viết pinyin cho chữ 辩证:",
+          character: "辩证",
+        },
+        answer: { correct: "biànzhèng" },
+        explanation: "辩证 (biànzhèng) = biện chứng. 辩 = biện luận (thanh 4), 证 = chứng minh (thanh 4). 辩证法 = phép biện chứng, 辩证唯物主义 = chủ nghĩa duy vật biện chứng.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "\"存在先于本质\"是哪位哲学家的核心观点？",
+          options: [
+            "萨特 (Sartre) — Triết học hiện sinh",
+            "康德 (Kant) — Triết học phê phán",
+            "黑格尔 (Hegel) — Triết học biện chứng",
+            "尼采 (Nietzsche) — Triết học ý chí",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "\"存在先于本质\" (cúnzài xiān yú běnzhì) = tồn tại có trước bản chất — quan điểm cốt lõi của 萨特 (Sàtè/Sartre), nhà triết học hiện sinh Pháp. Con người tự tạo ra bản chất của mình qua hành động.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "黑格尔认为，历史的发展遵循\"正___合\"的辩证规律。(Hegel cho rằng sự phát triển lịch sử tuân theo quy luật biện chứng 'chính - phản - hợp'.)",
+          hint: "Phản (thứ hai trong ba bước biện chứng)",
+        },
+        answer: { correct: "反" },
+        explanation: "正反合 = chính - phản - hợp (thesis-antithesis-synthesis). Đây là công thức biện chứng của Hegel. 正 = chính đề, 反 = phản đề, 合 = tổng hợp.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 5,
+        question: {
+          text: "\"绝对精神\"是哪位哲学家体系中的核心概念？",
+          options: [
+            "黑格尔 (Hegel)",
+            "马克思 (Marx)",
+            "康德 (Kant)",
+            "叔本华 (Schopenhauer)",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "绝对精神 (juéduì jīngshén) = tinh thần tuyệt đối — khái niệm trung tâm trong hệ thống triết học của 黑格尔 (Hēigé'ěr/Hegel). Đây là thực thể tự nhận thức về bản thân qua quá trình lịch sử.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Câu nào dùng đúng cấu trúc 与其...不如... (thay vì...chi bằng...)?",
+          options: [
+            "与其坐等机会，不如主动创造机会。",
+            "与其坐等机会不如，主动创造机会。",
+            "与其主动创造机会，不如坐等机会。",
+            "坐等机会与其，不如主动创造。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "与其...不如... (yǔqí...bùrú...) = thay vì...chi bằng... Cấu trúc: 与其 + [lựa chọn kém hơn], 不如 + [lựa chọn tốt hơn]. Câu A: thay vì chờ đợi, chi bằng chủ động tạo cơ hội.",
+      },
+    ],
+  },
+
+  // ─── LESSON 2: Phê bình văn học ──────────────────────────────
+  {
+    title: "Luyện tập chuyên sâu HSK 6 (2)",
+    description: "Luyện tập từ vựng phê bình văn học, phân tích tác phẩm và lý luận văn học",
+    hskLevel: 6,
+    order: 88,
+    type: "READING",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "意象 (yìxiàng) trong thơ ca có nghĩa là gì?",
+          options: ["Hình tượng/ý tượng", "Nhân vật chính", "Bố cục tác phẩm", "Phong cách ngôn ngữ"],
+        },
+        answer: { correct: 0 },
+        explanation: "意象 (yìxiàng) = ý tượng, hình tượng — khái niệm kết hợp giữa 意 (ý nghĩa/cảm xúc) và 象 (hình ảnh cụ thể). Trong thơ Trung Hoa, ý tượng là cách nhà thơ gửi cảm xúc vào sự vật.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 韵:",
+          character: "韵",
+          options: ["yūn", "yún", "yǔn", "yùn"],
+        },
+        answer: { correct: 3 },
+        explanation: "韵 (yùn) = vần, âm điệu. Đọc thanh thứ tư. 押韵 (yāyùn) = gieo vần. 韵律 (yùnlǜ) = vần luật, nhịp điệu.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 5,
+        question: {
+          text: "杜甫被称为\"诗___\"，其诗歌以沉郁顿挫著称，反映了唐代的社会现实。(Đỗ Phủ được gọi là 'Thánh thơ', thơ ông nổi bật bởi sự trầm uất, phản ánh hiện thực xã hội đời Đường.)",
+          hint: "Thánh (của thơ)",
+        },
+        answer: { correct: "圣" },
+        explanation: "诗圣 (shīshèng) = Thánh thơ — danh hiệu của Đỗ Phủ (杜甫 Dù Fǔ). 李白 được gọi là 诗仙 (Tiên thơ). 沉郁顿挫 = trầm uất đột biến (phong cách thơ Đỗ Phủ).",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          pairs: [
+            { left: "叙述者", right: "Người kể chuyện" },
+            { left: "伏笔", right: "Phục bút (chi tiết dẫn trước)" },
+            { left: "象征", right: "Tượng trưng, biểu tượng" },
+            { left: "讽刺", right: "Châm biếm, mỉa mai" },
+            { left: "悲剧", right: "Bi kịch" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Thuật ngữ văn học: 叙述者 (xùshùzhě), 伏笔 (fúbǐ), 象征 (xiàngzhēng), 讽刺 (fěngcì), 悲剧 (bēijù).",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"《红楼梦》通过贾府的兴衰，深刻揭示了封建社会的腐朽与没落。\"",
+          options: [
+            "Qua sự thịnh suy của họ Giả, Hồng Lâu Mộng sâu sắc vạch trần sự mục nát và suy tàn của xã hội phong kiến.",
+            "Hồng Lâu Mộng là câu chuyện tình yêu bi thảm của Giả Bảo Ngọc và Lâm Đại Ngọc.",
+            "Tác phẩm mô tả cuộc sống xa hoa của tầng lớp quý tộc phong kiến Trung Quốc.",
+            "Hồng Lâu Mộng ca ngợi những giá trị truyền thống của xã hội phong kiến.",
+          ],
+          hint: "兴衰 = thịnh suy, 腐朽 = mục nát, 没落 = suy tàn",
+        },
+        answer: { correct: 0 },
+        explanation: "贾府 (Jiǎ fǔ) = phủ nhà Giả. 兴衰 (xīngshuāi) = thịnh suy. 揭示 (jiēshì) = vạch trần. 腐朽 (fǔxiǔ) = mục nát. 没落 (mòluò) = suy tàn.",
+      },
+      {
+        type: "PINYIN",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Viết pinyin cho chữ 意境:",
+          character: "意境",
+        },
+        answer: { correct: "yìjìng" },
+        explanation: "意境 (yìjìng) = ý cảnh, cảnh giới nghệ thuật. Đây là khái niệm mỹ học quan trọng trong thơ Trung Hoa — sự hòa hợp giữa cảm xúc (情) và cảnh vật (景). 意 = ý (thanh 4), 境 = cảnh (thanh 4).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "\"春蚕到死丝方尽，蜡炬成灰泪始干\" (Lý Thương Ẩn) dùng biện pháp tu từ nào chính yếu?",
+          options: [
+            "Ẩn dụ (比喻) và đối ngẫu (对仗)",
+            "Phóng đại (夸张) và đảo ngữ (倒装)",
+            "Nhân hóa (拟人) và so sánh (比较)",
+            "Điệp ngữ (反复) và đối chiếu (对比)",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "Câu thơ dùng ẩn dụ (比喻): tằm = người yêu, tơ = tình yêu/nhớ thương. Hai vế đối nhau (对仗): 春蚕/蜡炬, 到死/成灰, 丝方尽/泪始干. Đây là cặp câu nổi tiếng của 李商隐 (Lǐ Shāngyǐn).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "鲁迅的小说《阿Q正传》通过阿Q的\"___胜利法\"，深刻批判了中国国民性的弱点。(Tiểu thuyết 'AQ chính truyện' của Lỗ Tấn qua 'phép thắng lợi tinh thần' của AQ, sâu sắc phê phán nhược điểm của quốc dân tính Trung Quốc.)",
+          hint: "Tinh thần",
+        },
+        answer: { correct: "精神" },
+        explanation: "精神胜利法 (jīngshén shènglì fǎ) = phép thắng lợi tinh thần — tự an ủi mình dù thực tế đang thất bại. 阿Q正传 (Ā Q Zhèngzhuàn) = AQ chính truyện của 鲁迅 (Lǔ Xùn/Lỗ Tấn).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 5,
+        question: {
+          text: "现实主义文学的核心特征是什么？",
+          options: [
+            "真实描绘社会现实，揭示社会矛盾",
+            "追求语言形式的创新和实验",
+            "强调个人内心世界的探索",
+            "回归古典美学标准和形式",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "现实主义 (xiànshí zhǔyì) = chủ nghĩa hiện thực. Đặc điểm cốt lõi: 真实描绘 = mô tả trung thực, 揭示社会矛盾 = vạch trần mâu thuẫn xã hội. Đây phân biệt với chủ nghĩa lãng mạn, hiện đại chủ nghĩa.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Câu nào sử dụng đúng 以...为... (lấy...làm...)?",
+          options: [
+            "他以诚信为本，在商界树立了良好的声誉。",
+            "他以为诚信，在商界树立良好的声誉。",
+            "以他诚信为本，在商界树立了声誉。",
+            "他在商界以为诚信本，声誉良好。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "以...为... (yǐ...wéi...) = lấy...làm/coi là... Cấu trúc: 以 + [đối tượng/nguyên tắc] + 为 + [cơ sở/vai trò]. 以诚信为本 = lấy thành tín làm gốc.",
+      },
+    ],
+  },
+
+  // ─── LESSON 3: Luật pháp ─────────────────────────────────────
+  {
+    title: "Luyện tập chuyên sâu HSK 6 (3)",
+    description: "Luyện tập từ vựng pháp luật, tư pháp và các khái niệm luật học nâng cao",
+    hskLevel: 6,
+    order: 89,
+    type: "READING",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "司法独立 (sīfǎ dúlì) có nghĩa là gì?",
+          options: ["Tư pháp độc lập", "Lập pháp độc lập", "Hành pháp độc lập", "Tư pháp tự quyết"],
+        },
+        answer: { correct: 0 },
+        explanation: "司法独立 (sīfǎ dúlì) = tư pháp độc lập (judicial independence). Nguyên tắc cơ bản của nhà nước pháp quyền: tòa án xét xử không bị can thiệp từ lập pháp hay hành pháp.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 辩:",
+          character: "辩",
+          options: ["biān", "bián", "biǎn", "biàn"],
+        },
+        answer: { correct: 3 },
+        explanation: "辩 (biàn) = biện hộ, biện luận. Đọc thanh thứ tư. 辩护 (biànhù) = biện hộ (trong tòa án), 辩护律师 = luật sư biện hộ.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 5,
+        question: {
+          text: "根据无罪推定原则，被告在未被证明有罪之前应被___为无罪。(Theo nguyên tắc suy đoán vô tội, bị cáo trước khi bị chứng minh có tội phải được coi là vô tội.)",
+          hint: "Coi là, suy đoán là",
+        },
+        answer: { correct: "推定" },
+        explanation: "推定 (tuīdìng) = suy đoán, coi là. 无罪推定 (wúzuì tuīdìng) = suy đoán vô tội (presumption of innocence). 被告 (bèigào) = bị cáo.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          pairs: [
+            { left: "原告", right: "Nguyên đơn" },
+            { left: "被告", right: "Bị cáo/Bị đơn" },
+            { left: "证人", right: "Nhân chứng" },
+            { left: "判决", right: "Phán quyết" },
+            { left: "上诉", right: "Kháng án" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Thuật ngữ tòa án: 原告 (yuángào), 被告 (bèigào), 证人 (zhèngrén), 判决 (pànjué), 上诉 (shàngsù).",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"法治的核心是以法律约束权力，保障公民权利，实现社会公正。\"",
+          options: [
+            "Cốt lõi của pháp quyền là dùng pháp luật ràng buộc quyền lực, bảo đảm quyền công dân, thực hiện công bằng xã hội.",
+            "Nhà nước pháp quyền nghĩa là mọi người đều phải tuân thủ pháp luật.",
+            "Pháp luật là công cụ để chính quyền quản lý xã hội.",
+            "Tòa án là cơ quan duy nhất có quyền giải thích pháp luật.",
+          ],
+          hint: "法治 = pháp trị/pháp quyền, 约束 = ràng buộc, 保障 = bảo đảm",
+        },
+        answer: { correct: 0 },
+        explanation: "法治 (fǎzhì) = pháp quyền, pháp trị. 约束权力 = ràng buộc quyền lực. 保障公民权利 = bảo đảm quyền công dân. 社会公正 = công bằng xã hội.",
+      },
+      {
+        type: "PINYIN",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Viết pinyin cho chữ 违宪:",
+          character: "违宪",
+        },
+        answer: { correct: "wéixiàn" },
+        explanation: "违宪 (wéixiàn) = vi hiến. 违 = vi phạm (thanh 2), 宪 = hiến pháp (thanh 4). 违宪审查 = kiểm tra tính hợp hiến.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "\"紧急避险\"在刑法中的含义是？",
+          options: [
+            "Tình trạng khẩn cấp — hành động trái luật để tránh nguy hiểm lớn hơn",
+            "Bỏ trốn khi đang bị điều tra",
+            "Tự vệ chính đáng trước tấn công",
+            "Hành động theo lệnh cấp trên",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "紧急避险 (jǐnjí bìxiǎn) = tình trạng khẩn cấp (necessity/emergency). Trong luật hình sự, đây là trường hợp hành động vượt giới hạn pháp luật để tránh nguy hiểm nghiêm trọng hơn, có thể giảm nhẹ trách nhiệm hình sự.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "国际法的主要渊源包括国际___、国际习惯和一般法律原则。(Các nguồn chính của luật quốc tế bao gồm điều ước quốc tế, tập quán quốc tế và các nguyên tắc pháp lý chung.)",
+          hint: "Điều ước",
+        },
+        answer: { correct: "条约" },
+        explanation: "条约 (tiáoyuē) = điều ước, hiệp ước. 国际条约 = điều ước quốc tế. 国际习惯 = tập quán quốc tế. 法律原则 = nguyên tắc pháp lý.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 5,
+        question: {
+          text: "\"程序正义\"指的是？",
+          options: [
+            "Sự công bằng trong quy trình tố tụng và thủ tục pháp lý",
+            "Kết quả cuối cùng của vụ kiện phải công bằng",
+            "Pháp luật áp dụng bình đẳng cho tất cả mọi người",
+            "Luật sư phải được cấp phép hành nghề",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "程序正义 (chéngxù zhèngyì) = công bằng thủ tục (procedural justice) — yêu cầu quy trình tố tụng phải công bằng, minh bạch. Đối lập với 实体正义 (substantive justice) = công bằng về nội dung kết quả.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Câu nào dùng đúng cấu trúc 固然...但是... (đành rằng/tuy đúng...nhưng...)?",
+          options: [
+            "他的方案固然有优点，但是也存在明显的缺陷。",
+            "固然他的方案有优点但是，也存在缺陷。",
+            "他的方案有优点固然，但是也存在缺陷。",
+            "固然但是他的方案有优点，也存在缺陷。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "固然...但是... (gùrán...dànshì...) = đành rằng/tuy rằng...nhưng... Dùng để nhận nhượng bộ rồi nêu phản đề. 固然 + [điểm nhượng bộ], 但是 + [phản đề quan trọng hơn]. Câu A đúng cấu trúc.",
+      },
+    ],
+  },
+
+  // ─── LESSON 4: Khoa học nâng cao ─────────────────────────────
+  {
+    title: "Luyện tập chuyên sâu HSK 6 (4)",
+    description: "Luyện tập từ vựng khoa học tự nhiên nâng cao, vũ trụ học và công nghệ mới",
+    hskLevel: 6,
+    order: 90,
+    type: "READING",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "暗物质 (àn wùzhì) có nghĩa là gì?",
+          options: ["Vật chất tối", "Lỗ đen", "Năng lượng tối", "Hạt cơ bản"],
+        },
+        answer: { correct: 0 },
+        explanation: "暗物质 (àn wùzhì) = vật chất tối (dark matter). 暗 = tối/không nhìn thấy, 物质 = vật chất. Chiếm ~27% vũ trụ nhưng không phát ra hoặc hấp thụ ánh sáng.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 核:",
+          character: "核",
+          options: ["hē", "hé", "hě", "hè"],
+        },
+        answer: { correct: 1 },
+        explanation: "核 (hé) = nhân, hạt nhân. Đọc thanh thứ hai. 核反应 (hé fǎnyìng) = phản ứng hạt nhân, 核裂变 (hé lièbiàn) = phân hạch, 核聚变 (hé jùbiàn) = nhiệt hạch.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 5,
+        question: {
+          text: "根据相对论，当物体运动速度接近光速时，其质量会___增加。(Theo thuyết tương đối, khi vật thể chuyển động với tốc độ tiệm cận vận tốc ánh sáng, khối lượng của nó sẽ tăng lên vô hạn.)",
+          hint: "Vô hạn",
+        },
+        answer: { correct: "无限" },
+        explanation: "无限 (wúxiàn) = vô hạn. 相对论 (xiāngduìlùn) = thuyết tương đối. 光速 (guāngsù) = tốc độ ánh sáng. 质量 (zhìliàng) = khối lượng.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          pairs: [
+            { left: "黑洞", right: "Lỗ đen" },
+            { left: "宇宙大爆炸", right: "Vụ nổ Big Bang" },
+            { left: "引力波", right: "Sóng hấp dẫn" },
+            { left: "超导体", right: "Siêu dẫn điện" },
+            { left: "纳米技术", right: "Công nghệ nano" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Từ vựng khoa học hiện đại: 黑洞 (hēidòng), 宇宙大爆炸 (yǔzhòu dà bàozhà), 引力波 (yǐnlì bō), 超导体 (chāodǎotǐ), 纳米技术 (nàmǐ jìshù).",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"CRISPR基因编辑技术的突破，使得人类能够精确修改生物体的遗传信息，但同时引发了严重的伦理争议。\"",
+          options: [
+            "Sự đột phá của công nghệ chỉnh sửa gen CRISPR cho phép con người chỉnh sửa chính xác thông tin di truyền của sinh vật, nhưng đồng thời gây ra tranh cãi đạo đức nghiêm trọng.",
+            "CRISPR là công nghệ điều trị bệnh di truyền an toàn và không có tranh cãi.",
+            "Công nghệ gen hiện đại chỉ có thể áp dụng cho thực vật và động vật.",
+            "Chỉnh sửa gen người là điều không thể về mặt kỹ thuật.",
+          ],
+          hint: "基因编辑 = chỉnh sửa gen, 伦理争议 = tranh cãi đạo đức",
+        },
+        answer: { correct: 0 },
+        explanation: "CRISPR = công nghệ chỉnh sửa gen. 精确修改 = chỉnh sửa chính xác. 遗传信息 = thông tin di truyền. 伦理争议 (lúnlǐ zhēngyì) = tranh cãi đạo đức.",
+      },
+      {
+        type: "PINYIN",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Viết pinyin cho chữ 宇宙:",
+          character: "宇宙",
+        },
+        answer: { correct: "yǔzhòu" },
+        explanation: "宇宙 (yǔzhòu) = vũ trụ. 宇 = không gian vô biên (thanh 3), 宙 = thời gian vô biên (thanh 4). Khái niệm cổ đại Trung Hoa: 宇 = không gian, 宙 = thời gian.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "\"量子纠缠\"这一现象最令人惊奇的特点是什么？",
+          options: [
+            "Hai hạt có thể tức thì ảnh hưởng lẫn nhau dù cách nhau rất xa",
+            "Các hạt lượng tử có thể tồn tại ở hai nơi cùng một lúc",
+            "Ánh sáng có thể bị hấp thụ hoàn toàn bởi vật chất tối",
+            "Các nguyên tử có thể thay đổi khối lượng khi bị quan sát",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "量子纠缠 (liàngzǐ jiūchán) = vướng víu lượng tử (quantum entanglement). Đặc điểm kỳ lạ nhất: hai hạt vướng víu có thể tức thì (instantly) ảnh hưởng lẫn nhau bất kể khoảng cách — thách thức quan niệm về thông tin và không gian.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "人工智能的___算法通过分析大量数据，能够不断自我改进和学习新技能。(Thuật toán học sâu của trí tuệ nhân tạo thông qua phân tích lượng lớn dữ liệu, có thể liên tục tự cải thiện và học các kỹ năng mới.)",
+          hint: "Học sâu (Deep Learning)",
+        },
+        answer: { correct: "深度学习" },
+        explanation: "深度学习 (shēndù xuéxí) = học sâu (Deep Learning). 算法 (suànfǎ) = thuật toán. 自我改进 = tự cải thiện. Đây là nền tảng của AI hiện đại.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 5,
+        question: {
+          text: "\"摩尔定律\"预测每隔大约两年，集成电路上的晶体管数量会：",
+          options: ["Tăng gấp đôi", "Tăng gấp ba", "Giảm một nửa", "Tăng theo hàm mũ không xác định"],
+        },
+        answer: { correct: 0 },
+        explanation: "摩尔定律 (Mó'ěr dìnglǜ) = Định luật Moore. Dự đoán mỗi ~2 năm số lượng 晶体管 (jīngtǐguǎn = transistor) trên mạch tích hợp tăng gấp đôi. 集成电路 (jíchéng diànlù) = mạch tích hợp.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Câu nào dùng đúng cấu trúc 不是...而是... (không phải...mà là...)?",
+          options: [
+            "科学的本质不是积累知识，而是不断提出和检验假设。",
+            "科学的本质不是积累知识，还是不断提出假设。",
+            "科学的本质而是不断提出假设，不是积累知识。",
+            "不是科学的本质积累知识，而是提出假设。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "不是...而是... (bùshì...érshì...) = không phải...mà là... Dùng để sửa hiểu sai hoặc làm rõ ý. Câu A: Bản chất khoa học không phải là tích lũy kiến thức mà là liên tục đặt ra và kiểm chứng giả thuyết.",
+      },
+    ],
+  },
+
+  // ─── LESSON 5: Thơ cổ điển Trung Hoa ─────────────────────────
+  {
+    title: "Luyện tập chuyên sâu HSK 6 (5)",
+    description: "Phân tích và luyện tập thơ Đường, thơ Tống và các thể thức thơ cổ điển Trung Hoa",
+    hskLevel: 6,
+    order: 91,
+    type: "CULTURE",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "律诗 (lǜshī) có đặc điểm gì?",
+          options: [
+            "8 câu, mỗi câu 5 hoặc 7 chữ, có quy tắc vần và thanh điệu nghiêm ngặt",
+            "4 câu, không có quy tắc vần",
+            "Không giới hạn số câu, tự do về vần điệu",
+            "Dùng xen tiếng nói và thơ ca",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "律诗 (lǜshī) = thơ luật — thể thơ Đường có 8 câu (4 liên), mỗi câu 5 chữ (五言律诗) hoặc 7 chữ (七言律诗), quy tắc vần và 平仄 (bằng trắc) rất nghiêm ngặt.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 吟:",
+          character: "吟",
+          options: ["yīn", "yín", "yǐn", "yìn"],
+        },
+        answer: { correct: 1 },
+        explanation: "吟 (yín) = ngâm thơ, ngân nga. Đọc thanh thứ hai. 吟诗 = ngâm thơ, 吟咏 (yínyǒng) = ngâm vịnh.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 5,
+        question: {
+          text: "\"床前明月光，疑是地上霜\"是李白诗作《___》的开头两句。(\"Sáng sân giường ánh trăng chiếu sáng, ngỡ là sương phủ mặt đất\" là hai câu đầu bài thơ ___ của Lý Bạch.)",
+          hint: "Bài thơ về nhớ quê hương nổi tiếng nhất",
+        },
+        answer: { correct: "静夜思" },
+        explanation: "静夜思 (Jìng Yè Sī) = Tĩnh Dạ Tư (Tư dưới đêm tĩnh lặng) — bài thơ nổi tiếng nhất của 李白 (Lǐ Bái/Lý Bạch) về nỗi nhớ quê hương.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          pairs: [
+            { left: "绝句", right: "Tuyệt cú (4 câu)" },
+            { left: "律诗", right: "Thơ luật (8 câu)" },
+            { left: "词", right: "Từ — thơ lấp đầy âm nhạc" },
+            { left: "曲", right: "Khúc — thơ ca kịch" },
+            { left: "赋", right: "Phú — thể văn vần cổ" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Các thể thơ Trung Hoa: 绝句 (juéjù) — 4 câu, 律诗 (lǜshī) — 8 câu, 词 (cí) — theo điệu nhạc, 曲 (qǔ) — thơ kịch, 赋 (fù) — thể văn vần cổ.",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Nghe và phân tích: \"《春望》中'感时花溅泪，恨别鸟惊心'运用了什么修辞手法？\"",
+          options: [
+            "Nhân hóa — hoa và chim mang cảm xúc con người",
+            "So sánh — so sánh hoa với nước mắt",
+            "Phóng đại — thổi phồng phản ứng tự nhiên",
+            "Điệp âm — lặp lại âm để tạo hiệu quả",
+          ],
+          hint: "花溅泪 = hoa nhỏ lệ, 鸟惊心 = chim giật mình lo sợ",
+        },
+        answer: { correct: 0 },
+        explanation: "\"感时花溅泪，恨别鸟惊心\" của Đỗ Phủ dùng 拟人 (nhân hóa): 花溅泪 = hoa rơi lệ (hoa mang cảm xúc), 鸟惊心 = chim giật mình (chim mang nỗi lo sợ). Cảm xúc của tác giả phóng chiếu vào thiên nhiên.",
+      },
+      {
+        type: "PINYIN",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Viết pinyin cho chữ 平仄:",
+          character: "平仄",
+        },
+        answer: { correct: "píngzè" },
+        explanation: "平仄 (píngzè) = thanh bằng và thanh trắc. Hệ thống phân loại thanh điệu thơ Trung Hoa cổ điển. 平 = bằng (thanh 1, 2), 仄 = trắc (thanh 3, 4, và nhập thanh cổ).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "\"海内存知己，天涯若比邻\" (Vương Bột) bày tỏ ý nghĩa gì?",
+          options: [
+            "Bạn tri kỷ dù xa cách vẫn như ở bên nhau",
+            "Người tài giỏi sẽ nổi tiếng khắp thiên hạ",
+            "Tình bạn đẹp nhất là khi gặp nhau trực tiếp",
+            "Thế giới rộng lớn nhưng bạn tốt thì hiếm",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "\"海内存知己，天涯若比邻\" của 王勃 (Wáng Bó) = Trong thiên hạ còn bạn tri kỷ, dù xa tận chân trời vẫn như ở cạnh bên. Câu thơ nổi tiếng về tình bạn thắm thiết vượt khoảng cách.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "苏轼的《水调歌头》中\"___有悲欢离合，月有阴晴圆缺\"表达了对人生无常的感慨。(Trong 'Thủy điệu ca đầu' của Tô Thức, '... có buồn vui tan hợp, trăng có tối sáng tròn khuyết' bày tỏ cảm xúc về sự vô thường của cuộc đời.)",
+          hint: "Con người (trong thơ)",
+        },
+        answer: { correct: "人" },
+        explanation: "\"人有悲欢离合，月有阴晴圆缺\" của 苏轼 (Sū Shì/Tô Thức). 悲欢离合 = buồn vui tan hợp. 阴晴圆缺 = tối sáng tròn khuyết. Bài từ nổi tiếng nhất về Tết Trung Thu.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 5,
+        question: {
+          text: "\"婉约派\"与\"豪放派\"是宋词的两大流派，下列哪位词人属于\"豪放派\"？",
+          options: [
+            "苏轼 (Tô Thức)",
+            "李清照 (Lý Thanh Chiếu)",
+            "柳永 (Liễu Vĩnh)",
+            "秦观 (Tần Quan)",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "豪放派 (háofàng pài) = phái hào phóng — phong cách phóng khoáng, hùng tráng, không bị ràng buộc. 苏轼 (Tô Thức) và 辛弃疾 (Tân Khí Tật) là đại diện lớn nhất. 婉约派 = phái uyển ước — tinh tế, nhẹ nhàng, tình cảm.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Câu nào phân tích đúng cấu trúc đối ngẫu (对仗) trong \"白日依山尽，黄河入海流\"？",
+          options: [
+            "白日对黄河 (danh), 依山对入海 (động từ + danh), 尽对流 (động từ)",
+            "白日对黄河是主谓结构，两句都是描写自然景象",
+            "两句都是倒装句，表达诗人的感情",
+            "这两句没有对仗关系，是自由体诗",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "\"白日依山尽，黄河入海流\" của 王之涣 trong 《登鹳雀楼》. Đối ngẫu: 白日/黄河 (danh từ), 依山/入海 (giới từ + danh), 尽/流 (động từ). Cặp đối hoàn hảo về từ loại và nghĩa.",
+      },
+    ],
+  },
+
+  // ─── LESSON 6: Tu từ học và lập luận ─────────────────────────
+  {
+    title: "Luyện tập chuyên sâu HSK 6 (6)",
+    description: "Luyện tập từ vựng tu từ học, biện pháp tu từ và kỹ năng lập luận học thuật",
+    hskLevel: 6,
+    order: 92,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "通感 (tōnggǎn) là biện pháp tu từ gì?",
+          options: [
+            "Cảm giác chuyển đổi — dùng giác quan này để mô tả giác quan kia",
+            "So sánh giữa hai sự vật tương tự",
+            "Phóng đại quy mô hoặc tính chất",
+            "Mượn bộ phận để chỉ toàn thể",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "通感 (tōnggǎn) = cảm giác giao thoa (synesthesia) — dùng giác quan này để diễn đạt giác quan kia. Ví dụ: \"甜蜜的歌声\" (giọng hát ngọt ngào) — dùng vị giác mô tả thính giác.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 譬:",
+          character: "譬",
+          options: ["pī", "pí", "pǐ", "pì"],
+        },
+        answer: { correct: 3 },
+        explanation: "譬 (pì) = ví dụ, ẩn dụ. Đọc thanh thứ tư. 譬如 (pìrú) = ví như, chẳng hạn. 譬喻 (pìyù) = phép ẩn dụ.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 5,
+        question: {
+          text: "\"欲把西湖比西子，淡妆浓抹总相宜\"（苏轼）使用了___的修辞手法。(\"Muốn ví Tây Hồ như Tây Tử, trang điểm đậm nhạt đều thêm đẹp\" dùng biện pháp tu từ ___. )",
+          hint: "So sánh, ví von",
+        },
+        answer: { correct: "比喻" },
+        explanation: "比喻 (bǐyù) = ẩn dụ, tỉ dụ. Tô Thức ví Tây Hồ (西湖) như Tây Thi (西子 = Tây Tử), người đẹp nổi tiếng nhất Trung Hoa cổ đại. Đây là phép ẩn dụ kinh điển.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          pairs: [
+            { left: "夸张", right: "Phóng đại" },
+            { left: "排比", right: "Liệt kê song hành" },
+            { left: "反问", right: "Câu hỏi tu từ" },
+            { left: "引用", right: "Trích dẫn" },
+            { left: "对偶", right: "Đối ngẫu" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Các biện pháp tu từ: 夸张 (kuāzhāng), 排比 (páibǐ), 反问 (fǎnwèn), 引用 (yǐnyòng), 对偶 (duì'ǒu).",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"一篇有力的论说文需要论点明确、论据充分、论证严密，三者缺一不可。\"",
+          options: [
+            "Một bài văn nghị luận có sức thuyết phục cần luận điểm rõ ràng, luận cứ đầy đủ, lập luận chặt chẽ — ba yếu tố không thể thiếu.",
+            "Bài văn nghị luận chỉ cần luận điểm rõ ràng là đủ.",
+            "Luận cứ đầy đủ là yếu tố quan trọng nhất trong bài nghị luận.",
+            "Lập luận chặt chẽ quan trọng hơn luận cứ trong bài nghị luận.",
+          ],
+          hint: "论点 = luận điểm, 论据 = luận cứ, 论证 = lập luận",
+        },
+        answer: { correct: 0 },
+        explanation: "论点 (lùndiǎn) = luận điểm. 论据 (lùnjù) = luận cứ, bằng chứng. 论证 (lùnzhèng) = lập luận, chứng minh. 缺一不可 = thiếu một cũng không được.",
+      },
+      {
+        type: "PINYIN",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Viết pinyin cho chữ 修辞:",
+          character: "修辞",
+        },
+        answer: { correct: "xiūcí" },
+        explanation: "修辞 (xiūcí) = tu từ. 修 = sửa/trau dồi (thanh 1), 辞 = lời văn (thanh 2). 修辞学 = tu từ học, 修辞手法 = biện pháp tu từ.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "\"将欲取之，必先予之\" (muốn lấy, trước phải cho) minh họa cho chiến lược lập luận nào?",
+          options: [
+            "Nhượng bộ trước để đạt mục đích lớn hơn",
+            "Tấn công trực tiếp vào luận điểm đối phương",
+            "Dẫn dụ bằng ví dụ thực tế",
+            "Phủ nhận để khẳng định",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "\"将欲取之，必先予之\" xuất từ 《道德经》 của Lão Tử — chiến lược nhượng bộ để đạt mục đích lớn hơn. Trong lập luận, đây tương đương với \"concession then refutation\" — nhượng bộ điểm nhỏ để củng cố điểm lớn.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "反驳对方论点时，可以先\"___\"，即承认对方部分正确，然后指出其局限性。(Khi phản bác luận điểm đối phương, có thể trước tiên 'nhượng bộ', tức thừa nhận một phần đúng của đối phương, rồi chỉ ra giới hạn của nó.)",
+          hint: "Nhượng bộ/làm bộ",
+        },
+        answer: { correct: "退一步" },
+        explanation: "退一步 (tuì yī bù) = lùi một bước, nhượng bộ. Trong lập luận: 退一步说 = giả sử nhượng bộ mà nói. Đây là kỹ thuật lập luận hiệu quả.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 5,
+        question: {
+          text: "\"虚词\"和\"实词\"的主要区别是什么？",
+          options: [
+            "虚词主要表示语法关系，实词表示具体意义",
+            "虚词不能单独使用，实词可以",
+            "虚词是古代汉语特有的，实词是现代汉语",
+            "虚词只有一个音节，实词可以有多个",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "虚词 (xūcí) = hư từ — chủ yếu biểu thị quan hệ ngữ pháp, không có nghĩa từ vựng độc lập (như 的, 了, 和, 因为). 实词 (shící) = thực từ — có nghĩa từ vựng cụ thể (danh từ, động từ, tính từ...).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Câu nào dùng đúng 况且 (hơn nữa/vả lại) để bổ sung lập luận?",
+          options: [
+            "这个计划不仅节省时间，况且还能减少成本。",
+            "况且这个计划不好，我们应该放弃。",
+            "这个计划很差，况且所有人都反对。",
+            "我们况且支持这个计划，还是反对？",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "况且 (kuàngqiě) = hơn nữa, vả lại — dùng để bổ sung thêm lý do hoặc lập luận cùng chiều. Thường đi sau mệnh đề đã có lý do, rồi 况且 thêm lý do nữa. Câu A dùng đúng: không chỉ tiết kiệm thời gian, hơn nữa còn giảm chi phí.",
+      },
+    ],
+  },
+
+  // ─── LESSON 7: Xã hội Trung Quốc đương đại ──────────────────
+  {
+    title: "Luyện tập chuyên sâu HSK 6 (7)",
+    description: "Luyện tập từ vựng về các vấn đề xã hội Trung Quốc đương đại và xu hướng phát triển",
+    hskLevel: 6,
+    order: 93,
+    type: "READING",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "城镇化 (chéngzhènhuà) có nghĩa là gì?",
+          options: ["Đô thị hóa (mở rộng về thành phố nhỏ và thị trấn)", "Công nghiệp hóa", "Hiện đại hóa nông nghiệp", "Số hóa nền kinh tế"],
+        },
+        answer: { correct: 0 },
+        explanation: "城镇化 (chéngzhènhuà) = đô thị hóa, thành thị hóa. 城镇 = thành phố và thị trấn, 化 = hóa. Đây là quá trình dân số nông thôn di chuyển vào đô thị.",
+      },
+      {
+        type: "TONE",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "Chọn thanh điệu đúng cho chữ 贫:",
+          character: "贫",
+          options: ["pīn", "pín", "pǐn", "pìn"],
+        },
+        answer: { correct: 1 },
+        explanation: "贫 (pín) = nghèo. Đọc thanh thứ hai. 贫困 (pínkùn) = nghèo khó, bần cùng. 脱贫攻坚 (tuōpín gōngjiān) = thoát nghèo — chính sách quan trọng của Trung Quốc.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 3,
+        difficulty: 5,
+        question: {
+          text: "随着人口___的加剧，如何应对老龄化社会成为中国面临的重要挑战。(Cùng với sự gia tăng của tình trạng lão hóa dân số, cách ứng phó với xã hội già hóa đã trở thành thách thức quan trọng mà Trung Quốc đang đối mặt.)",
+          hint: "Lão hóa",
+        },
+        answer: { correct: "老龄化" },
+        explanation: "老龄化 (lǎolínghuà) = lão hóa (aging). 人口老龄化 = lão hóa dân số. 加剧 (jiājù) = gia tăng, trầm trọng hơn. 老龄化社会 = xã hội già hóa.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          pairs: [
+            { left: "城乡差距", right: "Chênh lệch thành thị-nông thôn" },
+            { left: "就业压力", right: "Áp lực việc làm" },
+            { left: "社会保障", right: "An sinh xã hội" },
+            { left: "贫富差距", right: "Chênh lệch giàu nghèo" },
+            { left: "人口流动", right: "Dịch chuyển dân số" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]] },
+        explanation: "Vấn đề xã hội Trung Quốc: 城乡差距 (chéngyāng chājù), 就业压力 (jiùyè yālì), 社会保障 (shèhuì bǎozhàng), 贫富差距 (pínfù chājù), 人口流动 (rénkǒu liúdòng).",
+      },
+      {
+        type: "LISTENING",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Nghe và chọn nghĩa đúng: \"\"996工作制\"指的是早上九点上班、晚上九点下班、每周工作六天，这一现象在中国科技行业引发了广泛争议。\"",
+          options: [
+            "Chế độ làm việc '996' tức 9 giờ sáng đi làm, 9 giờ tối tan sở, 6 ngày mỗi tuần — hiện tượng này gây tranh cãi rộng rãi trong ngành công nghệ Trung Quốc.",
+            "'996' là tên gọi của một chính sách thuế thu nhập mới.",
+            "'996' chỉ 99.6% tỷ lệ hoàn thành công việc trong ngành tech.",
+            "Chế độ '996' là tiêu chuẩn làm việc được pháp luật quy định.",
+          ],
+          hint: "996 = 9 giờ sáng - 9 giờ tối - 6 ngày/tuần",
+        },
+        answer: { correct: 0 },
+        explanation: "996工作制 (gōngzuò zhì) = chế độ làm việc 996. 早上九点 = 9 giờ sáng, 晚上九点 = 9 giờ tối, 每周工作六天 = 6 ngày/tuần. 引发争议 = gây ra tranh cãi.",
+      },
+      {
+        type: "PINYIN",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Viết pinyin cho chữ 共同富裕:",
+          character: "共同富裕",
+        },
+        answer: { correct: "gòngtóng fùyù" },
+        explanation: "共同富裕 (gòngtóng fùyù) = thịnh vượng chung (common prosperity). Đây là mục tiêu chính sách quan trọng của Trung Quốc — giảm bất bình đẳng, nâng cao mức sống người dân. 富裕 = giàu có, thịnh vượng.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "\"内卷\"（nèijuǎn/involution）这一社会现象指的是什么？",
+          options: [
+            "Cạnh tranh vô nghĩa quá mức trong cùng một lĩnh vực, không tạo ra giá trị mới",
+            "Xu hướng người trẻ quay về cuộc sống giản dị",
+            "Hiện tượng kinh tế đình trệ và tụt hậu",
+            "Sự gia tăng của tầng lớp trung lưu đô thị",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "内卷 (nèijuǎn) = involution — cạnh tranh quá mức trong không gian hạn chế, tiêu tốn nguồn lực mà không tạo ra giá trị mới. Hiện tượng phổ biến trong giáo dục và công việc ở Trung Quốc hiện đại.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "\"躺平\"思潮是对过度\"内卷\"的反弹，表达了年轻人拒绝过度___的态度。(Trào lưu 'nằm phẳng' là phản ứng ngược lại với 'nội quyển' quá mức, thể hiện thái độ từ chối của người trẻ trước việc cạnh tranh quá mức.)",
+          hint: "Cạnh tranh",
+        },
+        answer: { correct: "竞争" },
+        explanation: "竞争 (jìngzhēng) = cạnh tranh. 躺平 (tǎng píng) = nằm phẳng — từ lóng chỉ xu hướng từ bỏ cuộc đua, sống tối giản. 反弹 (fǎntán) = phản ứng ngược, bật lại.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 9,
+        difficulty: 5,
+        question: {
+          text: "\"数字经济\"对传统就业市场的主要影响是什么？",
+          options: [
+            "Tạo ra loại hình việc làm mới đồng thời làm mất đi một số công việc truyền thống",
+            "Loại bỏ hoàn toàn sự cần thiết của lao động con người",
+            "Chỉ tạo việc làm cho những người có trình độ cao",
+            "Không ảnh hưởng đến thị trường lao động truyền thống",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "数字经济 (shùzì jīngjì) = kinh tế số. Tác động hai chiều: 创造新就业 = tạo việc làm mới (giao hàng, streaming, AI...) đồng thời 淘汰部分传统工作 = loại bỏ một số công việc truyền thống (thu ngân, lái xe...).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Câu nào sử dụng đúng cấu trúc 一方面...另一方面... (một mặt...mặt khác...)?",
+          options: [
+            "城市化一方面促进了经济发展，另一方面也带来了环境压力。",
+            "城市化一方面促进了经济发展，一方面也带来了环境压力。",
+            "城市化另一方面促进了经济，一方面带来了环境压力。",
+            "一方面城市化促进了经济，另一方面带来了环境压力城市化。",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "一方面...另一方面... (yī fāngmiàn...lìng yī fāngmiàn...) = một mặt...mặt khác... Cấu trúc trình bày hai khía cạnh. Lưu ý: phải dùng 另一方面 (mặt khác) cho vế sau, không lặp lại 一方面.",
+      },
+    ],
+  },
+];

@@ -1,5 +1,6 @@
 // Server Component — renders lesson content JSON blocks into React elements
 import { ChineseText } from "@/components/shared/chinese-text";
+import { VocabularyBlockAudio } from "./vocabulary-block-audio";
 import type { LessonContentBlock } from "@/types/lesson";
 
 interface LessonContentRendererProps {
@@ -28,13 +29,14 @@ export function LessonContentRenderer({ content }: LessonContentRendererProps) {
 
         if (block.type === "vocabulary") {
           return (
-            <span key={index} className="inline-block mx-2 my-1">
+            <span key={index} className="inline-flex items-center gap-0.5 mx-2 my-1">
               <ChineseText
                 simplified={block.simplified}
                 pinyin={block.pinyin}
                 meaning={block.meaning}
                 size="sm"
               />
+              <VocabularyBlockAudio text={block.simplified} />
             </span>
           );
         }

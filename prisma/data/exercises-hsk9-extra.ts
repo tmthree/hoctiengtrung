@@ -1,0 +1,1041 @@
+// HSK 9 Extra Exercises — 7 lessons × 10 exercises = 70 exercises (orders 108–114)
+// Topics: Governance Theory, Macroeconomic Policy, International Law,
+//         Advanced Linguistics, Classical Aesthetics, Philosophy of History, Scientific Methodology
+
+export const exerciseLessonsHsk9Extra = [
+  // ─── LESSON 108: Lý thuyết quản trị quốc gia nâng cao ───────────────────
+  {
+    title: "Luyện tập nâng cao HSK 9 — Lý thuyết quản trị quốc gia",
+    description: "Bài tập chuyên sâu cấp độ gần bản ngữ về quản trị, thể chế chính trị và quyền lực nhà nước",
+    hskLevel: 9,
+    order: 108,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "统筹 (tǒngchóu) trong ngữ cảnh quản lý nhà nước có nghĩa cụ thể là gì?",
+          options: [
+            "Tập trung quyền lực vào một người",
+            "Điều phối và hoạch định thống nhất mọi nguồn lực và hoạt động",
+            "Phân cấp quyền hạn cho địa phương",
+            "Giám sát độc lập từng bộ phận",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "统筹 = thống nhất điều phối. 统 = tổng hợp, hệ thống; 筹 = lập kế hoạch. Khác với 集权 (tập quyền): 统筹 nhấn mạnh phối hợp hiệu quả hơn là kiểm soát.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "现代国家___理论认为，政府应通过透明、参与和问责机制实现善治。(Lý thuyết ___ nhà nước hiện đại cho rằng chính phủ cần thực hiện quản trị tốt qua các cơ chế minh bạch, tham gia và truy cứu trách nhiệm.)",
+          hint: "Khái niệm quản lý nhà nước và xã hội hiệu quả, minh bạch",
+        },
+        answer: { correct: "治理" },
+        explanation: "治理 (zhìlǐ) = quản trị. 治 = quản lý, cai trị; 理 = điều chỉnh, trật tự. 国家治理 = quản trị nhà nước. Khác với 统治 (thống trị): nhấn mạnh hợp tác đa bên.",
+      },
+      {
+        type: "MATCHING",
+        order: 3,
+        difficulty: 5,
+        question: {
+          text: "Nối khái niệm quản trị với đặc điểm:",
+          pairs: [
+            { left: "集权", right: "quyền lực tập trung vào trung ương" },
+            { left: "分权", right: "tam quyền phân lập: lập pháp, hành pháp, tư pháp" },
+            { left: "问责", right: "quan chức phải giải trình và chịu hậu quả" },
+            { left: "政体", right: "hình thức tổ chức và cấu trúc nhà nước" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn khái niệm cốt lõi về cấu trúc quyền lực nhà nước: tập quyền, phân quyền, trách nhiệm giải trình, chính thể.",
+      },
+      {
+        type: "TONE",
+        order: 4,
+        difficulty: 5,
+        question: {
+          character: "筹",
+          options: ["chōu", "chóu", "chǒu", "chòu"],
+        },
+        answer: { correct: 1 },
+        explanation: "统筹 (tǒngchóu) — 筹 đọc thanh thứ hai. Nghĩa: lập kế hoạch, chuẩn bị. 统筹兼顾 = điều phối toàn diện.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Trong lý thuyết chính trị hiện đại, 软实力 (ruǎn shílì — soft power) của Joseph Nye đề cập đến gì?",
+          options: [
+            "Sức mạnh quân sự và kinh tế thuần túy",
+            "Khả năng gây ảnh hưởng thông qua văn hóa, ngoại giao và giá trị — không ép buộc",
+            "Liên minh quân sự và ngoại giao cứng rắn",
+            "Sức mạnh kinh tế được dùng làm đòn bẩy ngoại giao",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "软实力 = quyền lực mềm. Khả năng thu hút và thuyết phục thông qua 文化 (văn hóa), 价值观 (giá trị) và 外交政策 (chính sách ngoại giao) thay vì ép buộc.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n宪政",
+          options: ["Chính thể hiến định", "Cải cách chính trị", "Quản lý hành chính", "Phân quyền lập pháp"],
+        },
+        answer: { correct: 0 },
+        explanation: "宪政 (xiànzhèng) = lập hiến chủ nghĩa, chính thể hiến định. Hệ thống chính phủ được điều hành theo hiến pháp, quyền lực bị hạn chế bởi luật cơ bản.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "民主政治的核心在于选举的___性和代表性，确保政府能够真正反映民意。(Cốt lõi của chính trị dân chủ nằm ở tính ___ và đại diện của bầu cử, đảm bảo chính phủ thực sự phản ánh ý dân.)",
+          hint: "Tính không thiên vị, công bằng theo đúng quy tắc",
+        },
+        answer: { correct: "公正" },
+        explanation: "公正 (gōngzhèng) = công bằng, vô tư. Bầu cử công bằng là nền tảng của dân chủ đại diện: 普选 (phổ thông đầu phiếu) + 公正计票 (kiểm phiếu công khai).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Lý thuyết 国家能力 (năng lực nhà nước) bao gồm những chiều kích nào?",
+          options: [
+            "Chỉ có năng lực quân sự và kinh tế",
+            "Năng lực cưỡng chế, tài chính, hành chính và pháp quyền",
+            "Chỉ có bộ máy quan liêu hành chính",
+            "Dân số và diện tích lãnh thổ",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "国家能力 bao gồm: 强制能力 (cưỡng chế — độc quyền bạo lực hợp pháp), 财政能力 (tài chính — thu thuế), 行政能力 (hành chính — thực thi chính sách), 法制能力 (pháp quyền).",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 5,
+        question: {
+          character: "执政",
+          hint: "đảng hoặc chính phủ đang nắm quyền lãnh đạo đất nước",
+        },
+        answer: { correct: "zhízhèng" },
+        explanation: "执政 (zhízhèng) — 执 thanh thứ hai, 政 thanh thứ tư. Nghĩa: cầm quyền. 执政党 = đảng cầm quyền.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối học thuyết chính trị với đặc trưng:",
+          pairs: [
+            { left: "自由主义", right: "quyền cá nhân, thị trường tự do, giới hạn quyền lực nhà nước" },
+            { left: "保守主义", right: "duy trì truyền thống, thay đổi từ từ, trật tự xã hội" },
+            { left: "社会民主主义", right: "thị trường kết hợp phúc lợi mạnh, bình đẳng xã hội" },
+            { left: "民族主义", right: "bản sắc dân tộc, chủ quyền quốc gia là tối cao" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn học thuyết chính trị chủ yếu hiện đại: tự do chủ nghĩa, bảo thủ chủ nghĩa, dân chủ xã hội, dân tộc chủ nghĩa.",
+      },
+    ],
+  },
+
+  // ─── LESSON 109: Kinh tế vĩ mô nâng cao — Chính sách & Mô hình ─────────
+  {
+    title: "Luyện tập nâng cao HSK 9 — Mô hình kinh tế & Chính sách",
+    description: "Bài tập cấp bản ngữ về mô hình kinh tế, chính sách tiền tệ, tài khóa và tăng trưởng",
+    hskLevel: 9,
+    order: 109,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "凯恩斯主义 (Keynesianism — 凯恩斯主义) và古典经济学的核心分歧是gì?",
+          options: [
+            "Keynes ủng hộ thương mại tự do; cổ điển phản đối",
+            "Keynes cho rằng thị trường tự điều tiết đủ; cổ điển cần can thiệp nhà nước",
+            "Keynes đề xuất can thiệp tài chính nhà nước trong suy thoái; cổ điển tin thị trường tự điều chỉnh",
+            "Không có sự khác biệt thực chất",
+          ],
+        },
+        answer: { correct: 2 },
+        explanation: "Keynes: trong suy thoái, thị trường không tự phục hồi → cần chi tiêu chính phủ (财政政策) kích cầu. Cổ điển: thị trường tự điều tiết dài hạn, không cần can thiệp.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "菲利普斯曲线揭示了通货膨胀与___之间的短期负相关关系。(Đường cong Phillips tiết lộ mối tương quan âm ngắn hạn giữa lạm phát và ___.)",
+          hint: "Tình trạng người lao động không có việc làm",
+        },
+        answer: { correct: "失业率" },
+        explanation: "失业率 (shīyèlǜ) = tỷ lệ thất nghiệp. Đường cong Phillips: lạm phát thấp thường đi kèm thất nghiệp cao và ngược lại (ngắn hạn).",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 5,
+        question: {
+          character: "宏",
+          options: ["hōng", "hóng", "hǒng", "hòng"],
+        },
+        answer: { correct: 1 },
+        explanation: "宏观经济 (hónguān jīngjì) — 宏 đọc thanh thứ hai. Nghĩa: vĩ mô. 宏观 = vĩ mô; 微观 (wēiguān) = vi mô.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          text: "Nối chính sách kinh tế với công cụ:",
+          pairs: [
+            { left: "货币政策", right: "điều chỉnh lãi suất và cung tiền" },
+            { left: "财政政策", right: "điều chỉnh chi tiêu và thuế của chính phủ" },
+            { left: "汇率政策", right: "can thiệp vào tỷ giá ngoại hối" },
+            { left: "产业政策", right: "hỗ trợ và định hướng các ngành kinh tế" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn nhóm chính sách kinh tế vĩ mô: tiền tệ (NHTW), tài khóa (chính phủ), tỷ giá (ngoại hối), công nghiệp (ngành).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "比较优势理论 (comparative advantage — của David Ricardo) giải thích lợi ích thương mại quốc tế như thế nào?",
+          options: [
+            "Chỉ nước mạnh mới được lợi từ thương mại",
+            "Mỗi nước nên chuyên môn hóa sản xuất hàng hóa có chi phí cơ hội thấp nhất, dù không có lợi thế tuyệt đối",
+            "Thặng dư thương mại luôn có lợi cho quốc gia",
+            "Chỉ nên giao thương với nước có trình độ tương đương",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "比较优势 (comparative advantage): ngay cả khi một nước kém hơn ở mọi mặt, vẫn nên chuyên môn hóa mặt hàng mà mình bất lợi ít nhất để trao đổi.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n外部性",
+          options: ["Ngoại tác kinh tế", "Xuất khẩu hàng hóa", "Đầu tư nước ngoài", "Chính sách ngoại thương"],
+        },
+        answer: { correct: 0 },
+        explanation: "外部性 (wàibùxìng) = ngoại tác (externality). Chi phí hoặc lợi ích của hoạt động kinh tế tác động đến bên thứ ba không tham gia giao dịch. Ví dụ: ô nhiễm (外部负效应).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "经济___是指一个国家在给定时间内生产的所有最终商品和服务的市场总价值，是衡量经济规模的核心指标。(Tổng ___ kinh tế là tổng giá trị thị trường của tất cả hàng hóa và dịch vụ cuối cùng mà một quốc gia sản xuất trong một thời gian nhất định.)",
+          hint: "Viết tắt quen thuộc của chỉ tiêu kinh tế quốc gia lớn nhất",
+        },
+        answer: { correct: "GDP" },
+        explanation: "GDP (国内生产总值 — Gross Domestic Product). Chỉ tiêu đo lường quy mô nền kinh tế. 名义GDP = giá hiện tại; 实际GDP = đã điều chỉnh lạm phát.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "现代货币理论 (MMT — 现代货币理论) cho rằng quốc gia phát hành tiền tệ chủ quyền có thể làm gì?",
+          options: [
+            "Không bao giờ bị phá sản vì có thể in tiền vô hạn không có hậu quả",
+            "Chi tiêu tới mức lạm phát là giới hạn thực, không phải thiếu hụt ngân sách",
+            "Phải duy trì ngân sách cân bằng mọi lúc",
+            "Chỉ được chi tiêu bằng tiền thu từ thuế",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "MMT: nhà nước phát hành đồng tiền chủ quyền không thể 'phá sản' theo nghĩa thông thường. Giới hạn thực là lạm phát (资源约束), không phải thâm hụt ngân sách.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 5,
+        question: {
+          character: "通缩",
+          hint: "hiện tượng giá cả liên tục giảm, trái ngược với lạm phát",
+        },
+        answer: { correct: "tōngsuō" },
+        explanation: "通缩 (tōngsuō) = giảm phát. Viết tắt của 通货紧缩. 通货 = tiền tệ lưu thông; 紧缩 = thắt chặt.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối thất bại thị trường với nguyên nhân:",
+          pairs: [
+            { left: "公共品", right: "không loại trừ được và không cạnh tranh — thị trường cung cấp thiếu" },
+            { left: "外部性", right: "chi phí/lợi ích không phản ánh vào giá thị trường" },
+            { left: "信息不对称", right: "một bên giao dịch có thông tin ưu thế" },
+            { left: "自然垄断", right: "chi phí cố định lớn dẫn đến độc quyền tự nhiên" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn loại thất bại thị trường: hàng hóa công, ngoại tác, thông tin bất cân xứng, độc quyền tự nhiên.",
+      },
+    ],
+  },
+
+  // ─── LESSON 110: Luật quốc tế công — Điều ước & Tranh chấp ─────────────
+  {
+    title: "Luyện tập nâng cao HSK 9 — Luật quốc tế công",
+    description: "Bài tập cấp bản ngữ về nguồn luật quốc tế, điều ước, giải quyết tranh chấp và chủ thể",
+    hskLevel: 9,
+    order: 110,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "Theo 《维也纳条约法公约》, điều kiện cơ bản để điều ước quốc tế có hiệu lực là gì?",
+          options: [
+            "Chỉ cần ký kết, không cần phê chuẩn",
+            "Phải được ký kết tự nguyện, các bên có năng lực ký kết, và đối tượng hợp pháp",
+            "Phải được Đại hội đồng LHQ thông qua",
+            "Chỉ có hiệu lực khi tất cả thành viên LHQ ký",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "《维也纳条约法公约》(1969) quy định điều kiện: 当事方有缔约能力 (có năng lực ký kết), 同意自由表示 (đồng ý tự nguyện), 合法标的 (đối tượng hợp pháp).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "国际法的主要渊源包括条约、国际惯例和国际法院的___，这三者共同构成国际法律秩序的基础。(Nguồn luật quốc tế chủ yếu gồm điều ước, tập quán quốc tế và ___ của Tòa án Quốc tế, ba nguồn này cùng tạo nền tảng của trật tự pháp lý quốc tế.)",
+          hint: "Phán quyết của tòa án trở thành tiền lệ, căn cứ pháp lý",
+        },
+        answer: { correct: "判例" },
+        explanation: "判例 (pàn lì) = án lệ, tiền lệ tư pháp. Phán quyết của ICJ và PCIJ được trích dẫn như nguồn phụ của luật quốc tế theo Điều 38 Quy chế ICJ.",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 5,
+        question: {
+          character: "缔",
+          options: ["dī", "dí", "dǐ", "dì"],
+        },
+        answer: { correct: 3 },
+        explanation: "缔约 (dìyuē) — 缔 đọc thanh thứ tư. Nghĩa: ký kết điều ước. 缔约国 = quốc gia thành viên điều ước.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          text: "Nối cơ chế giải quyết tranh chấp với phạm vi thẩm quyền:",
+          pairs: [
+            { left: "国际法院", right: "tranh chấp giữa các quốc gia — chỉ khi cả hai đồng ý" },
+            { left: "国际刑事法院", right: "truy cứu cá nhân về tội ác quốc tế nghiêm trọng" },
+            { left: "世贸组织争端解决机构", right: "tranh chấp thương mại quốc tế giữa các thành viên" },
+            { left: "国际仲裁", right: "giải quyết tranh chấp tư nhân xuyên biên giới" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn cơ chế giải quyết tranh chấp quốc tế: ICJ (giữa quốc gia), ICC (cá nhân tội ác), WTO DSB (thương mại), trọng tài quốc tế (tư).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Nguyên tắc强行法 (jus cogens — 强行法) trong luật quốc tế nghĩa là gì?",
+          options: [
+            "Nguyên tắc có thể bị các quốc gia thoả thuận từ bỏ",
+            "Quy phạm bắt buộc tuyệt đối mà không điều ước nào được vi phạm",
+            "Luật chỉ áp dụng cho các cường quốc",
+            "Nguyên tắc do Hội đồng Bảo an ban hành",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "强行法 (jus cogens) = quy phạm mệnh lệnh bắt buộc trong luật quốc tế. Ví dụ: cấm tra tấn, cấm diệt chủng, cấm nô lệ — không thể bị tước bỏ bởi bất kỳ điều ước nào.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n国际惯例",
+          options: ["Tập quán quốc tế", "Quy ước quốc tế", "Điều lệ quốc tế", "Thông lệ ngoại giao"],
+        },
+        answer: { correct: 0 },
+        explanation: "国际惯例 (guójì guànlì) = tập quán quốc tế (customary international law). Thực tiễn nhất quán được các quốc gia áp dụng với ý thức pháp lý bắt buộc (opinio juris).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "根据《联合国海洋法公约》，沿海国对其领海以外200海里的___区拥有对自然资源的专属开发权。(Theo Công ước LHQ về Luật biển, quốc gia ven biển có quyền khai thác độc quyền tài nguyên thiên nhiên trong ___ 200 hải lý ngoài lãnh hải.)",
+          hint: "Vùng biển đặc biệt, quốc gia ven biển có quyền kinh tế",
+        },
+        answer: { correct: "专属经济" },
+        explanation: "专属经济区 (EEZ — Exclusive Economic Zone) = vùng đặc quyền kinh tế. Theo UNCLOS, quốc gia ven biển có quyền khai thác tài nguyên trong EEZ 200 hải lý.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Trong luật quốc tế, 保护的责任 (R2P — Responsibility to Protect) mở rộng quyền can thiệp quân sự trong trường hợp nào?",
+          options: [
+            "Khi quốc gia có tài nguyên dầu mỏ lớn",
+            "Khi quốc gia không thể hoặc từ chối bảo vệ công dân khỏi tội ác diệt chủng và chống nhân loại",
+            "Khi có tranh chấp lãnh thổ giữa hai quốc gia",
+            "Khi quốc gia vi phạm thỏa thuận thương mại",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "R2P (保护的责任) = trách nhiệm bảo vệ. Khi quốc gia không thể/từ chối bảo vệ công dân khỏi 种族灭绝, 战争罪, 危害人类罪, 族裔清洗, cộng đồng quốc tế có quyền can thiệp.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 5,
+        question: {
+          character: "豁免",
+          hint: "quyền miễn trừ khỏi nghĩa vụ pháp lý hoặc thủ tục tư pháp",
+        },
+        answer: { correct: "huòmiǎn" },
+        explanation: "豁免 (huòmiǎn) — 豁 thanh thứ tư, 免 thanh thứ ba. Nghĩa: miễn trừ. 外交豁免权 = quyền miễn trừ ngoại giao.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối nguyên tắc luật quốc tế với nội dung:",
+          pairs: [
+            { left: "主权平等", right: "mọi quốc gia bình đẳng về pháp lý, bất kể quy mô" },
+            { left: "不干涉原则", right: "cấm can thiệp vào công việc nội bộ quốc gia khác" },
+            { left: "禁止使用武力", right: "cấm đe dọa hoặc sử dụng vũ lực chống toàn vẹn lãnh thổ" },
+            { left: "善意履约", right: "nghĩa vụ thực hiện cam kết điều ước một cách trung thực" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn nguyên tắc nền tảng của Hiến chương LHQ: bình đẳng chủ quyền, không can thiệp, cấm vũ lực, pacta sunt servanda.",
+      },
+    ],
+  },
+
+  // ─── LESSON 111: Ngôn ngữ học nâng cao — Ngữ nghĩa & Dụng học ──────────
+  {
+    title: "Luyện tập nâng cao HSK 9 — Ngữ nghĩa & Dụng học",
+    description: "Bài tập cấp bản ngữ về ngữ nghĩa học, dụng ngôn học và phân tích diễn ngôn",
+    hskLevel: 9,
+    order: 111,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "语用学 (yǔyòngxué — pragmatics) khác với ngữ nghĩa học (语义学) như thế nào?",
+          options: [
+            "Ngữ nghĩa học nghiên cứu âm thanh; dụng học nghiên cứu ý nghĩa",
+            "Ngữ nghĩa học nghiên cứu ý nghĩa độc lập ngữ cảnh; dụng học nghiên cứu ý nghĩa trong ngữ cảnh giao tiếp",
+            "Không có sự khác biệt",
+            "Dụng học chỉ áp dụng cho ngôn ngữ viết",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "语义学 (semantics) = ý nghĩa từ/câu độc lập. 语用学 (pragmatics) = ý nghĩa trong bối cảnh giao tiếp thực tế, bao gồm hàm ý, hành vi ngôn ngữ, lịch sự.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "在汉语中，'请问洗手间在哪儿？'是一个典型的___行为，说话人真正的目的是找厕所，而非单纯提问。(Trong tiếng Hán, '请问洗手间在哪儿？' là ___ điển hình, mục đích thực của người nói là tìm nhà vệ sinh chứ không phải hỏi đơn thuần.)",
+          hint: "Hành động được thực hiện thông qua lời nói, như hứa hẹn, ra lệnh, cầu xin...",
+        },
+        answer: { correct: "言语行为" },
+        explanation: "言语行为 (yányǔ xíngwéi) = hành vi ngôn ngữ (speech act). Lý thuyết Austin/Searle: lời nói không chỉ mô tả mà còn thực hiện hành động (hỏi đường = 间接请求).",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 5,
+        question: {
+          character: "义",
+          options: ["yī", "yí", "yǐ", "yì"],
+        },
+        answer: { correct: 3 },
+        explanation: "语义 (yǔyì) — 义 đọc thanh thứ tư. Nghĩa: ý nghĩa, nghĩa lý. 语义学 = ngữ nghĩa học.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          text: "Nối khái niệm ngữ dụng với định nghĩa:",
+          pairs: [
+            { left: "语用预设", right: "thông tin người nói giả định đã biết trước" },
+            { left: "会话含义", right: "ý nghĩa hàm ẩn suy ra từ quy tắc hội thoại" },
+            { left: "面子威胁", right: "hành vi ngôn ngữ đe dọa thể diện người khác" },
+            { left: "礼貌原则", right: "chiến lược giảm thiểu đe dọa thể diện" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn khái niệm dụng học quan trọng: presupposition, conversational implicature (Grice), face threat, politeness principle (Brown & Levinson).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Lý thuyết 关联理论 (Relevance Theory — Sperber & Wilson) giải thích giao tiếp như thế nào?",
+          options: [
+            "Giao tiếp tuân theo bốn phương châm hội thoại cứng nhắc",
+            "Người nghe chọn diễn giải cân bằng giữa hiệu ứng nhận thức tối đa và nỗ lực xử lý tối thiểu",
+            "Ngữ nghĩa là thứ duy nhất cần để hiểu",
+            "Mọi giao tiếp đều là mã hóa và giải mã thuần túy",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "关联理论: người nghe tự động tìm diễn giải phù hợp với nguyên tắc 关联 (relevance) — đạt hiệu ứng nhận thức (认知效果) cao nhất với nỗ lực xử lý ít nhất.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n话语分析",
+          options: ["Phân tích diễn ngôn", "Phân tích ngữ pháp câu", "Phân tích âm vị học", "Phân tích từ vựng"],
+        },
+        answer: { correct: 0 },
+        explanation: "话语分析 (huàyǔ fēnxī) = phân tích diễn ngôn (discourse analysis). Nghiên cứu cách ngôn ngữ được sử dụng trong các đơn vị lớn hơn câu.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "格莱斯的合作原则包含量的准则、质的准则、关系准则和___准则。(Nguyên tắc hợp tác của Grice bao gồm phương châm lượng, phương châm chất, phương châm quan hệ và phương châm ___.)",
+          hint: "Phương châm về cách thức trình bày — rõ ràng, gọn gàng, có trật tự",
+        },
+        answer: { correct: "方式" },
+        explanation: "方式准则 (phương châm cách thức): tránh mơ hồ, tránh lượng từ đa nghĩa, ngắn gọn và có trật tự. Bốn phương châm của Grice: lượng, chất, quan hệ, cách thức.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Trong ngôn ngữ học nhận thức, 概念隐喻 (conceptual metaphor — Lakoff & Johnson) ví dụ như '争论是战争' (争论是战争) phản ánh điều gì?",
+          options: [
+            "Ngôn ngữ đơn thuần là công cụ trang trí văn học",
+            "Tư duy con người về tranh luận được cấu trúc theo sơ đồ chiến tranh — tấn công, phòng thủ, thắng bại",
+            "Người nói thực sự tin rằng tranh luận là chiến tranh vật lý",
+            "Ẩn dụ chỉ xuất hiện trong thơ ca",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "概念隐喻: ẩn dụ không chỉ là tu từ mà phản ánh cấu trúc tư duy. '争论是战争' → ta nói: 攻击论点, 捍卫立场, 赢得/输掉争论 — sơ đồ chiến tranh ánh xạ lên tranh luận.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 5,
+        question: {
+          character: "含义",
+          hint: "ý nghĩa ẩn trong câu nói, không được nói thẳng",
+        },
+        answer: { correct: "hányì" },
+        explanation: "含义 (hányì) — 含 thanh thứ hai, 义 thanh thứ tư. Nghĩa: hàm ý, ý nghĩa ngầm.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối hiện tượng ngữ nghĩa với ví dụ tiếng Hán:",
+          pairs: [
+            { left: "多义词", right: "打 (đánh/gọi/mua/làm...)" },
+            { left: "同义词", right: "美丽、漂亮、靓丽 (đẹp)" },
+            { left: "反义词", right: "冷/热, 高/低, 好/坏" },
+            { left: "委婉语", right: "他去世了 thay vì 他死了" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn hiện tượng quan hệ ý nghĩa: đa nghĩa (polysemy), đồng nghĩa (synonymy), phản nghĩa (antonymy), nói tránh/uyển ngữ (euphemism).",
+      },
+    ],
+  },
+
+  // ─── LESSON 112: Mỹ học cổ điển Trung Quốc ──────────────────────────────
+  {
+    title: "Luyện tập nâng cao HSK 9 — Mỹ học cổ điển Trung Quốc",
+    description: "Bài tập cấp bản ngữ về mỹ học, thư pháp, hội họa và nghệ thuật cổ điển Trung Quốc",
+    hskLevel: 9,
+    order: 112,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "中国美学中的'意境' (yìjìng) bao hàm ý nghĩa gì?",
+          options: [
+            "Chỉ vẻ đẹp bên ngoài của tác phẩm nghệ thuật",
+            "Sự hòa quyện của hình tượng nghệ thuật và ý nghĩa sâu xa, tạo không gian tinh thần vô hạn",
+            "Kỹ thuật vẽ chính xác và tỉ mỉ",
+            "Số lượng màu sắc trong bức tranh",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "意境 = ý cảnh. Khái niệm mỹ học Trung Quốc độc đáo: kết hợp 意 (ý nghĩa, cảm xúc) và 境 (cảnh vật, không gian), tạo ra cảnh giới nghệ thuật vượt hình thức.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "中国书法讲究___的运用，通过笔墨的浓淡、粗细体现书写者的内心世界。(Thư pháp Trung Quốc coi trọng việc vận dụng ___, thể hiện thế giới nội tâm của người viết qua đậm nhạt, dày mỏng của bút mực.)",
+          hint: "Nghệ thuật điều khiển cây bút trong thư pháp và hội họa Trung Quốc",
+        },
+        answer: { correct: "笔法" },
+        explanation: "笔法 (bǐfǎ) = bút pháp. Nghệ thuật sử dụng bút lông: 藏锋 (ẩn nét), 露锋 (lộ nét), 逆锋 (ngược chiều)... Đây là nền tảng thư pháp và hội họa thủy mặc.",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 5,
+        question: {
+          character: "韵",
+          options: ["yūn", "yún", "yǔn", "yùn"],
+        },
+        answer: { correct: 3 },
+        explanation: "韵味 (yùnwèi) — 韵 đọc thanh thứ tư. Nghĩa: vần điệu, dư vị, phong vị. 回味无穷 = dư vị không dứt.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          text: "Nối khái niệm mỹ học Trung Quốc với ý nghĩa:",
+          pairs: [
+            { left: "气韵", right: "sức sống sinh động và nhịp điệu nội tại của tác phẩm" },
+            { left: "留白", right: "khoảng trống trong tranh — không gian tưởng tượng" },
+            { left: "神似", right: "giống về thần thái, hồn cốt hơn là hình thức bề ngoài" },
+            { left: "逸品", right: "tác phẩm tuyệt vời vượt ra ngoài mọi quy tắc" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn khái niệm mỹ học Trung Hoa: 气韵生动 (Tạ Hách), 留白 (khoảng trống), 神似 (thần tương tự), 逸品 (phẩm cách xuất chúng).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Trong mỹ học Phật giáo Thiền tông, khái niệm 禅意 (chányì) trong nghệ thuật hướng đến điều gì?",
+          options: [
+            "Mô phỏng chi tiết chính xác thực tại",
+            "Đạt đến trực giác giác ngộ, vượt qua khái niệm phân biệt và diễn đạt sự tịch tĩnh",
+            "Trang trí phức tạp và màu sắc rực rỡ",
+            "Diễn đạt cảm xúc mãnh liệt của nghệ nhân",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "禅意 (Zen aesthetics) = thiền ý. Vẻ đẹp của sự đơn giản, tịch tĩnh, không hoàn hảo (wabi-sabi của Nhật Bản cũng có nguồn gốc từ thiền Trung Quốc).",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n形神兼备",
+          options: ["Vừa có hình dạng vừa có thần thái", "Tinh thần và thể xác", "Hình thức nội dung", "Sức mạnh và linh hoạt"],
+        },
+        answer: { correct: 0 },
+        explanation: "形神兼备 (xíng shén jiān bèi) = vừa có hình lại có thần. 形 = hình dạng bên ngoài; 神 = thần thái, hồn cốt; 兼备 = có đủ cả hai. Tiêu chuẩn cao nhất của hội họa Trung Quốc.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "王羲之的《___》被誉为'天下第一行书'，其字体行云流水、飘逸自然。(《___》của Vương Hi Chi được mệnh danh là 'thiên hạ đệ nhất hành thư', nét chữ như mây trôi nước chảy, phóng khoáng tự nhiên.)",
+          hint: "Bài thư pháp nổi tiếng nhất của Vương Hi Chi, viết ở vườn Lan Đình",
+        },
+        answer: { correct: "兰亭集序" },
+        explanation: "《兰亭集序》(Lan Đình Tập Tự) — Vương Hi Chi viết năm 353, lần họp mặt các văn nhân ở Lan Đình, Cối Kê. Bản thư pháp gốc đã thất lạc.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Phong cách hội họa 水墨画 (shuǐmò huà) sử dụng chủ yếu những gì?",
+          options: [
+            "Màu sắc phong phú và bút chì",
+            "Mực đen với nhiều sắc độ trên giấy Tuyên, không hoặc ít màu sắc",
+            "Màu dầu trên vải canvas",
+            "Phấn màu trên tường vôi",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "水墨画 = hội họa thủy mặc. Chỉ dùng mực (墨) và nước, trên giấy Tuyên (宣纸). Sự biến hóa của 浓淡干湿 (đậm nhạt khô ướt) tạo ra vô số biểu cảm.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 5,
+        question: {
+          character: "意境",
+          hint: "cảnh giới nghệ thuật kết hợp ý nghĩa và hình tượng",
+        },
+        answer: { correct: "yìjìng" },
+        explanation: "意境 (yìjìng) — 意 thanh thứ tư, 境 thanh thứ tư. Nghĩa: ý cảnh, cảnh giới nghệ thuật.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối thể loại nghệ thuật với đặc điểm phong cách:",
+          pairs: [
+            { left: "工笔画", right: "chi tiết tỉ mỉ, đường nét chính xác, màu sắc phong phú" },
+            { left: "写意画", right: "bút pháp phóng khoáng, biểu đạt cảm xúc hơn hình thức" },
+            { left: "篆刻", right: "nghệ thuật chạm khắc con dấu chữ triện" },
+            { left: "青花瓷", right: "đồ sứ trắng vẽ hoa lam cobalt" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn thể loại nghệ thuật Trung Hoa: công bút họa (细腻), tả ý họa (豪放), triện khắc (篆刻), thanh hoa từ (青花瓷).",
+      },
+    ],
+  },
+
+  // ─── LESSON 113: Triết học lịch sử & Sử học ────────────────────────────
+  {
+    title: "Luyện tập nâng cao HSK 9 — Triết học lịch sử",
+    description: "Bài tập cấp bản ngữ về sử học, triết học lịch sử và diễn giải lịch sử Trung Quốc",
+    hskLevel: 9,
+    order: 113,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "司马迁在《史记》中采用的'纪传体' (jìzhuàntǐ) là thể loại lịch sử như thế nào?",
+          options: [
+            "Ghi chép theo thứ tự thời gian thuần túy",
+            "Kết hợp biên niên sử (本纪) và tiểu sử (列传) — lấy nhân vật làm trung tâm",
+            "Phân tích kinh tế và xã hội là chính",
+            "Chỉ ghi chép triều đại hoàng tộc",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "纪传体 = thể kỷ truyện. Tư Mã Thiên sáng tạo: 本纪 (biên niên hoàng đế) + 世家 (chư hầu) + 列传 (tiểu sử nhân vật) + 书 (chuyên đề) + 表 (bảng niên đại).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "历史___主义认为历史事件有其内在规律，历史发展方向是可以预测和解释的。(Chủ nghĩa ___ lịch sử cho rằng các sự kiện lịch sử có quy luật nội tại, chiều hướng phát triển lịch sử có thể được dự đoán và giải thích.)",
+          hint: "Quan điểm cho rằng lịch sử có quy luật tất yếu, không phải ngẫu nhiên",
+        },
+        answer: { correct: "决定" },
+        explanation: "历史决定主义 (historical determinism) = tất định luận lịch sử. Đối lập với 历史偶然论 (ngẫu nhiên luận). Marx là nhà tất định luận lịch sử điển hình.",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 5,
+        question: {
+          character: "鉴",
+          options: ["jiān", "jiánglǔ", "jiǎn", "jiàn"],
+        },
+        answer: { correct: 3 },
+        explanation: "借鉴 (jièjiàn) / 资治通鉴 — 鉴 đọc thanh thứ tư. Nghĩa: gương, soi xét, tham khảo. 以史为鉴 = lấy lịch sử làm gương.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          text: "Nối tác phẩm sử học với tác giả/đặc điểm:",
+          pairs: [
+            { left: "《史记》", right: "Tư Mã Thiên — sử ký thể kỷ truyện đầu tiên" },
+            { left: "《资治通鉴》", right: "Tư Mã Quang — biên niên sử 1362 năm (403 TCN—959 CN)" },
+            { left: "《二十四史》", right: "tổng tập 24 bộ chính sử các triều đại Trung Quốc" },
+            { left: "《春秋》", right: "Khổng Tử — biên niên sử nước Lỗ, dùng bút pháp khen chê" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Di sản sử học Trung Quốc: 《史记》(Tư Mã Thiên), 《资治通鉴》(Tư Mã Quang), 二十四史, 《春秋》(Khổng Tử).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Khái niệm '治乱循环' (zhì luàn xúnhuán) trong lịch sử Trung Quốc mô tả điều gì?",
+          options: [
+            "Tiến bộ tuyến tính liên tục của lịch sử",
+            "Chu kỳ trị loạn — triều đại hưng thịnh rồi suy vong, tiếp nối nhau",
+            "Cách mạng là động lực duy nhất của lịch sử",
+            "Lịch sử do địa lý quyết định hoàn toàn",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "治乱循环 = chu kỳ trị - loạn. Mô hình lịch sử Trung Quốc: 兴—盛—衰—乱—亡—兴. Mỗi triều đại theo vòng này, liên quan đến 天命 (thiên mệnh).",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n以史为鉴",
+          options: ["Lấy lịch sử làm gương", "Học lịch sử để thi", "Nghiên cứu lịch sử học thuật", "Coi trọng truyền thống"],
+        },
+        answer: { correct: 0 },
+        explanation: "以史为鉴 (yǐ shǐ wéi jiàn) = lấy lịch sử làm gương. 鉴 = gương/soi. Hoàng đế Đường Thái Tông nói: 以史为镜，可以知兴替。",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "年鉴学派认为历史研究不应只关注事件和人物，更应重视长时段的___结构变化。(Trường phái Niên giám cho rằng nghiên cứu lịch sử không nên chỉ chú trọng sự kiện và nhân vật mà phải coi trọng sự thay đổi cấu trúc ___ dài hạn.)",
+          hint: "Các tầng lớp cơ sở của xã hội: kinh tế, địa lý, dân số...",
+        },
+        answer: { correct: "社会经济" },
+        explanation: "年鉴学派 (Annales School — Braudel): 历史分三层: 事件 (sự kiện ngắn hạn), 周期 (chu kỳ trung hạn), 结构 (cấu trúc dài hạn 社会经济地理).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Tại sao Tư Mã Thiên viết《史记》dù bị chịu hình phạt cung hình (宫刑)? Điều này phản ánh tinh thần gì?",
+          options: [
+            "Ông viết để báo thù hoàng đế",
+            "Ông hoàn thành di nguyện của cha và thực hiện sứ mệnh ghi chép lịch sử vì hậu thế",
+            "Ông được tha tội và tiếp tục làm quan",
+            "Ông viết để kiếm tiền",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "Tư Mã Thiên hoàn thiện ý nguyện của cha — Tư Mã Đàm. Ông viết: '人固有一死，或重于泰山，或轻于鸿毛' — tinh thần trách nhiệm với lịch sử và hậu thế.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 5,
+        question: {
+          character: "纪传",
+          hint: "thể loại sử học lấy tiểu sử nhân vật làm trung tâm",
+        },
+        answer: { correct: "jìzhuàn" },
+        explanation: "纪传 (jìzhuàn) — 纪 thanh thứ tư, 传 thanh thứ tư. Nghĩa: kỷ truyện, thể loại sử học của《史记》.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối triết học lịch sử với quan điểm:",
+          pairs: [
+            { left: "历史唯物主义", right: "lực lượng sản xuất và quan hệ sản xuất quyết định lịch sử" },
+            { left: "历史唯心主义", right: "ý tưởng, ý chí vĩ nhân quyết định lịch sử" },
+            { left: "文明史观", right: "xung đột và giao lưu văn minh là động lực lịch sử" },
+            { left: "现代化史观", right: "tiến trình hiện đại hóa là xu thế chung của lịch sử nhân loại" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn cách tiếp cận triết học lịch sử: duy vật (Marx), duy tâm (Hegel), văn minh (Huntington/Toynbee), hiện đại hóa (Weber).",
+      },
+    ],
+  },
+
+  // ─── LESSON 114: Phương pháp luận khoa học & Triết học khoa học ─────────
+  {
+    title: "Luyện tập nâng cao HSK 9 — Triết học khoa học",
+    description: "Bài tập cấp bản ngữ về phương pháp luận khoa học, triết học khoa học và đạo đức nghiên cứu",
+    hskLevel: 9,
+    order: 114,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 5,
+        question: {
+          text: "波普尔 (Karl Popper) đề xuất tiêu chí 可证伪性 (falsifiability) để phân biệt khoa học với phi khoa học. Lý thuyết nào thỏa mãn tiêu chí này?",
+          options: [
+            "Một lý thuyết có thể giải thích mọi hiện tượng mà không có ngoại lệ",
+            "Một lý thuyết có thể bị bác bỏ về nguyên tắc nếu thực nghiệm cho kết quả mâu thuẫn",
+            "Một lý thuyết được nhiều người tin tưởng",
+            "Một lý thuyết có lịch sử lâu đời và truyền thống",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "Popper: khoa học = có thể bị bác bỏ (可证伪). Thuyết tiến hóa có thể bị sai nếu tìm thấy hóa thạch thỏ ở Cambria. Chiêm tinh học và Freud không thể bác bỏ → phi khoa học.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 5,
+        question: {
+          text: "托马斯·库恩的《科学革命的结构》提出了___的概念，认为科学进步不是线性积累，而是通过范式转移实现的。(Thomas Kuhn trong 《Cấu trúc của các cuộc cách mạng khoa học》đề xuất khái niệm ___, cho rằng tiến bộ khoa học không phải tích lũy tuyến tính mà thông qua chuyển đổi mô thức.)",
+          hint: "Khung lý thuyết và thực hành chi phối một giai đoạn khoa học",
+        },
+        answer: { correct: "范式" },
+        explanation: "范式 (fànshì) = paradigm. Kuhn: khoa học bình thường (normal science) → khủng hoảng (crisis) → cách mạng → paradigm mới. Ví dụ: Copernicus thay Ptolemy.",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 5,
+        question: {
+          character: "验",
+          options: ["yān", "yán", "yǎn", "yàn"],
+        },
+        answer: { correct: 3 },
+        explanation: "实验 (shíyàn) / 验证 (yànzhèng) — 验 đọc thanh thứ tư. Nghĩa: kiểm chứng, thực nghiệm.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 5,
+        question: {
+          text: "Nối phương pháp nghiên cứu với đặc điểm:",
+          pairs: [
+            { left: "演绎法", right: "từ nguyên tắc chung suy ra kết luận cụ thể" },
+            { left: "归纳法", right: "từ nhiều quan sát cụ thể khái quát quy luật chung" },
+            { left: "类比推理", right: "áp dụng quy luật từ lĩnh vực này sang lĩnh vực tương tự" },
+            { left: "假设-演绎法", right: "đặt giả thuyết rồi kiểm tra bằng thực nghiệm" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn phương pháp suy luận khoa học: diễn dịch (deduction), quy nạp (induction), loại suy (analogy), giả thuyết-diễn dịch (H-D method).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "在科学研究的伦理规范中，知情同意 (知情同意) nguyên tắc đòi hỏi điều gì khi nghiên cứu trên người?",
+          options: [
+            "Chỉ cần thông báo sau khi nghiên cứu hoàn thành",
+            "Người tham gia phải được thông tin đầy đủ về nghiên cứu và tự nguyện đồng ý trước khi tham gia",
+            "Chỉ cần sự chấp thuận của người thân",
+            "Không cần sự đồng ý nếu nghiên cứu quan trọng",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "知情同意 (informed consent) = đồng ý có thông tin. Người tham gia phải: 1) được thông tin đầy đủ, 2) hiểu rõ, 3) tự nguyện đồng ý. Nền tảng của Tuyên ngôn Helsinki.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 5,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n可重复性",
+          options: ["Tính có thể tái lập (reproducibility)", "Tính liên tục của nghiên cứu", "Khả năng ứng dụng", "Độ tin cậy của dữ liệu"],
+        },
+        answer: { correct: 0 },
+        explanation: "可重复性 (kě chóngfùxìng) = tính có thể tái lập (reproducibility). Yêu cầu nghiên cứu khoa học: người khác thực hiện lại phải thu được kết quả tương tự.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "奥卡姆剃刀原则（如无必要，勿增实体）在科学方法中指导我们在解释现象时优先选择___的理论。(Dao cạo Occam (không nhân đa thực thể nếu không cần) hướng dẫn chúng ta ưu tiên lý thuyết ___ nhất khi giải thích hiện tượng.)",
+          hint: "Tính chất của lý thuyết không có giả thiết thừa, đơn giản nhất có thể",
+        },
+        answer: { correct: "简单" },
+        explanation: "奥卡姆剃刀 (Occam's Razor) = nguyên tắc tối giản. Trong điều kiện bằng nhau, lý thuyết đơn giản hơn được ưu tiên. 简单 = giản đơn, đơn giản.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "什么是科学上的'相关不等于因果' (相关不等于因果) — 'correlation does not imply causation'?",
+          options: [
+            "Hai hiện tượng liên quan nhau chắc chắn có quan hệ nhân quả",
+            "Hai biến số cùng biến đổi không có nghĩa là một gây ra biến đổi của biến kia",
+            "Phương pháp thống kê không đáng tin cậy",
+            "Chỉ có thí nghiệm mới cho kết quả đáng tin",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "相关 ≠ 因果. Ví dụ: bán kem tăng và đuối nước tăng cùng lúc (tương quan dương), nhưng nguyên nhân là mùa hè nóng — không phải kem gây đuối nước.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 5,
+        question: {
+          character: "方法论",
+          hint: "hệ thống lý luận về các phương pháp nghiên cứu và tiếp cận tri thức",
+        },
+        answer: { correct: "fāngfǎlùn" },
+        explanation: "方法论 (fāngfǎlùn) — 方 thanh thứ nhất, 法 thanh thứ ba, 论 thanh thứ tư. Nghĩa: phương pháp luận.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối nhà triết học khoa học với đóng góp chính:",
+          pairs: [
+            { left: "波普尔", right: "tiêu chí bác bỏ — phân biệt khoa học và phi khoa học" },
+            { left: "库恩", right: "cách mạng khoa học qua chuyển đổi mô thức" },
+            { left: "拉卡托斯", right: "chương trình nghiên cứu khoa học — lý thuyết không bị bác bỏ đơn lẻ" },
+            { left: "费耶阿本德", right: "chủ nghĩa vô phương pháp — 'anything goes'" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn nhà triết học khoa học: Popper (falsification), Kuhn (paradigm), Lakatos (research programme), Feyerabend (anarchism).",
+      },
+    ],
+  },
+];

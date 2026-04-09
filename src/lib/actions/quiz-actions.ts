@@ -94,3 +94,24 @@ export async function getExercisesForLesson(lessonId: string) {
     return { success: false, error: "Failed to fetch exercises", data: [] };
   }
 }
+
+/** Get random exercises by HSK level for exam simulation */
+export async function getExamExercises(hskLevel: number, count: number = 30) {
+  try {
+    const session = await auth.api.getSession({ headers: await headers() });
+    if (!session) return { success: false, error: "Unauthorized", data: [] };
+
+    // Get all exercises from lessons at this HSK level
+    const exercises = await db.exercise.findMany({
+      where: { lesson: { hskLevel } },
+      orderBy: { order: "asc" },
+    });
+
+    // Shuffle and take `count` exercises
+    const shuffled = exercises.sort(() => Math.random() - 0.5);
+    return { success: true, data: shuffled.slice(0, count) };
+  } catch (error) {
+    console.error("getExamExercises error:", error);
+    return { success: false, error: "Failed to fetch exam exercises", data: [] };
+  }
+}

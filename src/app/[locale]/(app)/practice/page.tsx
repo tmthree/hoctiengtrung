@@ -1,6 +1,6 @@
-// Practice hub page — entry point for flashcards and quizzes
+// Practice hub page — entry point for flashcards, quizzes, and exam simulation
 import Link from "next/link";
-import { BrainCircuit, BookOpen, Layers } from "lucide-react";
+import { BrainCircuit, BookOpen, Layers, Timer } from "lucide-react";
 import { getLessons } from "@/lib/queries/lessons";
 
 interface PracticePageProps {
@@ -72,6 +72,30 @@ export default async function PracticePage({ params }: PracticePageProps) {
             ))}
           </div>
         )}
+      </section>
+      {/* Exam simulation section */}
+      <section className="space-y-3">
+        <h2 className="text-lg font-semibold text-foreground flex items-center gap-2">
+          <Timer className="w-5 h-5 text-primary" />
+          Thi thử HSK
+        </h2>
+        <p className="text-sm text-muted-foreground">
+          Mô phỏng bài thi HSK thật với giới hạn thời gian. Chọn cấp độ để bắt đầu.
+        </p>
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((level) => (
+            <Link
+              key={level}
+              href={`/${locale}/practice/exam/${level}`}
+              className="flex flex-col items-center gap-1 rounded-xl border bg-card p-4 hover:border-primary hover:bg-primary/5 transition-colors text-center"
+            >
+              <span className="text-lg font-bold text-foreground">HSK {level}</span>
+              <span className="text-xs text-muted-foreground">
+                {level <= 3 ? "Sơ cấp" : level <= 6 ? "Trung cấp" : "Cao cấp"}
+              </span>
+            </Link>
+          ))}
+        </div>
       </section>
     </div>
   );

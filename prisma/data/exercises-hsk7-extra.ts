@@ -1,0 +1,1021 @@
+// HSK 7 Extra Exercises — 7 lessons × 10 exercises = 70 exercises (orders 94–100)
+// Topics: Advanced Politics, Macroeconomics, Jurisprudence, Academic Research,
+//         Classical Literature, Environmental Policy, Philosophy of Science
+
+export const exerciseLessonsHsk7Extra = [
+  // ─── LESSON 94: Chính trị nâng cao — Thể chế & Quyền lực ──────────────────
+  {
+    title: "Luyện tập nâng cao HSK 7 — Thể chế & Quyền lực",
+    description: "Bài tập bổ sung chuyên sâu về hệ thống thể chế và cơ cấu quyền lực nhà nước",
+    hskLevel: 7,
+    order: 94,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "执政 (zhízhèng) có nghĩa là gì?",
+          options: ["Chấp hành pháp luật", "Cầm quyền, nắm quyền lãnh đạo", "Bầu cử dân chủ", "Phân chia quyền lực"],
+        },
+        answer: { correct: 1 },
+        explanation: "执政 = cầm quyền. 执 = nắm giữ; 政 = chính trị. Đảng cầm quyền được gọi là 执政党.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "在___社会中，政府的权力受到法律和宪法的严格制约。(Trong xã hội ___, quyền lực chính phủ bị ràng buộc nghiêm ngặt bởi pháp luật và hiến pháp.)",
+          hint: "Chế độ dựa trên pháp luật là nền tảng",
+        },
+        answer: { correct: "法治" },
+        explanation: "法治 (fǎzhì) = pháp trị. Trong nhà nước pháp quyền, không ai đứng trên pháp luật.",
+      },
+      {
+        type: "MATCHING",
+        order: 3,
+        difficulty: 4,
+        question: {
+          text: "Nối khái niệm chính trị với nghĩa đúng:",
+          pairs: [
+            { left: "宪法", right: "hiến pháp" },
+            { left: "议会", right: "nghị viện" },
+            { left: "选举", right: "bầu cử" },
+            { left: "腐败", right: "tham nhũng" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "宪法 (hiến pháp), 议会 (nghị viện), 选举 (bầu cử), 腐败 (tham nhũng).",
+      },
+      {
+        type: "TONE",
+        order: 4,
+        difficulty: 3,
+        question: {
+          character: "权",
+          options: ["quān", "quán", "quǎn", "quàn"],
+        },
+        answer: { correct: 1 },
+        explanation: "权力 (quánlì) — 权 đọc thanh thứ hai (lên giọng). Nghĩa: quyền, quyền lực.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Câu nào diễn đạt đúng ý nghĩa của 以法治为基础推进改革?",
+          options: [
+            "Cải cách phải ưu tiên kinh tế hơn pháp luật",
+            "Đẩy mạnh cải cách trên nền tảng pháp trị",
+            "Pháp luật cản trở quá trình cải cách",
+            "Cải cách phải do nhân dân quyết định",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "以法治为基础 = lấy pháp trị làm nền tảng; 推进改革 = đẩy mạnh cải cách. Pháp trị là điều kiện tiên quyết cho cải cách bền vững.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 4,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n制度",
+          options: ["Chế độ, thể chế", "Chính sách kinh tế", "Quyền lực tối cao", "Hệ thống pháp luật"],
+        },
+        answer: { correct: 0 },
+        explanation: "制度 (zhìdù) = chế độ, thể chế. 制 = chế định; 度 = độ, quy tắc. Là hệ thống quy tắc tổ chức xã hội.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "反腐败斗争的核心是建立健全权力___机制，防止权力滥用。(Cốt lõi cuộc đấu tranh chống tham nhũng là xây dựng cơ chế ___ quyền lực, ngăn lạm quyền.)",
+          hint: "Hành động giám sát, kiểm soát để đảm bảo không lạm quyền",
+        },
+        answer: { correct: "监督" },
+        explanation: "监督 (jiāndū) = giám sát. 监 = theo dõi; 督 = kiểm tra. Giám sát quyền lực là nền tảng của nhà nước trong sạch.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Từ 公民 (gōngmín) nghĩa là gì và đi kèm với quyền gì?",
+          options: [
+            "Thần dân — chỉ có nghĩa vụ, không có quyền",
+            "Công dân — có cả quyền và nghĩa vụ hiến định",
+            "Cư dân — chỉ những người sinh ra trong nước",
+            "Thành viên đảng — có quyền đặc biệt",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "公民 (gōngmín) = công dân. Trong nhà nước pháp quyền, công dân vừa có quyền (bầu cử, ngôn luận) vừa có nghĩa vụ (nộp thuế, tuân pháp).",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 3,
+        question: {
+          character: "民主",
+          hint: "hình thức chính trị mà người dân có quyền quyết định",
+        },
+        answer: { correct: "mínzhǔ" },
+        explanation: "民主 (mínzhǔ) — 民 thanh thứ hai, 主 thanh thứ ba. Nghĩa: dân chủ.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối cấu trúc ngữ pháp với ý nghĩa:",
+          pairs: [
+            { left: "以经济建设为中心", right: "lấy xây dựng kinh tế làm trung tâm" },
+            { left: "以人民利益为出发点", right: "lấy lợi ích nhân dân làm điểm xuất phát" },
+            { left: "以法治为基础", right: "lấy pháp trị làm nền tảng" },
+            { left: "以改革开放为动力", right: "lấy cải cách mở cửa làm động lực" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Cấu trúc 以A为B (lấy A làm B) rất phổ biến trong văn bản chính trị Trung Quốc.",
+      },
+    ],
+  },
+
+  // ─── LESSON 95: Kinh tế vĩ mô nâng cao ──────────────────────────────────
+  {
+    title: "Luyện tập nâng cao HSK 7 — Kinh tế vĩ mô",
+    description: "Bài tập chuyên sâu về kinh tế vĩ mô, chính sách tiền tệ và tài khóa",
+    hskLevel: 7,
+    order: 95,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "通货膨胀 (tōnghuò péngzhàng) xảy ra khi nào?",
+          options: [
+            "Giá cả hàng hóa liên tục giảm",
+            "Mức giá chung trong nền kinh tế liên tục tăng",
+            "Tỷ lệ thất nghiệp vượt quá 10%",
+            "Thặng dư thương mại tăng mạnh",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "通货膨胀 = lạm phát. Xảy ra khi mức giá chung tăng liên tục, làm giảm sức mua của đồng tiền.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "为了控制通货膨胀，央行通常会提高___。(Để kiểm soát lạm phát, NHTW thường tăng ___)",
+          hint: "Tỷ lệ phần trăm mà ngân hàng tính khi cho vay tiền",
+        },
+        answer: { correct: "利率" },
+        explanation: "利率 (lìlǜ) = lãi suất. Tăng lãi suất làm giảm vay mượn, giảm chi tiêu, kiềm chế lạm phát.",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 3,
+        question: {
+          character: "贸",
+          options: ["māo", "máo", "mǎo", "mào"],
+        },
+        answer: { correct: 3 },
+        explanation: "贸易 (màoyì) — 贸 đọc thanh thứ tư. Nghĩa: thương mại, mậu dịch.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 4,
+        question: {
+          text: "Nối thuật ngữ kinh tế với định nghĩa:",
+          pairs: [
+            { left: "通货膨胀", right: "lạm phát" },
+            { left: "税收", right: "thuế" },
+            { left: "贸易逆差", right: "thâm hụt thương mại" },
+            { left: "利率", right: "lãi suất" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Các khái niệm kinh tế vĩ mô cơ bản: lạm phát, thuế, thâm hụt thương mại, lãi suất.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Khi nói 财政赤字 (cáizèng chìzì), người ta muốn nói đến điều gì?",
+          options: [
+            "Ngân sách thặng dư — thu nhiều hơn chi",
+            "Thâm hụt ngân sách — chi nhiều hơn thu",
+            "Cân bằng ngân sách — thu bằng chi",
+            "Nợ quốc gia đã được thanh toán hết",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "财政赤字 = thâm hụt tài chính/ngân sách. 赤字 nghĩa đen là 'chữ đỏ' — kế toán xưa ghi số âm bằng mực đỏ.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 4,
+        question: {
+          text: "Nhìn vào đoạn và chọn câu trả lời đúng:\n\n由于需求下降导致价格走低，市场出现了通货紧缩的迹象。\n\nThị trường đang có dấu hiệu gì?",
+          options: ["Lạm phát cao", "Giảm phát", "Bong bóng tài sản", "Tăng trưởng mạnh"],
+        },
+        answer: { correct: 1 },
+        explanation: "通货紧缩 (tōnghuò jǐnsuō) = giảm phát. 紧缩 = co lại, thắt chặt. Trái ngược với 通货膨胀 (lạm phát).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "国内生产总值，简称GDP，是衡量一国___水平的重要指标。(GDP là chỉ tiêu quan trọng đo lường mức độ ___ của một quốc gia.)",
+          hint: "Mức sản xuất ra của cải, hàng hóa trong nền kinh tế",
+        },
+        answer: { correct: "经济" },
+        explanation: "经济 (jīngjì) = kinh tế. GDP đo lường tổng giá trị sản xuất trong nền kinh tế trong một năm.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Câu 市场竞争有助于提高效率和降低成本 diễn đạt điều gì?",
+          options: [
+            "Cạnh tranh thị trường có hại cho doanh nghiệp",
+            "Cạnh tranh thị trường giúp nâng cao hiệu quả và giảm chi phí",
+            "Nhà nước cần kiểm soát mọi hoạt động thị trường",
+            "Chi phí sản xuất không liên quan đến cạnh tranh",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "竞争 (jìngzhēng) = cạnh tranh; 效率 (xiàolǜ) = hiệu quả; 成本 (chéngběn) = chi phí. Cạnh tranh là động lực của thị trường.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 3,
+        question: {
+          character: "投资",
+          hint: "bỏ tiền vào để sinh lời về sau",
+        },
+        answer: { correct: "tóuzī" },
+        explanation: "投资 (tóuzī) — 投 thanh thứ hai, 资 thanh thứ nhất. Nghĩa: đầu tư.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối chính sách kinh tế với mục tiêu:",
+          pairs: [
+            { left: "降低利率", right: "kích thích tiêu dùng và đầu tư" },
+            { left: "提高税收", right: "tăng ngân sách nhà nước" },
+            { left: "扩大出口", right: "cải thiện cán cân thương mại" },
+            { left: "控制通胀", right: "bảo vệ sức mua của đồng tiền" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Các chính sách kinh tế vĩ mô đều hướng đến mục tiêu ổn định và tăng trưởng bền vững.",
+      },
+    ],
+  },
+
+  // ─── LESSON 96: Pháp luật nâng cao — Tố tụng & Tư pháp ─────────────────
+  {
+    title: "Luyện tập nâng cao HSK 7 — Tố tụng & Tư pháp",
+    description: "Bài tập chuyên sâu về quy trình tố tụng, hệ thống tư pháp và khái niệm pháp lý",
+    hskLevel: 7,
+    order: 96,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "审判 (shěnpàn) có nghĩa là gì trong ngữ cảnh pháp lý?",
+          options: ["Ký kết hợp đồng", "Xét xử tại tòa án", "Đề xuất dự luật", "Thi hành bản án"],
+        },
+        answer: { correct: 1 },
+        explanation: "审判 = xét xử. 审 = xem xét kỹ lưỡng; 判 = phán xử. Đây là quá trình tòa án xem xét chứng cứ và đưa ra phán quyết.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "在法庭上，原告必须提供足够的___来证明被告的罪行。(Trước tòa, nguyên đơn phải cung cấp đủ ___ để chứng minh tội của bị cáo.)",
+          hint: "Vật/tài liệu dùng để chứng minh sự thật",
+        },
+        answer: { correct: "证据" },
+        explanation: "证据 (zhèngjù) = bằng chứng, chứng cứ. 证 = chứng minh; 据 = căn cứ.",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 3,
+        question: {
+          character: "罪",
+          options: ["zuī", "zuí", "zuǐ", "zuì"],
+        },
+        answer: { correct: 3 },
+        explanation: "犯罪 (fànzuì) — 罪 đọc thanh thứ tư. Nghĩa: tội, tội phạm.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 4,
+        question: {
+          text: "Nối thuật ngữ pháp lý với nghĩa:",
+          pairs: [
+            { left: "律师", right: "luật sư" },
+            { left: "判决", right: "phán quyết" },
+            { left: "法院", right: "tòa án" },
+            { left: "维权", right: "bảo vệ quyền lợi" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "律师 (luật sư), 判决 (phán quyết), 法院 (tòa án), 维权 (bảo vệ quyền lợi).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "依据宪法规定，公民享有言论自由。 — 'Từ 依据 có nghĩa là gì?",
+          options: ["Vì vậy", "Căn cứ theo, dựa theo", "Mặc dù", "Nhưng mà"],
+        },
+        answer: { correct: 1 },
+        explanation: "依据 (yījù) = căn cứ theo, dựa theo. Thường dùng trong văn bản pháp lý: 依据法律/宪法/合同... (căn cứ theo pháp luật/hiến pháp/hợp đồng...)",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 4,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n法律",
+          options: ["Pháp luật", "Luật sư", "Tòa án", "Bản án"],
+        },
+        answer: { correct: 0 },
+        explanation: "法律 (fǎlǜ) = pháp luật, hệ thống quy định của nhà nước. 法 = pháp; 律 = luật.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "根据合同___，乙方违约需赔偿损失。(Theo ___ hợp đồng, bên B vi phạm phải bồi thường thiệt hại.)",
+          hint: "Những điều khoản được quy định rõ ràng trong văn bản hợp đồng",
+        },
+        answer: { correct: "条款" },
+        explanation: "条款 (tiáokuǎn) = điều khoản. 条 = điều; 款 = khoản. Điều khoản hợp đồng ràng buộc pháp lý các bên.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Trong tố tụng hình sự Trung Quốc, 检察院 (jiǎncháyuàn) là cơ quan nào?",
+          options: [
+            "Tòa án xét xử",
+            "Viện kiểm sát — cơ quan công tố và giám sát pháp lý",
+            "Bộ Tư pháp",
+            "Cơ quan điều tra hình sự",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "检察院 = viện kiểm sát. 检察 = kiểm tra, giám sát; 院 = cơ quan. Đây là cơ quan thực hiện quyền công tố và giám sát hoạt động tư pháp.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 3,
+        question: {
+          character: "宪法",
+          hint: "đạo luật cơ bản cao nhất của quốc gia",
+        },
+        answer: { correct: "xiànfǎ" },
+        explanation: "宪法 (xiànfǎ) — 宪 thanh thứ tư, 法 thanh thứ ba. Nghĩa: hiến pháp.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối hành vi pháp lý với hậu quả:",
+          pairs: [
+            { left: "违反合同", right: "phải bồi thường thiệt hại" },
+            { left: "触犯刑法", right: "bị truy cứu trách nhiệm hình sự" },
+            { left: "侵犯版权", right: "bị kiện ra tòa dân sự" },
+            { left: "行政违规", right: "chịu xử phạt hành chính" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Mỗi loại vi phạm pháp luật có hình thức chịu trách nhiệm khác nhau: hợp đồng, hình sự, dân sự, hành chính.",
+      },
+    ],
+  },
+
+  // ─── LESSON 97: Nghiên cứu học thuật & Phương pháp khoa học ────────────
+  {
+    title: "Luyện tập nâng cao HSK 7 — Nghiên cứu học thuật",
+    description: "Bài tập về từ vựng nghiên cứu khoa học, phương pháp luận và viết học thuật",
+    hskLevel: 7,
+    order: 97,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "论文 (lùnwén) có nghĩa là gì trong bối cảnh học thuật?",
+          options: ["Sách giáo khoa", "Luận văn, bài nghiên cứu khoa học", "Bài kiểm tra", "Tạp chí học thuật"],
+        },
+        answer: { correct: 1 },
+        explanation: "论文 = luận văn, bài nghiên cứu. 论 = bàn luận, lập luận; 文 = văn bản. Đây là sản phẩm chính của nghiên cứu khoa học.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "实证研究需要收集大量___来支持或否定假设。(Nghiên cứu thực chứng cần thu thập nhiều ___ để ủng hộ hoặc bác bỏ giả thuyết.)",
+          hint: "Thông tin, số liệu được thu thập từ thực tế",
+        },
+        answer: { correct: "数据" },
+        explanation: "数据 (shùjù) = số liệu, dữ liệu. 数 = số; 据 = căn cứ. Dữ liệu là nền tảng của nghiên cứu thực chứng.",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 3,
+        question: {
+          character: "究",
+          options: ["jiū", "jiú", "jiǔ", "jiù"],
+        },
+        answer: { correct: 2 },
+        explanation: "研究 (yánjiū) — 究 đọc thanh thứ ba. Nghĩa: nghiên cứu, tìm hiểu sâu.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 4,
+        question: {
+          text: "Nối thuật ngữ nghiên cứu với nghĩa:",
+          pairs: [
+            { left: "假设", right: "giả thuyết" },
+            { left: "结论", right: "kết luận" },
+            { left: "方法论", right: "phương pháp luận" },
+            { left: "参考文献", right: "tài liệu tham khảo" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "假设 (giả thuyết), 结论 (kết luận), 方法论 (phương pháp luận), 参考文献 (tài liệu tham khảo).",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Khi một bài báo khoa học trải qua quy trình 同行评审 (tóngháng píngshěn), điều đó có nghĩa là gì?",
+          options: [
+            "Chỉ được kiểm tra bởi sinh viên đại học",
+            "Được đánh giá bởi các chuyên gia cùng lĩnh vực trước khi xuất bản",
+            "Chỉ cần tác giả tự kiểm tra",
+            "Được phê duyệt bởi cơ quan chính phủ",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "同行评审 = bình duyệt ngang hàng (peer review). 同行 = người cùng ngành; 评审 = đánh giá. Đây là tiêu chuẩn đảm bảo chất lượng trong nghiên cứu khoa học.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 4,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n学术",
+          options: ["Học thuật, khoa học", "Học phí đại học", "Trường đại học", "Sinh viên nghiên cứu"],
+        },
+        answer: { correct: 0 },
+        explanation: "学术 (xuéshù) = học thuật. 学 = học; 术 = thuật, nghệ thuật, kỹ năng. Dùng để chỉ hoạt động nghiên cứu và trao đổi tri thức.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "研究人员需要遵守学术___，不得剽窃他人成果。(Nhà nghiên cứu cần tuân thủ ___ học thuật, không được đạo văn thành quả của người khác.)",
+          hint: "Chuẩn mực, quy tắc đạo đức trong nghề nghiệp",
+        },
+        answer: { correct: "规范" },
+        explanation: "规范 (guīfàn) = quy tắc, chuẩn mực. 规 = quy định; 范 = khuôn mẫu. Học thuật quy phạm là nền tảng của nghiên cứu trung thực.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Trong phương pháp nghiên cứu, sự khác biệt chính giữa 定性研究 (định tính) và 定量研究 (định lượng) là gì?",
+          options: [
+            "Định tính dùng số liệu; định lượng dùng từ ngữ",
+            "Định tính phân tích ý nghĩa/trải nghiệm; định lượng đo lường bằng số liệu thống kê",
+            "Không có sự khác biệt thực chất",
+            "Định tính chỉ dùng trong khoa học tự nhiên",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "定性研究 (qualitative) = phân tích chiều sâu, ý nghĩa; 定量研究 (quantitative) = đo lường bằng số liệu. Cả hai phương pháp bổ sung cho nhau.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 3,
+        question: {
+          character: "理论",
+          hint: "hệ thống các nguyên tắc giải thích hiện tượng",
+        },
+        answer: { correct: "lǐlùn" },
+        explanation: "理论 (lǐlùn) — 理 thanh thứ ba, 论 thanh thứ tư. Nghĩa: lý luận, lý thuyết.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối bước nghiên cứu với mô tả:",
+          pairs: [
+            { left: "提出假设", right: "xác định điều cần kiểm chứng" },
+            { left: "收集数据", right: "thu thập thông tin thực nghiệm" },
+            { left: "分析结果", right: "xử lý và diễn giải dữ liệu" },
+            { left: "得出结论", right: "tổng kết phát hiện nghiên cứu" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Chu trình nghiên cứu khoa học: giả thuyết → thu thập → phân tích → kết luận.",
+      },
+    ],
+  },
+
+  // ─── LESSON 98: Văn học cổ điển Trung Quốc ──────────────────────────────
+  {
+    title: "Luyện tập nâng cao HSK 7 — Văn học cổ điển",
+    description: "Bài tập về từ vựng văn học, thành ngữ cổ điển và cách biểu đạt văn học",
+    hskLevel: 7,
+    order: 98,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "成语 (chéngyǔ) là gì trong văn học Trung Quốc?",
+          options: [
+            "Câu hỏi tu từ trong thơ",
+            "Thành ngữ bốn chữ có nguồn gốc lịch sử hoặc cổ văn",
+            "Từ vay mượn từ tiếng nước ngoài",
+            "Tiêu đề của tác phẩm văn học",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "成语 = thành ngữ. Thường gồm bốn chữ, xuất phát từ điển tích lịch sử, thần thoại hoặc cổ văn. Ví dụ: 亡羊补牢 (vong dương bổ lao).",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "李白是唐代著名的___，其诗歌豪放飘逸，被誉为'诗仙'。(Lý Bạch là ___ nổi tiếng đời Đường, thơ hào phóng bay bổng, được mệnh danh 'Thi tiên'.)",
+          hint: "Người viết thơ",
+        },
+        answer: { correct: "诗人" },
+        explanation: "诗人 (shīrén) = nhà thơ. 诗 = thơ; 人 = người. Lý Bạch là một trong những nhà thơ vĩ đại nhất lịch sử Trung Quốc.",
+      },
+      {
+        type: "MATCHING",
+        order: 3,
+        difficulty: 4,
+        question: {
+          text: "Nối tác phẩm cổ điển với thể loại:",
+          pairs: [
+            { left: "《红楼梦》", right: "tiểu thuyết" },
+            { left: "《诗经》", right: "tuyển tập thơ" },
+            { left: "《史记》", right: "sử ký" },
+            { left: "《论语》", right: "triết học, đối thoại" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "《红楼梦》tiểu thuyết; 《诗经》thơ cổ; 《史记》sử ký của Tư Mã Thiên; 《论语》lời dạy của Khổng Tử.",
+      },
+      {
+        type: "TONE",
+        order: 4,
+        difficulty: 3,
+        question: {
+          character: "诗",
+          options: ["shī", "shí", "shǐ", "shì"],
+        },
+        answer: { correct: 0 },
+        explanation: "诗人 (shīrén) — 诗 đọc thanh thứ nhất. Nghĩa: thơ. 诗人 = nhà thơ.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Thành ngữ 半途而废 (bàntú'érfèi) có nghĩa là gì?",
+          options: [
+            "Kiên trì đến cùng, không bỏ cuộc",
+            "Bỏ dở giữa chừng, không hoàn thành",
+            "Thành công sau nhiều thất bại",
+            "Bắt đầu muộn nhưng vẫn kịp",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "半途而废 = bỏ dở giữa chừng. 半途 = giữa đường; 废 = bỏ. Thành ngữ này phê phán sự thiếu kiên trì.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 4,
+        question: {
+          text: "Nhìn vào thành ngữ và chọn nghĩa đúng:\n\n亡羊补牢",
+          options: [
+            "Mất bò mới lo làm chuồng — xử lý hậu quả đã muộn",
+            "Chăn nuôi tốt từ đầu để tránh mất mát",
+            "Đổ lỗi cho người khác khi thất bại",
+            "Chuẩn bị kỹ lưỡng trước khi hành động",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "亡羊补牢 (wáng yáng bǔ láo) = mất dê mới sửa chuồng (tương tương 'mất bò mới lo làm chuồng'). 亡 = mất; 羊 = dê; 补牢 = sửa chuồng.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "杜甫被称为'诗圣'，其诗歌深刻反映了唐朝的___和人民的疾苦。(Đỗ Phủ được gọi là 'Thi thánh', thơ ông phản ánh sâu sắc ___ triều Đường và nỗi khổ của nhân dân.)",
+          hint: "Biến cố lớn của đất nước, giai đoạn lịch sử có nhiều thay đổi",
+        },
+        answer: { correct: "社会现实" },
+        explanation: "社会现实 (shèhuì xiànshí) = thực tại xã hội. Thơ Đỗ Phủ được gọi là 'thi sử' vì ghi lại trung thực hiện thực xã hội đương thời.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Trong cấu trúc văn xuôi Hán cổ, câu 学而时习之，不亦说乎 từ《论语》có nghĩa là gì?",
+          options: [
+            "Học và thường xuyên ôn tập, chẳng phải vui sao?",
+            "Học nhiều nhưng không ôn thì quên hết",
+            "Chỉ có học mới đem lại hạnh phúc",
+            "Người có học thức mới được tôn trọng",
+          ],
+        },
+        answer: { correct: 0 },
+        explanation: "学而时习之，不亦说乎 = Học mà thường xuyên ôn tập, chẳng phải vui lắm sao? 说 ở đây = 悦 (vui). Câu mở đầu《论语》.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 3,
+        question: {
+          character: "成语",
+          hint: "đơn vị ngôn ngữ cố định gồm bốn chữ",
+        },
+        answer: { correct: "chéngyǔ" },
+        explanation: "成语 (chéngyǔ) — 成 thanh thứ hai, 语 thanh thứ ba. Nghĩa: thành ngữ.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối thành ngữ với nghĩa:",
+          pairs: [
+            { left: "一石二鸟", right: "một công đôi việc" },
+            { left: "半途而废", right: "bỏ dở giữa chừng" },
+            { left: "一鸣惊人", right: "một tiếng vang lừng" },
+            { left: "名副其实", right: "xứng với danh tiếng" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Thành ngữ Hán phong phú: 一石二鸟 (nhất thạch nhị điểu), 半途而废, 一鸣惊人, 名副其实.",
+      },
+    ],
+  },
+
+  // ─── LESSON 99: Chính sách môi trường & Phát triển bền vững ────────────
+  {
+    title: "Luyện tập nâng cao HSK 7 — Môi trường & Phát triển bền vững",
+    description: "Bài tập về chính sách môi trường, biến đổi khí hậu và phát triển xanh",
+    hskLevel: 7,
+    order: 99,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "可持续发展 (kě chísù fāzhǎn) có nghĩa là gì?",
+          options: [
+            "Phát triển nhanh nhất có thể",
+            "Phát triển bền vững — đáp ứng nhu cầu hiện tại mà không ảnh hưởng tương lai",
+            "Phát triển chỉ dựa vào công nghệ cao",
+            "Ngừng phát triển để bảo vệ môi trường",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "可持续发展 = phát triển bền vững. 可 = có thể; 持续 = duy trì liên tục; 发展 = phát triển. Nguyên tắc không hy sinh tương lai để phục vụ hiện tại.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "全球___变暖已成为21世纪最严峻的环境挑战之一。(Nóng lên ___ toàn cầu đã trở thành thách thức môi trường nghiêm trọng nhất thế kỷ 21.)",
+          hint: "Từ chỉ trái đất, quả địa cầu",
+        },
+        answer: { correct: "气候" },
+        explanation: "气候 (qìhòu) = khí hậu. Biến đổi khí hậu toàn cầu: 全球气候变暖 = nóng lên toàn cầu.",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 3,
+        question: {
+          character: "碳",
+          options: ["tān", "tán", "tǎn", "tàn"],
+        },
+        answer: { correct: 3 },
+        explanation: "碳排放 (tàn páifàng) — 碳 đọc thanh thứ tư. Nghĩa: carbon. 碳排放 = phát thải carbon.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 4,
+        question: {
+          text: "Nối thuật ngữ môi trường với nghĩa:",
+          pairs: [
+            { left: "温室效应", right: "hiệu ứng nhà kính" },
+            { left: "可再生能源", right: "năng lượng tái tạo" },
+            { left: "生物多样性", right: "đa dạng sinh học" },
+            { left: "碳中和", right: "trung hòa carbon" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Các khái niệm môi trường quan trọng: hiệu ứng nhà kính, năng lượng tái tạo, đa dạng sinh học, trung hòa carbon.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Trung Quốc cam kết đạt 碳中和 (trung hòa carbon) vào năm nào?",
+          options: ["2030", "2050", "2060", "2100"],
+        },
+        answer: { correct: 2 },
+        explanation: "Trung Quốc cam kết đạt 碳中和 (carbon neutrality) vào năm 2060 và đạt đỉnh phát thải carbon (碳达峰) vào năm 2030.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 4,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n污染",
+          options: ["Ô nhiễm", "Tái chế", "Phát triển", "Bảo tồn"],
+        },
+        answer: { correct: 0 },
+        explanation: "污染 (wūrǎn) = ô nhiễm. 污 = bẩn, ô; 染 = nhuộm, lan. Ô nhiễm môi trường là vấn đề nghiêm trọng toàn cầu.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "发展___经济是解决环境问题和经济增长矛盾的有效途径。(Phát triển kinh tế ___ là con đường hiệu quả giải quyết mâu thuẫn giữa vấn đề môi trường và tăng trưởng.)",
+          hint: "Màu sắc biểu trưng cho thiên nhiên, thân thiện môi trường",
+        },
+        answer: { correct: "绿色" },
+        explanation: "绿色经济 (lǜsè jīngjì) = kinh tế xanh. Mô hình kinh tế giảm ô nhiễm, tăng hiệu quả năng lượng và bảo vệ hệ sinh thái.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "《巴黎协定》(Paris Agreement) được ký kết với mục tiêu chính là gì?",
+          options: [
+            "Giảm chi tiêu quốc phòng toàn cầu",
+            "Kiểm soát gia tăng nhiệt độ toàn cầu ở mức dưới 2°C so với thời tiền công nghiệp",
+            "Phân bổ lại nguồn năng lượng toàn cầu",
+            "Ngăn chặn hoạt động khai thác dầu mỏ",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "《巴黎协定》= Hiệp định Paris (2015) đặt mục tiêu kiểm soát nhiệt độ toàn cầu tăng không quá 2°C (lý tưởng là 1.5°C) so với mức tiền công nghiệp.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 3,
+        question: {
+          character: "环境",
+          hint: "thế giới xung quanh chúng ta, thiên nhiên",
+        },
+        answer: { correct: "huánjìng" },
+        explanation: "环境 (huánjìng) — 环 thanh thứ hai, 境 thanh thứ tư. Nghĩa: môi trường.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối chính sách môi trường với nội dung:",
+          pairs: [
+            { left: "碳税", right: "đánh thuế vào phát thải carbon" },
+            { left: "限塑令", right: "cấm hoặc hạn chế túi nhựa" },
+            { left: "排放权交易", right: "thị trường giao dịch hạn ngạch carbon" },
+            { left: "植树造林", right: "trồng rừng để hấp thụ CO₂" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Các công cụ chính sách môi trường: thuế carbon, hạn chế nhựa, giao dịch phát thải, trồng rừng.",
+      },
+    ],
+  },
+
+  // ─── LESSON 100: Triết học & Tư tưởng ──────────────────────────────────
+  {
+    title: "Luyện tập nâng cao HSK 7 — Triết học & Tư tưởng",
+    description: "Bài tập về triết học Trung Quốc, tư tưởng Nho Đạo Phật và triết học phương Tây",
+    hskLevel: 7,
+    order: 100,
+    type: "GRAMMAR",
+    content: [],
+    vocabularyKeys: [],
+    exercises: [
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 1,
+        difficulty: 4,
+        question: {
+          text: "儒家 (Rújiā) tư tưởng cốt lõi nhấn mạnh điều gì?",
+          options: [
+            "Sống hòa hợp với thiên nhiên, không can thiệp",
+            "Nhân nghĩa, lễ nghĩa và tu thân tề gia trị quốc",
+            "Sức mạnh quân sự là nền tảng của quốc gia",
+            "Theo đuổi khoái lạc cá nhân là mục đích sống",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "儒家 = Nho gia. Tư tưởng cốt lõi: 仁 (nhân), 义 (nghĩa), 礼 (lễ), 智 (trí), 信 (tín). Tu thân → tề gia → trị quốc → bình thiên hạ.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 2,
+        difficulty: 4,
+        question: {
+          text: "道家哲学强调'___'，主张顺应自然，不强行干预。(Triết học Đạo gia nhấn mạnh '___ ', chủ trương thuận theo tự nhiên, không cưỡng cầu.)",
+          hint: "Khái niệm cốt lõi của Lão Tử — không hành động ngược lại tự nhiên",
+        },
+        answer: { correct: "无为" },
+        explanation: "无为 (wúwéi) = vô vi. Khái niệm trung tâm của Đạo gia: hành động không trái với quy luật tự nhiên, không cưỡng ép.",
+      },
+      {
+        type: "TONE",
+        order: 3,
+        difficulty: 3,
+        question: {
+          character: "哲",
+          options: ["zhē", "zhé", "zhě", "zhè"],
+        },
+        answer: { correct: 1 },
+        explanation: "哲学 (zhéxué) — 哲 đọc thanh thứ hai. Nghĩa: triết, sáng suốt. 哲学 = triết học.",
+      },
+      {
+        type: "MATCHING",
+        order: 4,
+        difficulty: 4,
+        question: {
+          text: "Nối trường phái triết học với đặc điểm:",
+          pairs: [
+            { left: "儒家", right: "nhân nghĩa lễ trí tín" },
+            { left: "道家", right: "vô vi thuận tự nhiên" },
+            { left: "法家", right: "pháp trị nghiêm minh" },
+            { left: "墨家", right: "kiêm ái phi công (yêu thương mọi người, phản chiến)" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Bốn trường phái lớn thời Chiến Quốc: Nho, Đạo, Pháp, Mặc.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 5,
+        difficulty: 5,
+        question: {
+          text: "Câu 知之为知之，不知为不知，是知也 của Khổng Tử có nghĩa là gì?",
+          options: [
+            "Học nhiều ắt biết nhiều",
+            "Biết thì nhận là biết, không biết thì nhận là không biết — đó mới là trí tuệ thực sự",
+            "Người biết nhiều phải dạy lại cho người không biết",
+            "Chỉ những gì đã biết mới đáng học",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "Khổng Tử dạy rằng nhận thức đúng giới hạn của mình là trí tuệ thực sự. Không thừa nhận sự thiếu hiểu biết là tự lừa dối.",
+      },
+      {
+        type: "LISTENING",
+        order: 6,
+        difficulty: 4,
+        question: {
+          text: "Nhìn vào chữ này và chọn đúng nghĩa:\n\n辩证法",
+          options: ["Biện chứng pháp", "Phương pháp lý luận", "Lý thuyết tranh luận", "Phép giải toán học"],
+        },
+        answer: { correct: 0 },
+        explanation: "辩证法 (biànzhèngfǎ) = biện chứng pháp. 辩 = biện luận; 证 = chứng minh; 法 = phương pháp. Phương pháp tư duy xem xét mâu thuẫn và vận động.",
+      },
+      {
+        type: "FILL_BLANK",
+        order: 7,
+        difficulty: 5,
+        question: {
+          text: "马克思主义哲学认为，物质决定___，存在决定意识。(Triết học Mác-xít cho rằng vật chất quyết định ___, tồn tại quyết định ý thức.)",
+          hint: "Trạng thái tinh thần, suy nghĩ, nhận thức",
+        },
+        answer: { correct: "意识" },
+        explanation: "意识 (yìshí) = ý thức. Nguyên lý duy vật của Marx: vật chất (物质) quyết định ý thức (意识); tồn tại xã hội quyết định ý thức xã hội.",
+      },
+      {
+        type: "MULTIPLE_CHOICE",
+        order: 8,
+        difficulty: 5,
+        question: {
+          text: "Khái niệm 天人合一 (tiān rén hé yī) trong triết học Trung Quốc có nghĩa là gì?",
+          options: [
+            "Thiên đường là nơi con người sẽ đến sau khi chết",
+            "Trời và người hợp nhất — con người cần sống hòa hợp với trật tự vũ trụ",
+            "Chỉ những người đức hạnh mới được trời chứng giám",
+            "Con người có thể chinh phục thiên nhiên",
+          ],
+        },
+        answer: { correct: 1 },
+        explanation: "天人合一 = thiên nhân hợp nhất. Khái niệm quan trọng của Nho-Đạo: con người và trời đất là một thể thống nhất, không tách rời.",
+      },
+      {
+        type: "PINYIN",
+        order: 9,
+        difficulty: 3,
+        question: {
+          character: "伦理",
+          hint: "học thuyết về đạo đức, quan hệ và chuẩn mực xã hội",
+        },
+        answer: { correct: "lúnlǐ" },
+        explanation: "伦理 (lúnlǐ) — 伦 thanh thứ hai, 理 thanh thứ ba. Nghĩa: đạo đức học, luân lý.",
+      },
+      {
+        type: "MATCHING",
+        order: 10,
+        difficulty: 5,
+        question: {
+          text: "Nối khái niệm triết học với trường phái:",
+          pairs: [
+            { left: "无为自然", right: "Đạo gia" },
+            { left: "仁者爱人", right: "Nho gia" },
+            { left: "兼爱非攻", right: "Mặc gia" },
+            { left: "以法治国", right: "Pháp gia" },
+          ],
+        },
+        answer: { pairs: [[0, 0], [1, 1], [2, 2], [3, 3]] },
+        explanation: "Đặc trưng: Đạo gia (vô vi tự nhiên), Nho gia (nhân ái), Mặc gia (kiêm ái phản chiến), Pháp gia (trị quốc bằng pháp luật).",
+      },
+    ],
+  },
+];
