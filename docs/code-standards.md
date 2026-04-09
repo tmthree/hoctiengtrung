@@ -89,3 +89,87 @@ export const createLessonSchema = z.object({
 - Namespaced by feature: `auth.login`, `lessons.title`, etc.
 - Server Components: `getTranslations('namespace')`
 - Client Components: `useTranslations('namespace')`
+
+## JWT & Token Management
+
+```tsx
+// src/lib/auth-tokens.ts exports:
+import { generateAccessToken, rotateRefreshToken, revokeTokenFamily } from "@/lib/auth-tokens"
+
+// Generate new token pair
+const accessToken = generateAccessToken({ id: user.id, email: user.email, role: user.role })
+const refreshToken = await generateRefreshToken(user)
+
+// Rotate tokens (old → new pair, same family)
+const { accessToken, refreshToken, userId } = await rotateRefreshToken(oldToken)
+
+// Revoke all tokens in family (logout)
+await revokeTokenFamily(tokenFamily)
+```
+
+- Access tokens: 15-minute JWT with role
+- Refresh tokens: 7-day opaque UUID, stored in DB with family tracking
+- Breach detection: If old token already revoked, revoke entire family
+- Endpoints: `/api/auth/token/issue` (new pair), `/api/auth/token` (rotate)
+
+## RBAC & Permissions
+
+```tsx
+// src/lib/rbac.ts exports:
+import { hasPermission, requireRole, requirePermission } from "@/lib/rbac"
+
+// Check permission
+if (hasPermission(user.role, "course:create")) { ... }
+
+// Require role in Server Action
+export async function createCourse(data: FormData) {
+  const session = await getSession()
+  requireRole(session, "INSTRUCTOR", "ADMIN")
+  // ... rest of logic
+}
+
+// Require specific permission
+requirePermission(session, "course:edit")
+```
+
+Roles: LEARNER (none), INSTRUCTOR (course/lesson ops), ADMIN (all + user management).
+
+## Payment Integration
+
+```tsx
+// Server Action: create checkout session with idempotency
+import { createCheckoutSession } from "@/lib/actions/payment-actions"
+const { success, url, error } = await createCheckoutSession(courseId)
+
+// Stripe client (singleton)
+import { stripe } from "@/lib/stripe"
+const session = await stripe.checkout.sessions.retrieve(sessionId)
+
+// Webhook: Stripe calls POST /api/webhooks/stripe with signature
+// Handler verifies signature, checks event idempotency, dispatches to processor
+```
+
+Layer 1 idempotency: Reuse recent PENDING order if same user + course + < 30min.
+Layer 2 idempotency: Check WebhookEvent.stripeEventId to prevent duplicate processing.
+Layer 3 idempotency: Stripe prevents duplicate charges via checksum.
+
+## Error Handling Pattern
+
+```tsx
+// Server Actions return consistent shape
+export async function action(data: FormData) {
+  try {
+    const parsed = validator.safeParse(data)
+    if (!parsed.success) {
+      return { success: false, error: parsed.error.issues[0]?.message }
+    }
+    const result = await db.model.create({ data: parsed.data })
+    return { success: true, data: result }
+  } catch (err) {
+    console.error("[action]", err)
+    return { success: false, error: "Đã xảy ra lỗi, vui lòng thử lại" }
+  }
+}
+```
+
+Always return `{ success, error?, data? }`. Vietnamese error messages.
