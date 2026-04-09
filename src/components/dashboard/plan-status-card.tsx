@@ -52,7 +52,7 @@ export function PlanStatusCard({ plan, planExpiresAt, locale }: PlanStatusCardPr
             </p>
           </div>
         </div>
-        <Link href={`/${locale}/pricing`} className="shrink-0">
+        <Link href="/pricing" className="shrink-0">
           <Button size="sm" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90">
             Nâng cấp Premium
           </Button>

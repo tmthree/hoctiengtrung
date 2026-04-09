@@ -15,7 +15,7 @@ export function UpgradeBanner({
   description = "Mở khóa tất cả bài học HSK 1-9, từ vựng và luyện tập không giới hạn.",
   locale,
 }: UpgradeBannerProps) {
-  const pricingHref = locale ? `/${locale}/pricing` : "/pricing";
+  const pricingHref = "/pricing";
 
   return (
     <div className="rounded-xl border border-amber-200 bg-gradient-to-r from-amber-50 to-orange-50 p-5 dark:border-amber-800 dark:from-amber-950/30 dark:to-orange-950/30">
