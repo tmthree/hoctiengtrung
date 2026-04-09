@@ -36,7 +36,10 @@
     "adminDashboard": "Tổng quan",
     "adminLessons": "Quản lý bài học",
     "adminVocabulary": "Quản lý từ vựng",
-    "adminUsers": "Quản lý người dùng"
+    "adminUsers": "Quản lý người dùng",
+    "courses": "Khóa học",
+    "orders": "Đơn hàng",
+    "instructorDashboard": "Giảng viên"
   },
   "auth": {
     "loginTitle": "Đăng nhập",
