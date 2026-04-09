@@ -48,7 +48,7 @@ export default async function VocabularyPage({ params, searchParams }: Vocabular
       {!userIsPremium && (
         <UpgradeBanner
           title="Chỉ hiển thị từ vựng HSK 1"
-          description="Nâng cấp Premium để xem toàn bộ từ vựng HSK 1-6 (hơn 5,000 từ)."
+          description="Nâng cấp Premium để xem toàn bộ từ vựng HSK 1-9 (hơn 11,000 từ)."
           locale={locale}
         />
       )}

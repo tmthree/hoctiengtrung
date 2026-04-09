@@ -156,7 +156,10 @@
       "level3": "~600 từ · Giao tiếp trong các tình huống thông thường",
       "level4": "~1200 từ · Đọc hiểu văn bản đơn giản",
       "level5": "~2500 từ · Đọc báo, xem phim không cần phụ đề",
-      "level6": "~5000 từ · Thành thạo hoàn toàn tiếng Trung"
+      "level6": "~5000 từ · Thành thạo hoàn toàn tiếng Trung",
+      "level7": "~7000 từ · Chính trị, pháp luật, y học, công nghệ",
+      "level8": "~9000 từ · Triết học, văn học, lịch sử, khoa học",
+      "level9": "~11000 từ · Trình độ gần bản ngữ, văn ngôn văn"
     },
     "cta": {
       "heading": "Bắt đầu học ngay hôm nay — miễn phí!",
@@ -190,7 +193,7 @@
     },
     "features": {
       "hsk1": "Bài học HSK 1",
-      "allHsk": "Tất cả HSK 1-6",
+      "allHsk": "Tất cả HSK 1-9",
       "flashcardsLimited": "10 thẻ ôn tập/ngày",
       "flashcardsUnlimited": "Ôn tập không giới hạn",
       "quizLimited": "3 bài kiểm tra/ngày",

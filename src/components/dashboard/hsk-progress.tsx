@@ -14,6 +14,9 @@ const hskBarColors: Record<number, string> = {
   4: "bg-orange-500",
   5: "bg-red-500",
   6: "bg-rose-600",
+  7: "bg-indigo-500",
+  8: "bg-teal-500",
+  9: "bg-amber-500",
 };
 
 export async function HskProgress({ progressByLevel }: HskProgressProps) {

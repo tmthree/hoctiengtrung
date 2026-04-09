@@ -1,4 +1,4 @@
-// HSK Levels Preview section — 6 level cards with colored top borders
+// HSK Levels Preview section — 9 level cards with colored top borders
 
 interface HskLevel {
   level: string;
@@ -20,6 +20,9 @@ const HSK_LEVELS: HskLevel[] = [
   { level: "HSK 4", name: "Trung cấp 2", description: "~1200 từ · Đọc hiểu cơ bản", color: "#F59E0B", textColor: "#d97706" },
   { level: "HSK 5", name: "Cao cấp 1", description: "~2500 từ · Đọc báo, xem phim", color: "#EF4444", textColor: "#dc2626" },
   { level: "HSK 6", name: "Cao cấp 2", description: "~5000 từ · Thành thạo tiếng Trung", color: "#CF2562", textColor: "#be185d" },
+  { level: "HSK 7", name: "Nâng cao 1", description: "~7000 từ · Chính trị, pháp luật, y học", color: "#6366F1", textColor: "#4f46e5" },
+  { level: "HSK 8", name: "Nâng cao 2", description: "~9000 từ · Triết học, văn học, lịch sử", color: "#14B8A6", textColor: "#0d9488" },
+  { level: "HSK 9", name: "Bậc thầy", description: "~11000 từ · Trình độ gần bản ngữ", color: "#F59E0B", textColor: "#d97706" },
 ];
 
 export function HskLevelsSection({ badge, heading }: HskLevelsSectionProps) {
@@ -35,7 +38,7 @@ export function HskLevelsSection({ badge, heading }: HskLevelsSectionProps) {
         </div>
 
         {/* Level cards grid */}
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {HSK_LEVELS.map((lvl) => (
             <div
               key={lvl.level}

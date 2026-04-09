@@ -12,7 +12,7 @@ interface UpgradeBannerProps {
 
 export function UpgradeBanner({
   title = "Nâng cấp Premium",
-  description = "Mở khóa tất cả bài học HSK 1-6, từ vựng và luyện tập không giới hạn.",
+  description = "Mở khóa tất cả bài học HSK 1-9, từ vựng và luyện tập không giới hạn.",
   locale,
 }: UpgradeBannerProps) {
   const pricingHref = locale ? `/${locale}/pricing` : "/pricing";

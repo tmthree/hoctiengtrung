@@ -49,8 +49,8 @@ export default async function LessonsPage({ params, searchParams }: LessonsPageP
 
       {showUpgradeBanner && (
         <UpgradeBanner
-          title="Nâng cấp Premium để học tất cả HSK 1-6"
-          description={`Gói miễn phí chỉ bao gồm HSK 1. Nâng cấp để mở khóa ${6 - FREE_LIMITS.maxHskLevel} cấp độ còn lại.`}
+          title="Nâng cấp Premium để học tất cả HSK 1-9"
+          description={`Gói miễn phí chỉ bao gồm HSK 1. Nâng cấp để mở khóa ${9 - FREE_LIMITS.maxHskLevel} cấp độ còn lại.`}
           locale={locale}
         />
       )}

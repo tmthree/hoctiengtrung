@@ -156,7 +156,10 @@
       "level3": "~600 words · Communication in common situations",
       "level4": "~1200 words · Basic reading comprehension",
       "level5": "~2500 words · Read newspapers, watch films without subtitles",
-      "level6": "~5000 words · Full Chinese proficiency"
+      "level6": "~5000 words · Full Chinese proficiency",
+      "level7": "~7000 words · Politics, law, medicine, technology",
+      "level8": "~9000 words · Philosophy, literature, history, science",
+      "level9": "~11000 words · Near-native proficiency, classical Chinese"
     },
     "cta": {
       "heading": "Start learning today — for free!",
@@ -190,7 +193,7 @@
     },
     "features": {
       "hsk1": "HSK 1 lessons",
-      "allHsk": "All HSK 1-6 lessons",
+      "allHsk": "All HSK 1-9 lessons",
       "flashcardsLimited": "10 flashcard reviews/day",
       "flashcardsUnlimited": "Unlimited flashcard reviews",
       "quizLimited": "3 quizzes/day",

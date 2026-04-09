@@ -12,6 +12,9 @@ export default async function AboutPage() {
     { level: "HSK 4", color: "#F59E0B", desc: t("hsk.level4") },
     { level: "HSK 5", color: "#EF4444", desc: t("hsk.level5") },
     { level: "HSK 6", color: "#CF2562", desc: t("hsk.level6") },
+    { level: "HSK 7", color: "#6366F1", desc: t("hsk.level7") },
+    { level: "HSK 8", color: "#14B8A6", desc: t("hsk.level8") },
+    { level: "HSK 9", color: "#F59E0B", desc: t("hsk.level9") },
   ];
 
   return (
