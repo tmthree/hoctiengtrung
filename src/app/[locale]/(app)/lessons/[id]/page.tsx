@@ -97,7 +97,7 @@ export default async function LessonDetailPage({ params }: LessonDetailPageProps
       {lesson.exercises.length > 0 && (
         <div className="pt-2">
           <Link
-            href={`/${locale}/practice/${lesson.id}`}
+            href={`/${locale}/practice/quiz/${lesson.id}`}
             className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/80 transition-colors"
           >
             Làm bài tập ({lesson.exercises.length} câu)

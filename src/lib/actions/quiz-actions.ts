@@ -100,6 +100,101 @@ export async function getExercisesForLesson(lessonId: string) {
   }
 }
 
+/** Complete a quiz — upserts UserProgress and updates LearningStreak */
+export async function completeQuiz(lessonId: string, score: number, exerciseCount: number) {
+  try {
+    const session = await auth.api.getSession({ headers: await headers() });
+    if (!session) return { success: false, error: "Unauthorized" };
+
+    const userId = session.user.id;
+    const status = score >= 60 ? "COMPLETED" : "IN_PROGRESS";
+    const today = new Date(new Date().toISOString().split("T")[0]);
+
+    // Upsert UserProgress — keep highest score
+    const existing = await db.userProgress.findUnique({
+      where: { userId_lessonId: { userId, lessonId } },
+    });
+
+    const keepScore = existing?.score != null ? Math.max(existing.score, score) : score;
+
+    await db.userProgress.upsert({
+      where: { userId_lessonId: { userId, lessonId } },
+      create: {
+        userId,
+        lessonId,
+        status,
+        score: keepScore,
+        completedAt: status === "COMPLETED" ? new Date() : null,
+        lastAccessedAt: new Date(),
+      },
+      update: {
+        status: existing?.status === "COMPLETED" ? "COMPLETED" : status,
+        score: keepScore,
+        completedAt:
+          existing?.status !== "COMPLETED" && status === "COMPLETED"
+            ? new Date()
+            : existing?.completedAt ?? null,
+        lastAccessedAt: new Date(),
+      },
+    });
+
+    // Upsert LearningStreak for today
+    const minutesToAdd = Math.round(exerciseCount * 0.5);
+    await db.learningStreak.upsert({
+      where: { userId_date: { userId, date: today } },
+      create: {
+        userId,
+        date: today,
+        exercisesCompleted: exerciseCount,
+        minutesStudied: minutesToAdd,
+      },
+      update: {
+        exercisesCompleted: { increment: exerciseCount },
+        minutesStudied: { increment: minutesToAdd },
+      },
+    });
+
+    return { success: true };
+  } catch (error) {
+    console.error("completeQuiz error:", error);
+    return { success: false, error: "Failed to save progress" };
+  }
+}
+
+/** Complete an exam — updates LearningStreak only (exam isn't tied to a lesson) */
+export async function completeExam(hskLevel: number, score: number, exerciseCount: number) {
+  // hskLevel kept for potential future use (e.g., exam-specific analytics)
+  void hskLevel;
+  void score;
+  try {
+    const session = await auth.api.getSession({ headers: await headers() });
+    if (!session) return { success: false, error: "Unauthorized" };
+
+    const userId = session.user.id;
+    const today = new Date(new Date().toISOString().split("T")[0]);
+    const minutesToAdd = Math.round(exerciseCount * 0.5);
+
+    await db.learningStreak.upsert({
+      where: { userId_date: { userId, date: today } },
+      create: {
+        userId,
+        date: today,
+        exercisesCompleted: exerciseCount,
+        minutesStudied: minutesToAdd,
+      },
+      update: {
+        exercisesCompleted: { increment: exerciseCount },
+        minutesStudied: { increment: minutesToAdd },
+      },
+    });
+
+    return { success: true };
+  } catch (error) {
+    console.error("completeExam error:", error);
+    return { success: false, error: "Failed to save streak" };
+  }
+}
+
 /** Get random exercises by HSK level for exam simulation */
 export async function getExamExercises(hskLevel: number, count: number = 30) {
   try {

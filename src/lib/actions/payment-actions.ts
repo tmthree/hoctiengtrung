@@ -92,8 +92,8 @@ export async function createCheckoutSession(courseId: string) {
         },
       ],
       metadata: { orderId: order.id, userId: user.id, courseId },
-      success_url: `${APP_URL}/vi/courses/${courseId}?payment=success`,
-      cancel_url: `${APP_URL}/vi/courses/${courseId}?payment=cancelled`,
+      success_url: `${APP_URL}/courses/${courseId}?payment=success`,
+      cancel_url: `${APP_URL}/courses/${courseId}?payment=cancelled`,
     });
 
     await db.order.update({ where: { id: order.id }, data: { stripeSessionId: checkoutSession.id } });

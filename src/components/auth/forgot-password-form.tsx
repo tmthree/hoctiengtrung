@@ -1,64 +1,30 @@
 "use client";
 
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
+// Forgot-password form.
+// Better Auth's forgetPassword requires a sendResetPassword email handler
+// which is not yet configured (no email service set up). Until Resend/SMTP
+// is wired into src/lib/auth.ts, we show an honest message directing the
+// user to the contact page rather than silently doing nothing.
+
 import { useTranslations } from "next-intl";
-import { toast } from "sonner";
-import { forgotPasswordSchema, type ForgotPasswordInput } from "@/lib/validators/auth";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Link } from "@/i18n/navigation";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export function ForgotPasswordForm() {
   const t = useTranslations("auth");
-  const [submitted, setSubmitted] = useState(false);
-
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-  } = useForm<ForgotPasswordInput>({
-    resolver: zodResolver(forgotPasswordSchema),
-  });
-
-  async function onSubmit(_data: ForgotPasswordInput) {
-    // MVP: show success message without actual email sending
-    setSubmitted(true);
-    toast.success(t("checkEmail"));
-  }
-
-  if (submitted) {
-    return (
-      <p className="text-center text-sm text-muted-foreground py-4">
-        {t("checkEmail")}
-      </p>
-    );
-  }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-      <div className="space-y-1.5">
-        <Label htmlFor="email">{t("email")}</Label>
-        <Input
-          id="email"
-          type="email"
-          autoComplete="email"
-          placeholder="you@example.com"
-          {...register("email")}
-        />
-        {errors.email && (
-          <p className="text-sm text-destructive">{errors.email.message}</p>
-        )}
-      </div>
-
-      <Button
-        type="submit"
-        className="w-full rounded-full"
-        disabled={isSubmitting}
+    <div className="space-y-4 text-center">
+      <p className="text-sm text-muted-foreground leading-relaxed">
+        {t("resetPasswordUnavailable")}
+      </p>
+      <Link
+        href="/contact"
+        className={cn(buttonVariants({ variant: "default" }), "w-full rounded-full")}
       >
-        {isSubmitting ? t("loading") : t("resetButton")}
-      </Button>
-    </form>
+        {t("goToContact")}
+      </Link>
+    </div>
   );
 }

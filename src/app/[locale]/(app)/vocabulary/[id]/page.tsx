@@ -1,10 +1,13 @@
 // Word detail page — Server Component
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
+import { headers } from "next/headers";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import { auth } from "@/lib/auth";
 import { WordDetail } from "@/components/vocabulary/word-detail";
 import { VocabularyCard } from "@/components/vocabulary/vocabulary-card";
 import { getVocabularyById, getVocabulary } from "@/lib/queries/vocabulary";
+import { canAccessVocabulary } from "@/lib/access-control";
 
 interface WordDetailPageProps {
   params: Promise<{ locale: string; id: string }>;
@@ -15,6 +18,13 @@ export default async function WordDetailPage({ params }: WordDetailPageProps) {
   const word = await getVocabularyById(id);
 
   if (!word) notFound();
+
+  // Plan gating: free users cannot access HSK 2+ vocabulary by direct URL
+  const session = await auth.api.getSession({ headers: await headers() });
+  if (session?.user?.id) {
+    const canAccess = await canAccessVocabulary(session.user.id, word.hskLevel);
+    if (!canAccess) redirect(`/${locale}/pricing`);
+  }
 
   // Fetch related words from the same HSK level (exclude current)
   const { vocabulary: related } = await getVocabulary({

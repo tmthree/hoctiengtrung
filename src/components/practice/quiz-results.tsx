@@ -1,6 +1,10 @@
+"use client";
 // Quiz results screen component — shows score, breakdown, and action buttons
+// Calls completeQuiz on mount to persist UserProgress + LearningStreak
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type { AnswerResult } from "@/hooks/use-quiz-state";
+import { completeQuiz } from "@/lib/actions/quiz-actions";
 
 interface QuizResultsProps {
   score: number;
@@ -18,6 +22,18 @@ export function QuizResults({
   locale,
   onRetry,
 }: QuizResultsProps) {
+  const [saving, setSaving] = useState(true);
+  const called = useRef(false);
+
+  useEffect(() => {
+    if (called.current) return;
+    called.current = true;
+
+    completeQuiz(lessonId, score, stats.total)
+      .catch((err) => console.error("completeQuiz failed:", err))
+      .finally(() => setSaving(false));
+  }, [lessonId, score, stats.total]);
+
   const scoreColor =
     score >= 80
       ? "text-green-600"
@@ -49,6 +65,9 @@ export function QuizResults({
       <div>
         <h2 className="text-2xl font-bold text-foreground mb-1">Hoàn thành bài kiểm tra!</h2>
         <p className={`font-medium ${scoreColor}`}>{scoreMessage}</p>
+        {saving && (
+          <p className="text-xs text-muted-foreground mt-1">Đang lưu tiến độ...</p>
+        )}
       </div>
 
       {/* Stats */}

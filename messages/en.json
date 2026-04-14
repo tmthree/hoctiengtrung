@@ -61,7 +61,9 @@
     "registerSuccess": "Registration successful! Please sign in.",
     "loginError": "Invalid email or password",
     "registerError": "Registration failed. Email may already be in use.",
-    "loading": "Processing..."
+    "loading": "Processing...",
+    "resetPasswordUnavailable": "Password reset is under development. Please contact admin via the Contact page for assistance.",
+    "goToContact": "Go to Contact page"
   },
   "landing": {
     "hero": {

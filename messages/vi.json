@@ -64,7 +64,9 @@
     "registerSuccess": "Đăng ký thành công! Vui lòng đăng nhập.",
     "loginError": "Email hoặc mật khẩu không đúng",
     "registerError": "Đăng ký thất bại. Email có thể đã được sử dụng.",
-    "loading": "Đang xử lý..."
+    "loading": "Đang xử lý...",
+    "resetPasswordUnavailable": "Tính năng đặt lại mật khẩu đang được phát triển. Vui lòng liên hệ admin qua trang Liên hệ để được hỗ trợ.",
+    "goToContact": "Đến trang Liên hệ"
   },
   "landing": {
     "hero": {

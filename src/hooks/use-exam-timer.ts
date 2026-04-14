@@ -11,7 +11,12 @@ export function useExamTimer({ totalSeconds, onTimeUp }: UseExamTimerOptions) {
   const [remaining, setRemaining] = useState(totalSeconds);
   const [isRunning, setIsRunning] = useState(true);
   const onTimeUpRef = useRef(onTimeUp);
-  onTimeUpRef.current = onTimeUp;
+
+  // Keep ref in sync without triggering re-renders — must be inside useEffect
+  // to avoid "mutating a ref during render" lint warning.
+  useEffect(() => {
+    onTimeUpRef.current = onTimeUp;
+  });
 
   useEffect(() => {
     if (!isRunning || remaining <= 0) return;

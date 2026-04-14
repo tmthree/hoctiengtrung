@@ -65,8 +65,19 @@ export async function getDueReviewCards(hskLevel?: number) {
     const userId = session.user.id;
     const now = new Date();
 
-    // Get all vocabulary (with optional hsk filter)
-    const vocabularyWhere = hskLevel ? { hskLevel } : {};
+    // Plan gating: free users can only review HSK 1 vocabulary
+    const user = await db.user.findUnique({
+      where: { id: userId },
+      select: { plan: true, planExpiresAt: true },
+    });
+    const isPremiumUser = user?.plan === "PREMIUM" && (!user.planExpiresAt || user.planExpiresAt > now);
+    const maxHskLevel = isPremiumUser ? 9 : 1;
+
+    // Get all vocabulary (with optional hsk filter, capped by plan)
+    const effectiveLevel = hskLevel ? Math.min(hskLevel, maxHskLevel) : undefined;
+    const vocabularyWhere = effectiveLevel
+      ? { hskLevel: effectiveLevel }
+      : { hskLevel: { lte: maxHskLevel } };
     const allVocabulary = await db.vocabulary.findMany({
       where: vocabularyWhere,
       take: 50,

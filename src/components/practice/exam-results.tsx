@@ -1,6 +1,10 @@
+"use client";
 // Exam results — shows score, time, and comparison with exam standards
+// Calls completeExam on mount to update LearningStreak
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Clock, Target, Trophy } from "lucide-react";
+import { completeExam } from "@/lib/actions/quiz-actions";
 
 interface ExamResultsProps {
   score: number;
@@ -16,6 +20,18 @@ interface ExamResultsProps {
 const PASS_SCORE = 60;
 
 export function ExamResults({ score, stats, hskLevel, locale, elapsed, timeUp, onRetry }: ExamResultsProps) {
+  const [saving, setSaving] = useState(true);
+  const called = useRef(false);
+
+  useEffect(() => {
+    if (called.current) return;
+    called.current = true;
+
+    completeExam(hskLevel, score, stats.total)
+      .catch((err) => console.error("completeExam failed:", err))
+      .finally(() => setSaving(false));
+  }, [hskLevel, score, stats.total]);
+
   const passed = score >= PASS_SCORE;
   const minutes = Math.floor(elapsed / 60);
   const seconds = elapsed % 60;
@@ -38,6 +54,9 @@ export function ExamResults({ score, stats, hskLevel, locale, elapsed, timeUp, o
         </p>
         {timeUp && (
           <p className="text-sm text-red-600 font-medium mt-1">Hết giờ làm bài!</p>
+        )}
+        {saving && (
+          <p className="text-xs text-muted-foreground mt-1">Đang lưu tiến độ...</p>
         )}
       </div>
 
